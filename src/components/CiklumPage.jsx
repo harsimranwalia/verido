@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Header } from "./header";
+
 import { HeroContent } from "./hero-content";
 import { GradientBars } from "./ui/GradientBars";
 import { FundamentalsSection } from "./sections/FundamentalsSection";
@@ -13,7 +13,7 @@ import { StatsSection } from "./sections/StatsSection";
 import { IndustriesSection } from "./sections/IndustriesSection";
 import { CaseStudiesSection } from "./sections/CaseStudiesSection";
 import { ThoughtLeadershipSection } from "./sections/ThoughtLeadershipSection";
-import { FooterSection } from "./sections/FooterSection";
+
 import { Reveal } from "./ui/Reveal";
 import { motion } from "framer-motion";
 
@@ -50,12 +50,7 @@ export default function CiklumPage() {
   }, []);
 
   return (
-    <div ref={containerRef} className="page-root overflow-clip">
-      {/* ── STICKY HEADER ─────────────────────────────────── */}
-      <div className="fixed left-0 top-0 z-50 w-full px-4 py-3 md:px-8 md:py-4">
-        <Header />
-      </div>
-
+    <div ref={containerRef} className="page-root">
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(circle_at_50%_0%,#ecf3ff_0%,#f5f8ff_60%,#f5f7ff_100%)]">
         {/* GradientBars background */}
@@ -131,9 +126,8 @@ export default function CiklumPage() {
           </Reveal>
         </div>
       </section>
-
-      {/* ── FOOTER ────────────────────────────────────────── */}
-      <FooterSection />
     </div>
   );
 }
+
+      

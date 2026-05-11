@@ -2,33 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/Reveal";
-
-const articles = [
-  {
-    title: "Enterprise AI Automation: A Practical Guide to GenAI, AI Agents and Intelligent Workflows",
-    tag: "AI & Automation",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80",
-    featured: true,
-  },
-  {
-    title: "How AI Agents Are Rewiring Corporate DNA in Healthcare",
-    tag: "Healthcare",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80",
-  },
-  {
-    title: "Legacy Modernization: Architecture, AI, Cloud, ROI & Roadmaps",
-    tag: "Cloud",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80",
-  },
-  {
-    title: "AI Powered Insights in Retail: Enabling Smarter, Faster Decision-Making",
-    tag: "Retail",
-    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=400&q=80",
-  },
-];
+import { THOUGHT_LEADERSHIP_ARTICLES } from "@/components/data/thought-leadership-data";
 
 export function ThoughtLeadershipSection() {
-  const [featured, ...rest] = articles;
+  const [featured, ...rest] = THOUGHT_LEADERSHIP_ARTICLES;
 
   return (
     <section className="bg-[linear-gradient(180deg,#f8fbff_0%,#eff5ff_52%,#f8fbff_100%)] px-6 py-24 md:px-12 md:py-36 lg:px-24">
@@ -49,7 +26,7 @@ export function ThoughtLeadershipSection() {
           </div>
           <Reveal delay={0.2}>
             <motion.a
-              href="#"
+              href="/thought-leadership"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-indigo-700 via-blue-600 to-teal-500 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_14px_36px_rgba(79,70,229,0.3)] transition hover:brightness-110"
@@ -67,7 +44,7 @@ export function ThoughtLeadershipSection() {
           {/* Featured article */}
           <Reveal>
             <motion.a
-              href="#"
+              href={`/thought-leadership/${featured.slug}`}
               className="group relative block h-full min-h-[320px] cursor-pointer overflow-hidden rounded-2xl border border-white/70 shadow-[0_18px_50px_rgba(15,23,42,0.14)]"
               whileHover={{ y: -3 }}
               transition={{ type: "spring", stiffness: 280, damping: 24 }}
@@ -82,14 +59,18 @@ export function ThoughtLeadershipSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent" />
 
               {/* Floating tags (AI icons watermark) */}
-              <div className="absolute top-4 right-4 flex gap-2">
-                <span className="rounded-lg bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-indigo-700">
-                  AI
-                </span>
-                <span className="rounded-lg bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-teal-700">
-                  GenAI
-                </span>
-              </div>
+                {featured.tags?.length ? (
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    {featured.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-lg bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-semibold text-indigo-700"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
 
               {/* Content bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -108,7 +89,7 @@ export function ThoughtLeadershipSection() {
             {rest.map((article, i) => (
               <Reveal key={article.title} delay={i * 0.1}>
                 <motion.a
-                  href="#"
+                  href={`/thought-leadership/${article.slug}`}
                   className="group flex gap-4 rounded-2xl border border-white/70 bg-white/80 p-4 shadow-[0_10px_28px_rgba(15,23,42,0.08)] transition-all duration-300 hover:border-indigo-100 hover:shadow-[0_16px_42px_rgba(79,70,229,0.16)]"
                   whileHover={{ x: 3 }}
                   transition={{ type: "spring", stiffness: 300, damping: 24 }}

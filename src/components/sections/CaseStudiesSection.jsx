@@ -2,45 +2,9 @@
 
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
-
-const caseStudies = [
-  {
-    title: "Transforming the Mortgage Transfer Process for Santander",
-    client: "Santander",
-    logo: "Santander",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
-    logoColor: "#EC0000",
-  },
-  {
-    title: "Engineering the World's largest Food Delivery Platform",
-    client: "Just Eat",
-    logo: "JUST EAT",
-    image: "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=600&q=80",
-    logoColor: "#FF8000",
-  },
-  {
-    title: "Achieved 50% Reduction in Testing Time Through Automation Testing...",
-    client: "Seeking Alpha",
-    logo: "Seeking Alpha",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
-    logoColor: "#1a1a2e",
-  },
-  {
-    title: "Optimizing Payment Infrastructure at Scale",
-    client: "Betsson",
-    logo: "Betsson",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
-    logoColor: "#0066cc",
-  },
-  {
-    title: "AI-Driven CO₂ Reduction for Smart Shipping",
-    client: "Stena Line",
-    logo: "Stena Line",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=80",
-    logoColor: "#003087",
-  },
-];
+import { CASE_STUDIES } from "@/components/data/case-studies-data";
 
 export function CaseStudiesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,7 +26,7 @@ export function CaseStudiesSection() {
   }, []);
 
   const prev = () => setActiveIndex((i) => Math.max(0, i - 1));
-  const next = () => setActiveIndex((i) => Math.min(caseStudies.length - 1, i + 1));
+  const next = () => setActiveIndex((i) => Math.min(CASE_STUDIES.length - 1, i + 1));
 
   return (
     <section className="overflow-hidden bg-[linear-gradient(180deg,#f8fbff_0%,#eef4ff_48%,#f8fbff_100%)] px-6 py-24 md:px-12 md:py-36 lg:px-24">
@@ -88,7 +52,7 @@ export function CaseStudiesSection() {
           </Reveal>
           <Reveal delay={0.3}>
             <motion.a
-              href="#"
+              href="/case-studies"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-indigo-700 via-blue-600 to-teal-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_36px_rgba(79,70,229,0.3)] transition hover:brightness-110"
@@ -125,44 +89,38 @@ export function CaseStudiesSection() {
                 animate={{ x: activeIndex * -300 }}
                 transition={{ type: "spring", stiffness: 280, damping: 28 }}
               >
-                {caseStudies.map((study) => (
+                {CASE_STUDIES.map((study) => (
                   <motion.div
-                    key={study.title}
+                    key={study.slug}
                     className="flex-shrink-0 w-[280px] md:w-[300px]"
                     whileHover={{ y: -4 }}
                     transition={{ type: "spring", stiffness: 280, damping: 24 }}
                   >
                     <div className="group overflow-hidden rounded-2xl border border-white/70 bg-white/80 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur-sm transition-shadow duration-300 hover:shadow-[0_22px_60px_rgba(79,70,229,0.2)]">
-                      {/* Image with logo overlay */}
-                      <div className="relative h-48 overflow-hidden bg-slate-200">
+                      {/* Image */}
+                      <div className="relative h-48 overflow-hidden bg-slate-100">
                         <img
                           src={study.image}
                           alt={study.title}
                           loading="lazy"
-                          className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+                          className="h-full w-full object-contain bg-white p-2 transition-transform duration-300 group-hover:scale-[1.01]"
                         />
-                        {/* Logo overlay */}
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/25">
-                          <span
-                            className="text-lg font-black tracking-tight drop-shadow-lg"
-                            style={{ color: study.logoColor, textShadow: "0 0 12px rgba(255,255,255,0.8)" }}
-                          >
-                            {study.logo}
-                          </span>
-                        </div>
                       </div>
 
                       {/* Content */}
                       <div className="p-5">
+                        <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.14em] text-indigo-600">
+                          {study.category}
+                        </p>
                         <h3 className="font-heading text-sm font-bold text-slate-900 leading-snug mb-4">
                           {study.title}
                         </h3>
-                        <a
-                          href="#"
+                        <Link
+                          href={`/case-studies/${study.slug}`}
                           className="nav-link-underline inline-flex items-center gap-1 text-xs font-bold tracking-widest uppercase text-indigo-700 hover:text-indigo-900 transition-colors"
                         >
                           Learn More →
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </motion.div>
@@ -173,7 +131,7 @@ export function CaseStudiesSection() {
             {/* Next arrow */}
             <button
               onClick={next}
-              disabled={activeIndex >= caseStudies.length - 3}
+              disabled={activeIndex >= CASE_STUDIES.length - 3}
               className="absolute right-0 top-1/2 z-10 flex h-10 w-10 translate-x-6 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/90 text-slate-500 shadow-[0_10px_28px_rgba(79,70,229,0.18)] transition-all hover:border-indigo-200 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-30"
               aria-label="Next"
             >

@@ -1,6 +1,8 @@
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/components/providers/LenisProvider";
+import { Header } from "@/components/header";
+import { FooterSection } from "@/components/sections/FooterSection";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -28,8 +30,14 @@ export default function RootLayout({ children }) {
     >
       <body className="font-sans">
         <LenisProvider>
+          <div className="fixed left-0 top-0 z-50 w-full px-4 pt-4 pb-3 md:px-8 md:pt-6 md:pb-4">
+            <Header />
+          </div>
           <div className="grain-overlay" aria-hidden="true" />
-          {children}
+          <div>
+            {children}
+          </div>
+          <FooterSection />
         </LenisProvider>
       </body>
     </html>

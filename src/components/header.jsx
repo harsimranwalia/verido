@@ -36,13 +36,13 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 mx-auto w-full max-w-6xl rounded-2xl border border-white/60 bg-[linear-gradient(130deg,rgba(255,255,255,0.88),rgba(242,247,255,0.78))] shadow-[0_14px_44px_rgba(15,23,42,0.08)] backdrop-blur-xl transition-all duration-300 ease-out",
+        "sticky top-0  z-50 mx-auto w-full max-w-6xl rounded-2xl border border-white/60 bg-[linear-gradient(130deg,rgba(255,255,255,0.88),rgba(242,247,255,0.78))] shadow-[0_14px_44px_rgba(15,23,42,0.08)] backdrop-blur-xl transition-all duration-300 ease-out",
         {
           "border-indigo-100/80 bg-[linear-gradient(130deg,rgba(255,255,255,0.95),rgba(241,246,255,0.9))] shadow-[0_18px_50px_rgba(79,70,229,0.16)]": scrolled,
         }
       )}
     >
-      <nav className="flex h-[3.75rem] w-full items-center justify-between px-4 md:px-5">
+      <nav className="flex h-[3.75rem]  w-full items-center justify-between px-4 md:px-5">
         <motion.a
           className="inline-flex items-center gap-2 rounded-lg p-2 hover:bg-white/70"
           href="/"

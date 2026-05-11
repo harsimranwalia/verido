@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
-import { Header } from "@/components/header";
-import { FooterSection } from "@/components/sections/FooterSection";
+import { motion, useScroll, useTransform, useInView, useReducedMotion, useSpring } from "framer-motion";
+
 
 // ── Scroll reveal ────────────────────────────────────────────────────────────
 function FadeUp({ children, delay = 0, className = "" }) {
@@ -93,27 +92,36 @@ function StatCard({ value, label, delay = 0 }) {
 
 export default function IndustryPageTemplate({ industry }) {
   const heroRef = useRef(null);
+  const shouldReduceMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
-  const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const heroParallaxTarget = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, shouldReduceMotion ? 0 : 120]
+  );
+  const heroY = useSpring(heroParallaxTarget, { stiffness: 130, damping: 32, mass: 0.2 });
 
   return (
-    <div className="bg-white overflow-clip">
+    <div className="bg-white">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <div className="absolute inset-x-0 top-4 z-50 flex justify-center px-4">
-        <Header />
-      </div>
-      <section ref={heroRef} className="relative flex h-[100svh] items-center overflow-hidden bg-slate-50">
-        <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
-          <img src={industry.heroImage} alt="" className="h-full w-full object-cover opacity-[0.12]" />
+      <section ref={heroRef} className="relative flex min-h-[100svh] pt-28 md:pt-32 pb-16 items-center overflow-hidden bg-slate-50">
+        <motion.div style={{ y: heroY, willChange: "transform" }} className="absolute inset-0 z-0 transform-gpu">
+          <img
+            src={industry.heroImage}
+            alt=""
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover opacity-[0.12]"
+          />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_62%_at_8%_28%,rgba(99,102,241,0.18),transparent)]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_100%_72%,rgba(34,211,238,0.14),transparent)]" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(248,250,252,0.75),rgba(255,255,255,0.94))]" />
           <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.12)_1px,transparent_1px)] [background-size:44px_44px]" />
         </motion.div>
 
-        <motion.div style={{ opacity: heroOpacity }} className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center px-6  md:px-12">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center px-6 md:px-12">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <motion.div
@@ -165,15 +173,16 @@ export default function IndustryPageTemplate({ industry }) {
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block"
+              className="block mt-10 lg:mt-0"
             >
               <div className="relative overflow-hidden rounded-[2rem] border border-white/90 shadow-[0_28px_60px_rgba(15,23,42,0.18)]">
-                <img src={industry.heroImage} alt={industry.badge} className="h-[420px] w-full object-cover" />
+                <img src={industry.heroImage} alt={industry.badge} loading="lazy" decoding="async" className="h-[420px] w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/55 via-transparent to-transparent" />
                 {/* Quick-stat pills */}
                 <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  initial={shouldReduceMotion ? false : { y: 10, opacity: 0 }}
+                  animate={shouldReduceMotion ? { opacity: 1 } : { y: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
                   className="absolute bottom-6 left-6 flex items-center gap-3 rounded-xl border border-slate-200 bg-white/90 px-5 py-3 text-slate-700 shadow-lg backdrop-blur-md"
                 >
                   <div className="h-2.5 w-2.5 rounded-full bg-indigo-500 animate-pulse" />
@@ -183,7 +192,7 @@ export default function IndustryPageTemplate({ industry }) {
               </div>
             </motion.div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* ── VALUE STATEMENT ───────────────────────────────────────────────── */}
@@ -347,8 +356,6 @@ export default function IndustryPageTemplate({ industry }) {
           </FadeUp>
         </div>
       </section>
-
-      <FooterSection />
     </div>
   );
 }

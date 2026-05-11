@@ -29,7 +29,7 @@ export function FooterSection() {
   };
 
   return (
-    <footer className="bg-[linear-gradient(155deg,#0f172a_0%,#121f45_45%,#0f2848_100%)] px-6 pb-10 pt-20 text-white md:px-12 lg:px-24">
+    <footer className="relative z-20 bg-[linear-gradient(155deg,#0f172a_0%,#121f45_45%,#0f2848_100%)] px-6 pb-10 pt-20 text-white md:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
           {/* Brand */}

@@ -41,7 +41,7 @@ export function HeroContent() {
   }, []);
 
   return (
-    <div className="pointer-events-none relative z-20 flex min-h-[100svh] w-full flex-col items-center justify-center px-4 pb-[30vh] pt-28 md:px-6 md:pb-[35vh] md:pt-32">
+    <div className="pointer-events-none relative z-20 flex min-h-[100svh] w-full flex-col items-center justify-center px-4 pb-20 pt-24 md:px-6 md:pb-[35vh] md:pt-32">
       <div
         ref={rootRef}
         className="mx-auto flex w-full max-w-5xl flex-col items-center text-center text-slate-900"

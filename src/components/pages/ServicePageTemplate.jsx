@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
-import { Header } from "@/components/header";
-import { FooterSection } from "@/components/sections/FooterSection";
+
 
 // ── Animated counter ─────────────────────────────────────────────────────────
 function StatCard({ value, label, delay = 0 }) {
@@ -114,13 +113,10 @@ export default function ServicePageTemplate({ service }) {
   const marqueeItems = service.capabilities.map((c) => c.title);
 
   return (
-    <div className="bg-white overflow-clip">
-      <div className="absolute inset-x-0 top-4 z-50 flex justify-center px-4">
-        <Header />
-      </div>
+    <div className="bg-white">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section ref={heroRef} className="relative flex h-[100svh] items-center overflow-hidden bg-slate-50">
+      <section ref={heroRef} className="relative flex min-h-[100svh] pt-28 md:pt-32 pb-16 items-center overflow-hidden bg-slate-50">
         {/* Parallax BG image */}
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
           <img src={service.heroImage} alt="" className="h-full w-full object-cover opacity-[0.12]" />
@@ -185,7 +181,7 @@ export default function ServicePageTemplate({ service }) {
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden lg:block"
+              className="block mt-10 lg:mt-0"
             >
               <div className="relative overflow-hidden rounded-[2rem] border border-white/90 shadow-[0_28px_60px_rgba(15,23,42,0.18)]">
                 <img src={service.heroImage} alt={service.badge} className="h-[420px] w-full object-cover" />
@@ -345,8 +341,6 @@ export default function ServicePageTemplate({ service }) {
           </FadeUp>
         </div>
       </section>
-
-      <FooterSection />
     </div>
   );
 }
