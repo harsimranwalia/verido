@@ -331,7 +331,7 @@ export default function AboutPage() {
                 name: "Akshat Agrawal",
                 role: "Co-Founder",
                 edu: "IIT Delhi & US MBA",
-                image: "/akshat.jpg",
+                image: "/akshat.jpeg",
                 oneLiner: "Product Strategy leader and Web3/AI infrastructure builder.",
                 fullInfo: "With an early career exit, Akshat led Product Strategy for Softbank-funded Snapdeal and multiple SaaS platforms before moving to Web3. He builds exchanges, vaults, and RWA platforms, ensures VARA/MiCA compliance, and is a major proponent of Coinbase's x402 micropayments for autonomous AI agents."
               },
@@ -339,7 +339,7 @@ export default function AboutPage() {
                 name: "Shubbankar Singh",
                 role: "AI Product Manager",
                 edu: "Rotman MBA & JMI",
-                image: "https://media.licdn.com/dms/image/v2/C4E03AQFyn_ZW69tMdA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1604105964478?e=1779321600&v=beta&t=4a1dIs2X7IoaHg_WTdysK2iCyDEAcs5xBPGQpKl2dS8",
+                image: "/shubhankar.jpeg",
                 oneLiner: "Product Leader dedicated to moving unconventional ideas from concept to shipped product.",
                 fullInfo: "Shubbankar specializes in 0→1 product leadership and AI innovation. At Telus, he managed an $8M innovation fund, running rigorous validation programs that drove 40+ projects annually and delivered over 4X ROI. At Wavelo Labs, he established an agile AI cadence and led cross-functional teams in shipping advanced proof-of-concepts to AWS. He excels at evaluating ambitious bets, driving product inception, and acting as a full-stack builder to launch solutions that transform business processes."
               }
