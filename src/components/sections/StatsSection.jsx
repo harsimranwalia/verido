@@ -34,7 +34,7 @@ function AnimatedCounter({ target, suffix = "", duration = 2000 }) {
 
 const stats = [
   { value: 120, suffix: "+", label: "AI & Web3 Audits Completed" },
-  { value: 45, suffix: " Days", label: "To Go Live (PoC/MVP/Feature)" },
+  { value: 42, suffix: " Days", label: "To Go Live (PoC/MVP/Feature)" },
   { value: 200, suffix: "+", label: "Enterprise Clients" },
   { value: 30, suffix: "+", label: "Global Locations" },
 ];

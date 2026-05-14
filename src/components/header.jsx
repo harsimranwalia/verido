@@ -7,7 +7,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { Button } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
 import { cn } from "@/lib/utils";
-import { CENTER_LINKS, SERVICE_GROUPS, INDUSTRIES_LINKS } from "@/components/navigation-data";
+import { CENTER_LINKS, SERVICE_GROUPS, INDUSTRIES_LINKS, RESOURCES_LINKS } from "@/components/navigation-data";
 
 export const navLinks = CENTER_LINKS;
 
@@ -15,6 +15,7 @@ export function Header() {
   const scrolled = useScroll(10);
   const [menuOpen, setMenuOpen] = useState(false);
   const [industriesMenuOpen, setIndustriesMenuOpen] = useState(false);
+  const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false);
   const [activeServiceLabel, setActiveServiceLabel] = useState(SERVICE_GROUPS[0].label);
   const [activeIndustryLabel, setActiveIndustryLabel] = useState(INDUSTRIES_LINKS[0].label);
 
@@ -201,6 +202,39 @@ export function Header() {
                           </motion.div>
                         </AnimatePresence>
                       </div>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <div className="relative" onMouseEnter={() => setResourcesMenuOpen(true)} onMouseLeave={() => setResourcesMenuOpen(false)}>
+            <Button size="sm" variant="ghost" className="group text-[14px] font-semibold text-slate-700 transition-colors hover:bg-white hover:text-slate-900">
+              Resources
+              <ChevronDown className="ml-1 size-3.5 opacity-50 transition-transform duration-200 group-hover:rotate-180" />
+            </Button>
+
+            <AnimatePresence>
+              {resourcesMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -8, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -8, scale: 0.98 }}
+                  transition={{ duration: 0.18, ease: "easeOut" }}
+                  className="absolute left-0 top-full z-[60] w-[260px] pt-3"
+                >
+                  <div className="rounded-2xl border border-white/70 bg-[linear-gradient(150deg,rgba(255,255,255,0.95),rgba(243,248,255,0.94))] p-2 shadow-[0_24px_60px_rgba(15,23,42,0.15)] backdrop-blur-xl">
+                    <div className="rounded-lg border border-slate-100 bg-white/90 p-2">
+                      {RESOURCES_LINKS.map((resource) => (
+                        <a
+                          key={resource.label}
+                          href={resource.href}
+                          className="flex items-center rounded-md px-3 py-2 text-sm text-slate-600 transition hover:bg-indigo-50/70 hover:text-slate-900"
+                        >
+                          {resource.label}
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </motion.div>

@@ -168,7 +168,7 @@ export const CASE_STUDIES = [
     title: "TokWealth",
     category: "Web3 · Fintech · Full-Stack",
     subtitle: "RWA Tokenization · Real Estate",
-    image: "https://www.codemonks.xyz/agencyLogo.png",
+    image: "https://github.com/Shivamsinghmer/Ibagency/blob/main/public/marquee/TokWealth.png?raw=true",
     summary:
       "Real World Asset (RWA) tokenization platform bringing real estate investment onto the blockchain for fractional ownership and transparent transactions.",
     overview: [
@@ -197,14 +197,14 @@ export const CASE_STUDIES = [
     ],
     outcome:
       "Delivered a production-ready, compliant, and secure RWA tokenization platform built for real investors.",
-    images: ["https://www.codemonks.xyz/agencyLogo.png"],
+    images: ["https://github.com/Shivamsinghmer/Ibagency/blob/main/public/marquee/TokWealth.png?raw=true"],
   },
   {
     slug: "strategy-connect",
     title: "StrategyConnect",
     category: "SaaS · Architecture · UI/UX",
     subtitle: "Platform Strategy · Systems Architecture",
-    image: "https://www.codemonks.xyz/agencyLogo.png",
+    image: "https://www.codemonks.xyz/marquee/StrategyConnect.svg",
     summary:
       "A strategy consulting services platform redesigned and rearchitected to improve structure, visibility, and operational clarity.",
     overview: [
@@ -234,6 +234,130 @@ export const CASE_STUDIES = [
     outcome:
       "Delivered a restructured, scalable SaaS platform with a coherent design system and durable technical foundation.",
     images: ["https://www.codemonks.xyz/agencyLogo.png"],
+  },
+  {
+    slug: "aiorders-zero-to-profitability",
+    title: "AIOrders",
+    category: "AI-Native SaaS · Agentic Automation · Product Leadership",
+    subtitle: "0-to-1 AI B2B SaaS from Concept to Profitability",
+    image: "https://aiorders.io/lovable-uploads/aio-logo.png",
+    summary:
+      "Partnered with a sales-led founder to architect, build, and scale an AI-native B2B SaaS from zero to profitability while owning the roadmap, AI infrastructure, and core business metrics.",
+    responsibilities: [
+      "Defined GTM-ready product strategy and shipped the MVP",
+      "Architected AI integration layer with validation and fallback logic",
+      "Built end-to-end features using AI-assisted development workflows",
+      "Established acquisition, conversion, and retention instrumentation",
+      "Owned roadmap prioritization tied to commercial outcomes",
+    ],
+    keyFeatures: [
+      "AI-powered ordering and storefront workflows",
+      "Resilient AI orchestration with production fallback paths",
+      "Rapid feature delivery with AI-assisted engineering",
+      "Full-funnel product and growth metric visibility",
+    ],
+    techHighlights: ["AI-Powered Development", "Agentic Automation"],
+    technicalConsiderations: [
+      "Production reliability for AI-dependent user journeys",
+      "Fallback-first architecture to prevent workflow disruption",
+      "Roadmap prioritization aligned to recurring revenue",
+    ],
+    outcome:
+      "Drove 0-to-1 commercialization by turning a raw concept into a profitable recurring-revenue SaaS platform.",
+    images: ["https://logo.clearbit.com/aiorders.io"],
+  },
+  {
+    slug: "walnut-insurance-series-a-foundation",
+    title: "Walnut Insurance",
+    category: "Insurtech · B2B2C APIs · Product Transformation",
+    subtitle: "Post-Seed Product Leadership and Dual-Track Scaling",
+    image: "https://cdn.prod.website-files.com/603e8cef693c1f49f3e84e58/61e6e2b4b2ed6e3de3f1a075_walnut-logo-pink.svg",
+    summary:
+      "Took over product leadership post-Seed, professionalized engineering cadence, and built the scalable digital broker foundation that positioned the company for Series A.",
+    responsibilities: [
+      "Transitioned product operations from founding team to a scalable model",
+      "Led roadmap execution for D2C broker and B2B2C partner API tracks",
+      "Realigned engineering priorities around partner revenue drivers",
+      "Redesigned end-to-end digital purchase experience for conversion",
+      "Architected carrier API integrations for real-time quoting",
+    ],
+    keyFeatures: [
+      "Direct-to-consumer digital broker experience",
+      "Embedded B2B2C API distribution layer",
+      "Real-time carrier quote integration workflows",
+      "Optimized onboarding and purchase conversion flows",
+    ],
+    techHighlights: ["Application Programming Interfaces (API)", "B2B2C"],
+    technicalConsiderations: [
+      "Balancing compliance, carrier constraints, and speed of delivery",
+      "Maintaining partner reliability while iterating consumer UX",
+      "Roadmap governance around measurable revenue impact",
+    ],
+    outcome:
+      "Improved time-to-market by 18% and drove 25% revenue growth while delivering the technical foundation needed for Series A readiness.",
+    images: ["https://cdn.prod.website-files.com/603e8cef693c1f49f3e84e58/61e6e2b4b2ed6e3de3f1a075_walnut-logo-pink.svg"],
+  },
+  {
+    slug: "peoplestrong-apac-ai-scale",
+    title: "PeopleStrong",
+    category: "Enterprise HR SaaS · Applied ML · Product at Scale",
+    subtitle: "Post-Acquisition Product and AI Strategy",
+    image: "https://www.peoplestrong.com/wp-content/uploads/2025/12/ps-logo.svg",
+    summary:
+      "Led product and AI strategy after the acquisition of Grownout, scaling architecture and product organization to support hyper-growth across APAC.",
+    responsibilities: [
+      "Led product scaling strategy through 8x active user growth",
+      "Operationalized conversational AI and recommendation systems",
+      "Implemented production ML observability and telemetry practices",
+      "Directed roadmap and delivery across four product verticals",
+      "Managed PM, PO, ML, and mobile functions for unified releases",
+    ],
+    keyFeatures: [
+      "Enterprise-grade conversational AI in daily workflows",
+      "AI-driven personalization across user journeys",
+      "Production model monitoring and degradation detection",
+      "Cross-vertical release planning and execution",
+    ],
+    techHighlights: ["Machine Learning", "Python"],
+    technicalConsiderations: [
+      "Scaling model-serving reliability alongside user growth",
+      "Observability-first ML operations for proactive incident prevention",
+      "Tight product-ML alignment for repeatable business impact",
+    ],
+    outcome:
+      "Scaled from 25K to 200K users, increased MAU by 23%, and contributed to 16% regional sales growth through AI-powered product differentiation.",
+    images: ["https://www.peoplestrong.com/wp-content/uploads/2025/12/ps-logo.svg"],
+  },
+  {
+    slug: "grownout-zero-to-acquisition",
+    title: "Grownout",
+    category: "Hiring Tech · Classical ML · Founder-Led Product",
+    subtitle: "AI Hiring Platform from First Commit to Exit",
+    image: "https://static-asset.inc42.com/logo/grownout.png",
+    summary:
+      "Co-founded, architected, and scaled an AI-powered hiring platform from the first line of code to strategic acquisition in under four years.",
+    responsibilities: [
+      "Led commercial product vision and technical architecture end-to-end",
+      "Built classical ML pipeline from feature engineering to production",
+      "Drove enterprise workflow redesign around AI candidate matching",
+      "Ran iterative model and UX experiments on live customer behavior",
+      "Scaled platform execution from concept to enterprise adoption",
+    ],
+    keyFeatures: [
+      "Real-time candidate ranking and matching system",
+      "AI-assisted enterprise screening workflow automation",
+      "Data-driven optimization loops across product and ML outputs",
+      "Enterprise onboarding and hiring pipeline acceleration",
+    ],
+    techHighlights: ["Python", "MongoDB"],
+    technicalConsiderations: [
+      "Model quality and explainability in high-stakes hiring decisions",
+      "Tight integration of ML outputs into recruiter workflows",
+      "Balancing speed of iteration with enterprise reliability needs",
+    ],
+    outcome:
+      "Secured two Indian patents, reduced average time-to-hire by 70% (35 to 10 days), and improved sourcing cycle speed by 40% ahead of acquisition.",
+    images: ["https://static-asset.inc42.com/logo/grownout.png"],
   },
 ];
 

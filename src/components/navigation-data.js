@@ -34,6 +34,17 @@ export const CENTER_LINKS = [
   },
 ];
 
+export const RESOURCES_LINKS = [
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+  },
+  {
+    label: "Blogs",
+    href: "/thought-leadership",
+  },
+];
+
 export const INDUSTRIES_LINKS = [
   { label: "Banking & Financial Services", href: "/industries/banking", icon: BankIcon, desc: "Modernize banking with AI-driven intelligence that transforms risk modeling, fraud detection, and customer engagement into seamless, trusted financial experiences.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800" },
   { label: "Retail & Consumer Goods", href: "/industries/retail", icon: RetailIcon, desc: "Drive customer loyalty and operational efficiency with predictive analytics and personalized, omnichannel retail experiences.", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" },

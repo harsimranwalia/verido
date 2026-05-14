@@ -37,7 +37,7 @@ const philosophyCards = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
       </svg>
     ),
-    title: "Live in 45 Days",
+    title: "Live in 42 days",
     description:
       "We build and launch AI & Web3 solutions fast. \"Live\" means a PoC, an MVP, or a standalone production feature — whichever delivers the most value for your business.",
     accent: "border-l-indigo-400",
@@ -96,7 +96,7 @@ export function ServicesSection() {
             <h2 className="font-heading text-[clamp(2rem,5vw,3.8rem)] font-bold tracking-tight text-slate-900 mb-5 leading-tight">
               Audit for Opportunity.
               <br />
-              <span className="bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">Live in 45 Days.</span>
+              <span className="bg-gradient-to-r from-indigo-600 to-teal-500 bg-clip-text text-transparent">Live in 42 days.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

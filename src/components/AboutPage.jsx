@@ -155,7 +155,7 @@ export default function AboutPage() {
                 {[
                   "AI audits — a way to get information about your business and surface opportunities to implement AI.",
                   "Web3 audits — evaluate readiness, security, and opportunity across your stack.",
-                  "AI & Web3 solutions building — going live in 45 days as a PoC, MVP, or independent feature.",
+                  "AI & Web3 solutions building — going live in 42 days as a PoC, MVP, or independent feature.",
                 ].map((text, i) => (
                   <Reveal key={i} delay={0.2 + i * 0.08}>
                     <div className="group flex items-start gap-4 rounded-2xl border border-transparent p-3 transition-all hover:border-indigo-100 hover:bg-indigo-50/50">
@@ -210,7 +210,7 @@ export default function AboutPage() {
               {
                 step: "03",
                 title: "Agile PoC to MVP",
-                desc: "Rapid deployment within 45 days. We prove value through functional prototypes before scaling."
+                desc: "Rapid deployment within 42 days. We prove value through functional prototypes before scaling."
               },
               {
                 step: "04",
@@ -325,7 +325,8 @@ export default function AboutPage() {
                 edu: "IIT Delhi",
                 image: "/harsimran.jpeg",
                 oneLiner: "AI Product Leader, 1x Exit Founder, and architect of AI-native B2B SaaS platforms.",
-                fullInfo: "With 15 years scaling B2B SaaS, Harsimran co-founded Grownout (acquired by Peoplestrong) and grew its ML platform to 200k users. Holding 2 patents, he recently launched AIOrders, an LLM-native platform built rapidly using AI-assisted tools. He specializes in end-to-end product strategy, transitioning from classical ML to advanced AI agents, and shipping robust solutions in high-stakes environments."
+                fullInfo: "With 15 years scaling B2B SaaS, Harsimran co-founded Grownout (acquired by Peoplestrong) and grew its ML platform to 200k users. Holding 2 patents, he recently launched AIOrders, an LLM-native platform built rapidly using AI-assisted tools. He specializes in end-to-end product strategy, transitioning from classical ML to advanced AI agents, and shipping robust solutions in high-stakes environments.",
+                linkedin: "https://www.linkedin.com/in/harsimran-walia",
               },
               {
                 name: "Akshat Agrawal",
@@ -333,7 +334,8 @@ export default function AboutPage() {
                 edu: "IIT Delhi & US MBA",
                 image: "/akshat.jpeg",
                 oneLiner: "Product Strategy leader and Web3/AI infrastructure builder.",
-                fullInfo: "With an early career exit, Akshat led Product Strategy for Softbank-funded Snapdeal and multiple SaaS platforms before moving to Web3. He builds exchanges, vaults, and RWA platforms, ensures VARA/MiCA compliance, and is a major proponent of Coinbase's x402 micropayments for autonomous AI agents."
+                fullInfo: "With an early career exit, Akshat led Product Strategy for Softbank-funded Snapdeal and multiple SaaS platforms before moving to Web3. He builds exchanges, vaults, and RWA platforms, ensures VARA/MiCA compliance, and is a major proponent of Coinbase's x402 micropayments for autonomous AI agents.",
+                linkedin: "https://www.linkedin.com/in/akshatagrawaldelhi/",
               },
               {
                 name: "Shubbankar Singh",
@@ -341,7 +343,8 @@ export default function AboutPage() {
                 edu: "Rotman MBA & JMI",
                 image: "/shubhankar.jpeg",
                 oneLiner: "Product Leader dedicated to moving unconventional ideas from concept to shipped product.",
-                fullInfo: "Shubbankar specializes in 0→1 product leadership and AI innovation. At Telus, he managed an $8M innovation fund, running rigorous validation programs that drove 40+ projects annually and delivered over 4X ROI. At Wavelo Labs, he established an agile AI cadence and led cross-functional teams in shipping advanced proof-of-concepts to AWS. He excels at evaluating ambitious bets, driving product inception, and acting as a full-stack builder to launch solutions that transform business processes."
+                fullInfo: "Shubbankar specializes in 0→1 product leadership and AI innovation. At Telus, he managed an $8M innovation fund, running rigorous validation programs that drove 40+ projects annually and delivered over 4X ROI. At Wavelo Labs, he established an agile AI cadence and led cross-functional teams in shipping advanced proof-of-concepts to AWS. He excels at evaluating ambitious bets, driving product inception, and acting as a full-stack builder to launch solutions that transform business processes.",
+                linkedin: "https://www.linkedin.com/in/shubbankarsingh",
               }
             ].map((person, i) => (
               <Reveal key={person.name} delay={i * 0.05} className="flex h-full w-full">
@@ -350,6 +353,8 @@ export default function AboutPage() {
                   description={person.role}
                   badge={person.edu}
                   oneLiner={person.oneLiner}
+                  linkHref={person.linkedin}
+                  linkLabel="LinkedIn Profile"
                   src={person.image || "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=800&fit=crop"}
                 >
                   <div className="text-slate-600 leading-relaxed text-sm">

@@ -9,6 +9,7 @@ import {
   CENTER_LINKS,
   INDUSTRIES_LINKS,
   SERVICE_GROUPS,
+  RESOURCES_LINKS,
 } from "@/components/navigation-data";
 
 export function MobileNav() {
@@ -131,6 +132,27 @@ export function MobileNav() {
                       </a>
                       );
                     })}
+                  </div>
+                </details>
+              </div>
+
+              <div className="rounded-lg border border-slate-100 bg-white/90 p-2">
+                <details className="group">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-2 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600 [&::-webkit-details-marker]:hidden">
+                    <span>Resources</span>
+                    <ChevronDown className="size-4 text-slate-400 transition-transform duration-200 group-open:rotate-180" />
+                  </summary>
+                  <div className="mt-2 grid gap-y-1">
+                    {RESOURCES_LINKS.map((resource) => (
+                      <a
+                        key={resource.label}
+                        href={resource.href}
+                        onClick={closeMenu}
+                        className="flex items-center rounded-md px-2 py-2 text-sm text-slate-600 hover:bg-indigo-50/70 hover:text-slate-900"
+                      >
+                        {resource.label}
+                      </a>
+                    ))}
                   </div>
                 </details>
               </div>

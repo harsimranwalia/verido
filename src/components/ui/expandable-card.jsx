@@ -4,6 +4,7 @@ import * as React from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ExternalLink } from "lucide-react";
 
 export function ExpandableCard({
   title,
@@ -11,6 +12,8 @@ export function ExpandableCard({
   description,
   badge,
   oneLiner,
+  linkHref,
+  linkLabel,
   children,
   className,
   classNameExpanded,
@@ -104,6 +107,17 @@ export function ExpandableCard({
                           {oneLiner}
                         </motion.div>
                       )}
+                      {linkHref && (
+                        <a
+                          href={linkHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
+                          title={linkLabel || "LinkedIn Profile"}
+                        >
+                           <ExternalLink size={20} />
+                        </a>
+                      )}
                     </div>
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
@@ -165,6 +179,18 @@ export function ExpandableCard({
             >
               {oneLiner}
             </motion.div>
+          )}
+          {linkHref && (
+            <a
+              href={linkHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => event.stopPropagation()}
+              className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
+              title={linkLabel || "LinkedIn Profile"}
+            >
+              <ExternalLink size={20} />
+            </a>
           )}
         </div>
       </motion.div>

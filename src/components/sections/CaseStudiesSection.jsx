@@ -9,6 +9,9 @@ import { CASE_STUDIES } from "@/components/data/case-studies-data";
 export function CaseStudiesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [dragConstraint, setDragConstraint] = useState(0);
+  const [cardStep, setCardStep] = useState(300);
+  const [maxTranslate, setMaxTranslate] = useState(0);
+  const [maxIndex, setMaxIndex] = useState(0);
   const trackRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -17,7 +20,17 @@ export function CaseStudiesSection() {
       if (trackRef.current && containerRef.current) {
         const trackWidth = trackRef.current.scrollWidth;
         const containerWidth = containerRef.current.offsetWidth;
-        setDragConstraint(-(trackWidth - containerWidth));
+        const maxOffset = Math.max(0, trackWidth - containerWidth);
+        const gap = parseFloat(getComputedStyle(trackRef.current).gap || "0");
+        const firstCardWidth = trackRef.current.firstElementChild?.getBoundingClientRect().width || 300;
+        const step = firstCardWidth + gap;
+        const computedMaxIndex = step > 0 ? Math.ceil(maxOffset / step) : 0;
+
+        setDragConstraint(-maxOffset);
+        setMaxTranslate(maxOffset);
+        setCardStep(step);
+        setMaxIndex(computedMaxIndex);
+        setActiveIndex((i) => Math.min(i, computedMaxIndex));
       }
     };
     update();
@@ -26,7 +39,7 @@ export function CaseStudiesSection() {
   }, []);
 
   const prev = () => setActiveIndex((i) => Math.max(0, i - 1));
-  const next = () => setActiveIndex((i) => Math.min(CASE_STUDIES.length - 1, i + 1));
+  const next = () => setActiveIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
     <section className="overflow-hidden bg-[linear-gradient(180deg,#f8fbff_0%,#eef4ff_48%,#f8fbff_100%)] px-6 py-24 md:px-12 md:py-36 lg:px-24">
@@ -86,7 +99,7 @@ export function CaseStudiesSection() {
                 drag="x"
                 dragConstraints={{ left: dragConstraint, right: 0 }}
                 dragElastic={0.08}
-                animate={{ x: activeIndex * -300 }}
+                animate={{ x: -Math.min(activeIndex * cardStep, maxTranslate) }}
                 transition={{ type: "spring", stiffness: 280, damping: 28 }}
               >
                 {CASE_STUDIES.map((study) => (
@@ -131,7 +144,7 @@ export function CaseStudiesSection() {
             {/* Next arrow */}
             <button
               onClick={next}
-              disabled={activeIndex >= CASE_STUDIES.length - 3}
+              disabled={activeIndex >= maxIndex}
               className="absolute right-0 top-1/2 z-10 flex h-10 w-10 translate-x-6 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/90 text-slate-500 shadow-[0_10px_28px_rgba(79,70,229,0.18)] transition-all hover:border-indigo-200 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-30"
               aria-label="Next"
             >
