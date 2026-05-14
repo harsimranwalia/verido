@@ -2,8 +2,8 @@
 import { MetadataRoute } from 'next';
 import { siteUrl } from '../lib/site-url';
 import { SERVICES_DATA } from '../components/data/services-data';
-import { THOUGHT_LEADERSHIP_ARTICLES, THOUGHT_LEADERSHIP_BY_SLUG } from '../components/data/thought-leadership-data';
-import { CASE_STUDIES, CASE_STUDIES_BY_SLUG } from '../components/data/case-studies-data';
+import { THOUGHT_LEADERSHIP_ARTICLES } from '../components/data/thought-leadership-data';
+import { CASE_STUDIES } from '../components/data/case-studies-data';
 import { INDUSTRIES_DATA } from '../components/data/industries-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -14,12 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),
-      changeFrequency: 
-        route === '' 
-          ? 'daily' 
-          : ['/about', '/contact'].includes(route) 
-            ? 'monthly' 
-            : 'weekly',
+      changeFrequency: (
+        route === ''
+          ? 'daily'
+          : ['/about', '/contact'].includes(route)
+            ? 'monthly'
+            : 'weekly'
+      ) as 'daily' | 'monthly' | 'weekly',
       priority: 
         route === '' 
           ? 1.0 
