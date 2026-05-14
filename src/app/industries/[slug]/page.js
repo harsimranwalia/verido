@@ -1,5 +1,5 @@
-import { INDUSTRIES_DATA } from "@/components/data/industries-data";
-import IndustryPageTemplate from "@/components/pages/IndustryPageTemplate";
+import { INDUSTRIES_DATA } from "../../../components/data/industries-data";
+import IndustryPageTemplate from "../../../components/pages/IndustryPageTemplate";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {

@@ -1,5 +1,5 @@
-import { SERVICES_DATA } from "@/components/data/services-data";
-import ServicePageTemplate from "@/components/pages/ServicePageTemplate";
+import { SERVICES_DATA } from "../../../components/data/services-data";
+import ServicePageTemplate from "../../../components/pages/ServicePageTemplate";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {

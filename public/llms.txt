@@ -1,0 +1,50 @@
+# 42Works
+42Works is a global, AI-powered Experience Engineering Company specializing in AI audits, Web3 audits, and building AI-native solutions that drive real business value.
+
+## Pages section listing key URLs with a one-line description each
+/ - Homepage: Overview of 42Works AI Visibility services
+/about - About Us: Company information, leadership, and values
+/services - Services Overview: All service offerings including AI Audit, Web3, MVP Development
+/contact - Contact Information: Get in touch with the 42Works team
+/case-studies - Case Studies: Selected systems designed, built, and taken to production
+/thought-leadership - Thought Leadership: Perspectives on AI, cloud modernization, and digital operating models
+/industries - Industries Served: Solutions tailored for specific industry verticals
+
+## Services section summarising offerings
+AI Audit: Discover where AI can transform your business with our comprehensive digital landscape assessment
+Web3 & Blockchain: Secure your Web3 stack with smart contract audits, DeFi protocol reviews, and compliance
+MVP Development: Build production-grade MVPs in weeks with our AI-assisted development process
+Generative AI: Build AI products that actually work with custom LLMs and multi-modal systems
+AI Agents & Automation: Build autonomous agents that act, not just answer
+Data & Intelligence: Turn data into decisions with modern data infrastructure and analytics
+RAG Systems: AI that knows your business with production-grade Retrieval-Augmented Generation
+Private LLM Systems: AI power with complete privacy through on-premise deployments
+Machine Learning: Models that learn and systems that scale with custom ML development
+Smart Contract Audits: Secure every line of code and protect every dollar
+dApp Development: Build decentralized applications that last with security and UX focus
+RWA Tokenization: Bring real assets on-chain with compliant tokenization solutions
+DeFi Protocols: Build the future of finance with secure and capital-efficient protocols
+VARA / MiCA Compliance: Navigate regulated Web3 markets with compliance expertise
+Data Engineering: Build pipelines that never break with scalable data infrastructure
+Data Analytics & Intelligence: Back every decision with data through analytics platforms
+Business Intelligence: Get executive clarity with real-time BI platforms
+Full-Stack Development: Build end-to-end products that scale with modern technologies
+Mobile App Development: Create apps users actually love with native and cross-platform development
+API Development: Build robust, scalable, and secure APIs that power your ecosystem
+UI/UX Design: Design interfaces that convert and delight with user-centered design
+Product Discovery: Validate assumptions and define the right product scope before building
+Cloud Transformation: Modernize your cloud infrastructure with resilient, scalable solutions
+DevOps & CI/CD: Ship faster with DevOps platforms and CI/CD pipelines that let you deploy with confidence
+
+## Contact section with email and office locations
+Email: hello@42works.co
+Phone: +1-800-42-WORKS
+Locations: USA (North America Hub), Canada (Innovation Center), Dubai (Middle East HQ), India (Global Delivery Center)
+
+## Exclude section listing URLs AI crawlers should ignore
+/api/* - Internal API endpoints
+/admin/* - Administration interfaces
+/private/* - Private resources
+/*.json$ - JSON data files (except public ones)
+/*admin* - Any admin-related paths
+/*private* - Any private-related paths

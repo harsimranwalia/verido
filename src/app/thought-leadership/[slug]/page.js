@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { THOUGHT_LEADERSHIP_ARTICLES, THOUGHT_LEADERSHIP_BY_SLUG } from "@/components/data/thought-leadership-data";
+import { THOUGHT_LEADERSHIP_ARTICLES, THOUGHT_LEADERSHIP_BY_SLUG } from "../../../components/data/thought-leadership-data";
 
 export async function generateStaticParams() {
   return THOUGHT_LEADERSHIP_ARTICLES.map((article) => ({ slug: article.slug }));

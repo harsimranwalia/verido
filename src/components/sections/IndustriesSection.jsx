@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal } from "../ui/Reveal";
 
 const industries = [
   {

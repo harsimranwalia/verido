@@ -2,15 +2,15 @@ import React from "react";
 import { X, Menu, ChevronDown, Phone, Layers, Building2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
-import { cn } from "@/lib/utils";
-import { Portal, PortalBackdrop } from "@/components/ui/portal";
-import { Button } from "@/components/ui/button";
+import { cn } from "../lib/utils";
+import { Portal, PortalBackdrop } from "./ui/portal";
+import { Button } from "./ui/button";
 import {
   CENTER_LINKS,
   INDUSTRIES_LINKS,
   SERVICE_GROUPS,
   RESOURCES_LINKS,
-} from "@/components/navigation-data";
+} from "./navigation-data";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -26,6 +26,7 @@ export function MobileNav() {
         onClick={() => setOpen(!open)}
         size="icon"
         variant="outline"
+        type="button"
       >
         <AnimatePresence mode="wait" initial={false}>
           {open ? (
@@ -54,8 +55,8 @@ export function MobileNav() {
         </AnimatePresence>
       </Button>
       {open && (
-        <Portal className="top-[3.75rem]" id="mobile-menu">
-          <PortalBackdrop />
+        <Portal className="top-[4.85rem] " id="mobile-menu">
+          <PortalBackdrop onClick={closeMenu} />
           <motion.div
             initial={{ opacity: 0, y: -14, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -65,6 +66,7 @@ export function MobileNav() {
               "flex-1 min-h-0 w-full overflow-y-auto px-4 pt-2 pb-12"
             )}
             data-slot={open ? "open" : "closed"}
+            data-lenis-prevent="true"
           >
             <div className="mx-auto grid w-full max-w-6xl gap-y-2 rounded-2xl border border-white/70 bg-[linear-gradient(145deg,rgba(255,255,255,0.95),rgba(244,248,255,0.92))] p-3 shadow-[0_26px_60px_rgba(15,23,42,0.18)] backdrop-blur-xl relative">
               
@@ -173,7 +175,7 @@ export function MobileNav() {
               <Button asChild className="w-full bg-gradient-to-r from-indigo-700 via-blue-600 to-teal-500 text-white shadow-[0_12px_30px_rgba(79,70,229,0.35)] transition hover:brightness-110">
                 <a href="/contact" onClick={closeMenu}>
                   <Phone className="mr-1.5 size-4" />
-                  Book a Call
+                  Get an AI Audit
                 </a>
               </Button>
               </div>

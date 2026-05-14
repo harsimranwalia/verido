@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { motion } from "motion/react";
-import { LogoCloud } from "@/components/logo-cloud";
+import { LogoCloud } from "./logo-cloud";
 
 export function HeroContent() {
   const rootRef = useRef(null);

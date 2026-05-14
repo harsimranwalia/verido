@@ -1,10 +1,19 @@
 import Link from "next/link";
-import { CASE_STUDIES } from "@/components/data/case-studies-data";
+import { CASE_STUDIES } from "../../components/data/case-studies-data";
+import { generateMetadataOverride } from '../../lib/metadata';
 
-export const metadata = {
-  title: "Case Studies — 42Works",
-  description: "Selected systems designed, built, and taken to production.",
-};
+export const metadata = generateMetadataOverride({
+  title: 'Case Studies | 42Works',
+  description: 'Selected systems designed, built, and taken to production. Explore our portfolio of successful projects.',
+  openGraph: {
+    title: 'Case Studies | 42Works',
+    description: 'Selected systems designed, built, and taken to production. Explore our portfolio of successful projects.',
+  },
+  twitter: {
+    title: 'Case Studies | 42Works',
+    description: 'Selected systems designed, built, and taken to production. Explore our portfolio of successful projects.',
+  },
+});
 
 export default function CaseStudiesPage() {
   return (

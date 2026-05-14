@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal } from "../ui/Reveal";
 
 function IconCircle({ children }) {
   return (

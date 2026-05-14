@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal } from "./ui/Reveal";
 
 const images = [
   "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",

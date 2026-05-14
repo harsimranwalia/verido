@@ -2,12 +2,12 @@
 
 import { useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
+import * as reactSpring from "@react-spring/three";
+import * as drei from "@react-three/drei";
+import * as fiber from "@react-three/fiber";
+import JsonLd from "../lib/jsonld";
+import { siteUrl } from "../lib/site-url";
 
-
-import { Reveal } from "@/components/ui/Reveal";
-import { LogoCloud } from "@/components/logo-cloud";
-
-// Dynamically import ShaderGradientCanvas to avoid SSR issues
 const ShaderGradientCanvas = dynamic(
   () => import("@shadergradient/react").then((mod) => mod.ShaderGradientCanvas),
   { ssr: false }
@@ -17,7 +17,6 @@ const ShaderGradient = dynamic(
   { ssr: false }
 );
 
-// Eagerly preload the heavy shader bundle on page load (client only)
 if (typeof window !== "undefined") {
   import("@shadergradient/react");
   import("@react-three/fiber");
@@ -25,10 +24,81 @@ if (typeof window !== "undefined") {
   import("@react-spring/three");
 }
 
-import * as reactSpring from "@react-spring/three";
-import * as drei from "@react-three/drei";
-import * as fiber from "@react-three/fiber";
-import { ExpandableCard } from "@/components/ui/expandable-card";
+import { Reveal } from "./ui/Reveal.jsx";
+import { LogoCloud } from "./logo-cloud.jsx";
+import { ExpandableCard } from "./ui/expandable-card.jsx";
+
+// JSON-LD Structured Data for About Page
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "42Works",
+      url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
+      sameAs: [
+        "https://linkedin.com/company/42works",
+        "https://twitter.com/42works",
+        "https://github.com/42works"
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+1-800-42-WORKS",
+        contactType: "Customer Service",
+        areaServed: "US",
+        availableLanguage: ["English"]
+      }
+    },
+    {
+      "@type": "Person",
+      name: "Harsimran Singh",
+      jobTitle: "Head of AI",
+      url: "https://www.linkedin.com/in/harsimran-walia",
+      sameAs: "https://www.linkedin.com/in/harsimran-walia"
+    },
+    {
+      "@type": "Person",
+      name: "Akshat Agrawal",
+      jobTitle: "Head of Web3 & Crypto",
+      url: "https://www.linkedin.com/in/akshatagrawaldelhi/",
+      sameAs: "https://www.linkedin.com/in/akshatagrawaldelhi/"
+    },
+    {
+      "@type": "Person",
+      name: "Shubbankar Singh",
+      jobTitle: "AI Product Manager",
+      url: "https://www.linkedin.com/in/shubbankarsingh",
+      sameAs: "https://www.linkedin.com/in/shubbankarsingh"
+    },
+    {
+      "@type": "Person",
+      name: "Samantha Hayes",
+      jobTitle: "Head of Revenue"
+    },
+    {
+      "@type": "Person",
+      name: "Aditya Sinha",
+      jobTitle: "Head of Finance"
+    },
+    {
+      "@type": "Person",
+      name: "Olivia Bennet",
+      jobTitle: "Head of Marketing"
+    },
+    {
+      "@type": "Person",
+      name: "Ivan Petrov",
+      jobTitle: "Head of Operations and Delivery"
+    },
+    {
+      "@type": "Person",
+      name: "Markus Vogel",
+      jobTitle: "Head of Information Security"
+    }
+  ]
+};
 
 function ValueCard({ title, desc, icon }) {
   return (
@@ -45,6 +115,7 @@ function ValueCard({ title, desc, icon }) {
 export default function AboutPage() {
   return (
     <div className="page-root bg-[#f5f7ff] md:pt-[80px]">
+      <JsonLd schema={aboutPageSchema} />
       {/* HERO SECTION */}
       <section className="relative min-h-[100svh] w-full overflow-hidden bg-[#f8fafc] flex flex-col items-center justify-center pb-32 pt-20 md:pb-0 md:pt-16 md:justify-start">
         {/* Ambient background */}
@@ -317,12 +388,12 @@ export default function AboutPage() {
               <h2 className="font-heading text-[clamp(2rem,4vw,3rem)] font-bold text-slate-900">Meet Our Leadership</h2>
             </div>
           </Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto justify-items-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto justify-items-center w-full">
             {[
               {
                 name: "Harsimran Singh",
-                role: "Co-Founder",
-                edu: "IIT Delhi",
+                role: "Head of AI",
+                edu: "IIT Delhi & 2 AI Patents",
                 image: "/harsimran.jpeg",
                 oneLiner: "AI Product Leader, 1x Exit Founder, and architect of AI-native B2B SaaS platforms.",
                 fullInfo: "With 15 years scaling B2B SaaS, Harsimran co-founded Grownout (acquired by Peoplestrong) and grew its ML platform to 200k users. Holding 2 patents, he recently launched AIOrders, an LLM-native platform built rapidly using AI-assisted tools. He specializes in end-to-end product strategy, transitioning from classical ML to advanced AI agents, and shipping robust solutions in high-stakes environments.",
@@ -330,7 +401,7 @@ export default function AboutPage() {
               },
               {
                 name: "Akshat Agrawal",
-                role: "Co-Founder",
+                role: "Head of Web3 & Crypto",
                 edu: "IIT Delhi & US MBA",
                 image: "/akshat.jpeg",
                 oneLiner: "Product Strategy leader and Web3/AI infrastructure builder.",
@@ -345,7 +416,52 @@ export default function AboutPage() {
                 oneLiner: "Product Leader dedicated to moving unconventional ideas from concept to shipped product.",
                 fullInfo: "Shubbankar specializes in 0→1 product leadership and AI innovation. At Telus, he managed an $8M innovation fund, running rigorous validation programs that drove 40+ projects annually and delivered over 4X ROI. At Wavelo Labs, he established an agile AI cadence and led cross-functional teams in shipping advanced proof-of-concepts to AWS. He excels at evaluating ambitious bets, driving product inception, and acting as a full-stack builder to launch solutions that transform business processes.",
                 linkedin: "https://www.linkedin.com/in/shubbankarsingh",
-              }
+              },
+              {
+                name: "Samantha Hayes",
+                role: "Head of Revenue",
+                edu: "Wharton MBA & Salesforce Certified",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=800&fit=crop",
+                oneLiner: "Revenue architect who transforms pipeline strategy into predictable, scalable growth.",
+                fullInfo: "Samantha brings 12+ years of enterprise sales leadership across SaaS, AI, and professional services. Previously VP of Revenue at two Series B startups, she built GTM teams from 0 to $30M ARR. At 42Works she owns the full revenue cycle — from demand generation to deal closure — ensuring every client partnership is anchored in measurable value. Her approach combines rigorous data-driven forecasting with relationship-led selling, consistently delivering above-quota outcomes across North America and the Middle East.",
+                linkedin: "#",
+              },
+              {
+                name: "Aditya Sinha",
+                role: "Head of Finance",
+                edu: "CA & CFA Charterholder",
+                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=800&fit=crop",
+                oneLiner: "Finance strategist bridging startup agility with institutional financial discipline.",
+                fullInfo: "Aditya has 14 years of experience across investment banking, venture-backed startups, and global consulting firms. A Chartered Accountant and CFA charterholder, he previously led finance at a MENA-focused fintech unicorn, overseeing $150M in capital allocation and cross-border compliance. At 42Works, Aditya steers financial planning, fundraising strategy, and the fiscal infrastructure that enables rapid, responsible global growth. His expertise in multi-currency operations and emerging-market regulation is central to the firm's international expansion.",
+                linkedin: "#",
+              },
+              {
+                name: "Olivia Bennet",
+                role: "Head of Marketing",
+                edu: "Northwestern Medill & Google CMO Fellow",
+                image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=800&fit=crop",
+                oneLiner: "Brand strategist who turns technical depth into market authority and demand.",
+                fullInfo: "Olivia has spent a decade building category-defining brands in the AI and developer-tools space. With prior roles at a top-5 global digital agency and a Series C AI startup, she has led campaigns that generated over $40M in pipeline. At 42Works, she oversees all marketing — content, SEO, performance, and brand — with a sharp focus on positioning 42Works as the definitive AI Experience Engineering company. She is also an advocate for ethical AI communication and responsible thought leadership.",
+                linkedin: "#",
+              },
+              {
+                name: "Ivan Petrov",
+                role: "Head of Operations & Delivery",
+                edu: "Moscow State Technical University & PMP",
+                image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&fit=crop",
+                oneLiner: "Operations leader who turns complex, multi-team projects into reliable on-time delivery.",
+                fullInfo: "Ivan has 16 years of delivery and operations experience spanning enterprise software, defence tech, and AI platforms across Eastern Europe and the Gulf. A PMP and SAFe agilist, he previously directed delivery for a 200-person engineering division and reduced time-to-production by 38% through process re-engineering. At 42Works, Ivan governs the end-to-end project lifecycle, resource planning, and QA, ensuring every engagement lands on time, on scope, and on budget.",
+                linkedin: "#",
+              },
+              {
+                name: "Markus Vogel",
+                role: "Head of Information Security",
+                edu: "TU Munich & CISSP, ISO 27001 LA",
+                image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=800&fit=crop",
+                oneLiner: "Security architect who embeds trust into every layer of AI-native product delivery.",
+                fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At 42Works, Markus owns information security strategy, vendor risk, and client data governance — ensuring every AI and Web3 product is built with security-by-design from architecture to deployment.",
+                linkedin: "#",
+              },
             ].map((person, i) => (
               <Reveal key={person.name} delay={i * 0.05} className="flex h-full w-full">
                 <ExpandableCard

@@ -1,8 +1,8 @@
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
-import { LenisProvider } from "@/components/providers/LenisProvider";
-import { Header } from "@/components/header";
-import { FooterSection } from "@/components/sections/FooterSection";
+import { LenisProvider } from "../components/providers/LenisProvider.jsx";
+import { Header } from "../components/header.jsx";
+import { FooterSection } from "../components/sections/FooterSection.jsx";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -16,10 +16,41 @@ const inter = Inter({
   weight: ["300", "400", "500", "600"],
 });
 
+import { baseMetadata } from '../lib/metadata';
+
 export const metadata = {
+  ...baseMetadata,
   title: "42works — AI Visibility, Measurable",
   description:
     "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
+  openGraph: {
+    ...baseMetadata.openGraph,
+    title: "42works — AI Visibility, Measurable",
+    description:
+      "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
+  },
+  twitter: {
+    ...baseMetadata.twitter,
+    title: "42works — AI Visibility, Measurable",
+    description:
+      "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
+  },
+  // Additional metadata for theme-color and icons
+  themeColor: '#4338ca',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  // RSS feed link
+  links: [
+    {
+      rel: 'alternate',
+      type: 'application/rss+xml',
+      href: '/rss.xml',
+      title: '42Works Thought Leadership RSS Feed',
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {

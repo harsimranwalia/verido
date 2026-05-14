@@ -3,8 +3,8 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Reveal } from "@/components/ui/Reveal";
-import { CASE_STUDIES } from "@/components/data/case-studies-data";
+import { Reveal } from "../ui/Reveal";
+import { CASE_STUDIES } from "../data/case-studies-data";
 
 export function CaseStudiesSection() {
   const [activeIndex, setActiveIndex] = useState(0);

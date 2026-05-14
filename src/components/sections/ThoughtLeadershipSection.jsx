@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/ui/Reveal";
-import { THOUGHT_LEADERSHIP_ARTICLES } from "@/components/data/thought-leadership-data";
+import { Reveal } from "../ui/Reveal";
+import { THOUGHT_LEADERSHIP_ARTICLES } from "../data/thought-leadership-data";
 
 export function ThoughtLeadershipSection() {
   const [featured, ...rest] = THOUGHT_LEADERSHIP_ARTICLES;

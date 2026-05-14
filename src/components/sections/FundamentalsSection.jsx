@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal } from "../ui/Reveal";
 import dynamic from "next/dynamic";
 import * as reactSpring from "@react-spring/three";
 import * as drei from "@react-three/drei";

@@ -1,0 +1,25 @@
+# robots.txt for 42Works
+# For more information: https://developers.google.com/search/docs/advanced/robots/robots_txt
+
+User-agent: *
+Allow: /
+
+# Disallow API routes and admin paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.json$
+
+# Allow specific files that might be blocked by the above rules
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /opengraph-image.png
+Allow: /apple-touch-icon.png
+
+# Sitemap location
+Sitemap: https://42works.co/sitemap.xml
+
+# LLMS.txt for AI crawlers
+User-agent: *
+Allow: /llms.txt

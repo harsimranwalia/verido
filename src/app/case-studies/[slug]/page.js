@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CASE_STUDIES, CASE_STUDIES_BY_SLUG } from "@/components/data/case-studies-data";
+import { CASE_STUDIES, CASE_STUDIES_BY_SLUG } from "../../../components/data/case-studies-data";
+import { generateMetadataOverride } from '../../../lib/metadata';
+import { siteUrl } from '../../../lib/site-url';
 
 export async function generateStaticParams() {
   return CASE_STUDIES.map((study) => ({ slug: study.slug }));
@@ -10,10 +12,37 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const study = CASE_STUDIES_BY_SLUG[slug];
   if (!study) return {};
-  return {
-    title: `${study.title} — Case Study`,
+  
+  return generateMetadataOverride({
+    title: `${study.title} — Case Study | 42Works`,
     description: study.summary,
-  };
+    openGraph: {
+      title: `${study.title} — Case Study | 42Works`,
+      description: study.summary,
+      images: [
+        {
+          url: study.image.startsWith('http') 
+            ? study.image 
+            : `${siteUrl}${study.image}`,
+          width: 1200,
+          height: 630,
+          alt: study.title,
+        },
+      ],
+    },
+    twitter: {
+      title: `${study.title} — Case Study | 42Works`,
+      description: study.summary,
+      images: [
+        study.image.startsWith('http') 
+          ? study.image 
+          : `${siteUrl}${study.image}`,
+      ],
+    },
+    alternates: {
+      canonical: `${siteUrl}/case-studies/${slug}`,
+    },
+  });
 }
 
 function BulletSection({ title, items }) {

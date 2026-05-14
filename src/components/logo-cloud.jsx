@@ -1,5 +1,5 @@
-import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { cn } from "@/lib/utils";
+import { InfiniteSlider } from "./ui/infinite-slider";
+import { cn } from "../lib/utils";
 
 const logos = [
   {

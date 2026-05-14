@@ -16,8 +16,44 @@ import { ThoughtLeadershipSection } from "./sections/ThoughtLeadershipSection";
 
 import { Reveal } from "./ui/Reveal";
 import { motion } from "framer-motion";
+import JsonLd from "../lib/jsonld";
+import { siteUrl } from "../lib/site-url";
 
 gsap.registerPlugin(ScrollTrigger);
+
+// JSON-LD Structured Data for Homepage
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "42Works",
+  url: siteUrl,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${siteUrl}/search?s={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+  // Also include Organization schema
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "42Works",
+      url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
+      sameAs: [
+        "https://linkedin.com/company/42works",
+        "https://twitter.com/42works",
+        "https://github.com/42works"
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+1-800-42-WORKS",
+        contactType: "Customer Service",
+        areaServed: "US",
+        availableLanguage: ["English"],
+      }
+    }
+  ]
+};
 
 export default function CiklumPage() {
   const containerRef = useRef(null);
@@ -51,6 +87,7 @@ export default function CiklumPage() {
 
   return (
     <div ref={containerRef} className="page-root">
+      <JsonLd schema={homepageSchema} />
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className="relative min-h-screen w-full overflow-hidden bg-[radial-gradient(circle_at_50%_0%,#ecf3ff_0%,#f5f8ff_60%,#f5f7ff_100%)]">
         {/* GradientBars background */}

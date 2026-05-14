@@ -3,11 +3,11 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ChevronDown, MessageCircle, Layers, Building2, ArrowRight, ChevronRight } from "lucide-react";
-import { MobileNav } from "@/components/mobile-nav";
-import { Button } from "@/components/ui/button";
-import { useScroll } from "@/hooks/use-scroll";
-import { cn } from "@/lib/utils";
-import { CENTER_LINKS, SERVICE_GROUPS, INDUSTRIES_LINKS, RESOURCES_LINKS } from "@/components/navigation-data";
+import { MobileNav } from "./mobile-nav";
+import { Button } from "./ui/button";
+import { useScroll } from "../hooks/use-scroll";
+import { cn } from "../lib/utils";
+import { CENTER_LINKS, SERVICE_GROUPS, INDUSTRIES_LINKS, RESOURCES_LINKS } from "./navigation-data";
 
 export const navLinks = CENTER_LINKS;
 

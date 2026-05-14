@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import emailjs from "@emailjs/browser";
 
 import * as reactSpring from "@react-spring/three";
 import * as drei from "@react-three/drei";
@@ -24,10 +25,32 @@ if (typeof window !== "undefined") {
 }
 
 const COMPANY_SIZES = ["1–10", "11–50", "51–200", "201–500", "500–1000", "1000+"];
+const INITIAL_FORM_DATA = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  companyWebsite: "",
+  companySize: "",
+  message: "",
+};
 
-function Field({ label, optional, id, type = "text", placeholder, className = "", textarea = false }) {
+function Field({
+  label,
+  optional,
+  id,
+  name,
+  type = "text",
+  placeholder,
+  className = "",
+  textarea = false,
+  value,
+  onChange,
+  required,
+}) {
   const inputClass =
     "w-full rounded-lg border border-slate-200 bg-white/80 px-3 py-2 text-[13px] text-slate-800 placeholder:text-slate-400 outline-none transition focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 backdrop-blur-sm";
+  const inputName = name ?? id;
   return (
     <div className={`flex flex-col gap-1 ${className}`}>
       <label htmlFor={id} className="text-[11px] font-semibold uppercase tracking-widest text-slate-500">
@@ -35,9 +58,27 @@ function Field({ label, optional, id, type = "text", placeholder, className = ""
         {optional && <span className="ml-1 normal-case font-normal text-slate-400">(Optional)</span>}
       </label>
       {textarea ? (
-        <textarea id={id} rows={3} placeholder={placeholder} className={`${inputClass} resize-none`} />
+        <textarea
+          id={id}
+          name={inputName}
+          rows={3}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          required={required}
+          className={`${inputClass} resize-none`}
+        />
       ) : (
-        <input id={id} type={type} placeholder={placeholder} className={inputClass} />
+        <input
+          id={id}
+          name={inputName}
+          type={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          required={required}
+          className={inputClass}
+        />
       )}
     </div>
   );
@@ -46,6 +87,57 @@ function Field({ label, optional, id, type = "text", placeholder, className = ""
 export default function ContactPage() {
   const [agreed, setAgreed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formData, setFormData] = useState(INITIAL_FORM_DATA);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (!agreed || isSending) {
+      return;
+    }
+
+    setErrorMessage("");
+    setIsSending(true);
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setErrorMessage("Email service is not configured yet.");
+      setIsSending(false);
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          work_email: formData.email,
+          phone: formData.phone,
+          company_website: formData.companyWebsite,
+          company_size: formData.companySize,
+          message: formData.message,
+        },
+        { publicKey }
+      );
+      setSubmitted(true);
+      setFormData(INITIAL_FORM_DATA);
+    } catch (error) {
+      setErrorMessage("We could not send your message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden">
@@ -99,7 +191,7 @@ export default function ContactPage() {
               <div className="space-y-5">
                 {[
                   { label: "Email", value: "hello@42works.co", href: "mailto:hello@42works.co" },
-                  { label: "Phone", value: "+1 (234) 567-890", href: "tel:+12345678901" },
+                  { label: "Phone", value: "+1 647-794-8516", href: "tel: +16477948516" },
                   { label: "Offices", value: "USA · Canada · Dubai · India", href: null },
                 ].map(({ label, value, href }) => (
                   <div key={label}>
@@ -178,21 +270,67 @@ export default function ContactPage() {
                 <p className="text-sm text-slate-500">We&apos;ll get back to you within 24 hours.</p>
               </div>
             ) : (
-              <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <div className="grid grid-cols-2 gap-3">
-                  <Field id="first-name" label="First name" placeholder="John" />
-                  <Field id="last-name" label="Last name" placeholder="Doe" />
+                  <Field
+                    id="firstName"
+                    name="firstName"
+                    label="First name"
+                    placeholder="John"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <Field
+                    id="lastName"
+                    name="lastName"
+                    label="Last name"
+                    placeholder="Doe"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
-                <Field id="email" label="Work Email" type="email" placeholder="johndoe@example.com" />
-                <Field id="phone" label="Phone" type="tel" placeholder="+1 (555) 123-4567" optional />
+                <Field
+                  id="email"
+                  name="email"
+                  label="Work Email"
+                  type="email"
+                  placeholder="johndoe@example.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <Field
+                  id="phone"
+                  name="phone"
+                  label="Phone"
+                  type="tel"
+                  placeholder="+1 (555) 123-4567"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  optional
+                />
                 <div className="grid grid-cols-2 gap-3">
-                  <Field id="company-website" label="Company Website" placeholder="https://example.com" />
+                  <Field
+                    id="companyWebsite"
+                    name="companyWebsite"
+                    label="Company Website"
+                    placeholder="https://example.com"
+                    value={formData.companyWebsite}
+                    onChange={handleChange}
+                    required
+                  />
                   <div className="flex flex-col gap-1">
-                    <label htmlFor="company-size" className="text-[11px] font-semibold uppercase tracking-widest text-slate-500">
+                    <label htmlFor="companySize" className="text-[11px] font-semibold uppercase tracking-widest text-slate-500">
                       Company Size
                     </label>
                     <select
-                      id="company-size"
+                      id="companySize"
+                      name="companySize"
+                      value={formData.companySize}
+                      onChange={handleChange}
+                      required
                       className="w-full rounded-lg border border-slate-200 bg-white/80 px-3 py-2 text-[13px] text-slate-700 outline-none transition focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 backdrop-blur-sm"
                     >
                       <option value="">Select a value</option>
@@ -200,7 +338,16 @@ export default function ContactPage() {
                     </select>
                   </div>
                 </div>
-                <Field id="message" label="How can we help?" placeholder="Your message" textarea />
+                <Field
+                  id="message"
+                  name="message"
+                  label="How can we help?"
+                  placeholder="Your message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  textarea
+                />
 
                 <label className="flex cursor-pointer items-start gap-2.5 pt-1 text-[12px] text-slate-600">
                   <input
@@ -217,11 +364,16 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  disabled={!agreed}
+                  disabled={!agreed || isSending}
                   className="w-full rounded-lg bg-gradient-to-r from-indigo-600 via-blue-600 to-teal-500 py-3 text-[14px] font-bold text-white shadow-[0_8px_24px_rgba(79,70,229,0.28)] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40"
                 >
-                  Submit
+                  {isSending ? "Sending..." : "Submit"}
                 </button>
+                {errorMessage && (
+                  <p className="text-[12px] text-rose-600" role="alert">
+                    {errorMessage}
+                  </p>
+                )}
               </form>
             )}
           </div>

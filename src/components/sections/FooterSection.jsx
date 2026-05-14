@@ -1,6 +1,6 @@
 "use client";
 
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal } from "../ui/Reveal";
 
 export function FooterSection() {
   const footerLinks = {

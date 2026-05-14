@@ -1,4 +1,4 @@
-import { Skiper30 } from "@/components/ui/skiper-ui/skiper30";
+import { Skiper30 } from "./ui/skiper-ui/skiper30";
 
 // Using the parallax image gallery
 const DemoSkiper30 = () => {
