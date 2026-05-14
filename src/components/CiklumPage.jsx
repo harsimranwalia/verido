@@ -46,7 +46,7 @@ const homepageSchema = {
       ],
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+1-800-42-WORKS",
+        telephone: "+1-647-794-8516",
         contactType: "Customer Service",
         areaServed: "US",
         availableLanguage: ["English"],

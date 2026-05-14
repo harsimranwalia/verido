@@ -38,7 +38,7 @@ DevOps & CI/CD: Ship faster with DevOps platforms and CI/CD pipelines that let y
 
 ## Contact section with email and office locations
 Email: hello@42works.co
-Phone: +1-800-42-WORKS
+Phone: +1-647-794-8516
 Locations: USA (North America Hub), Canada (Innovation Center), Dubai (Middle East HQ), India (Global Delivery Center)
 
 ## Exclude section listing URLs AI crawlers should ignore
