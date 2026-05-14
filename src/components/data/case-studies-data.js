@@ -163,6 +163,78 @@ export const CASE_STUDIES = [
       "Delivered a production-ready automation suite that significantly reduced manual operations and improved business process efficiency.",
     images: ["https://www.nuvantaai.com/lovable-uploads/85c313cb-8651-4f68-9f70-5e61033a7fec.webp"],
   },
+  {
+    slug: "tokwealth",
+    title: "TokWealth",
+    category: "Web3 · Fintech · Full-Stack",
+    subtitle: "RWA Tokenization · Real Estate",
+    image: "https://www.codemonks.xyz/agencyLogo.png",
+    summary:
+      "Real World Asset (RWA) tokenization platform bringing real estate investment onto the blockchain for fractional ownership and transparent transactions.",
+    overview: [
+      "TokWealth is a Real World Asset (RWA) tokenization platform that brings real estate investment onto the blockchain, enabling fractional ownership and transparent transactions.",
+      "The platform was built end to end with investor-facing applications, smart contract infrastructure, compliance systems, security architecture, and financial integrations.",
+    ],
+    responsibilities: [
+      "Investor mobile and web application development",
+      "Smart contract infrastructure for ownership and transfer rules",
+      "KYC, KYB, and KYT compliance implementation",
+      "Fiat and crypto payment flow integration",
+      "Wallet-as-a-Service integration and security validation",
+    ],
+    keyFeatures: [
+      "Fractional ownership for real estate assets",
+      "On-chain ownership and compliance logic",
+      "Integrated fiat-to-crypto and traditional payment flows",
+      "Managed wallet experience for non-technical investors",
+      "Security-first architecture with penetration testing",
+    ],
+    technicalConsiderations: [
+      "Smart contracts as source of truth",
+      "Compliance embedded into onboarding and transactions",
+      "Security as a first-class product requirement",
+      "User experience abstraction over blockchain complexity",
+    ],
+    outcome:
+      "Delivered a production-ready, compliant, and secure RWA tokenization platform built for real investors.",
+    images: ["https://www.codemonks.xyz/agencyLogo.png"],
+  },
+  {
+    slug: "strategy-connect",
+    title: "StrategyConnect",
+    category: "SaaS · Architecture · UI/UX",
+    subtitle: "Platform Strategy · Systems Architecture",
+    image: "https://www.codemonks.xyz/agencyLogo.png",
+    summary:
+      "A strategy consulting services platform redesigned and rearchitected to improve structure, visibility, and operational clarity.",
+    overview: [
+      "Strategy Connect is a consulting operations platform built to manage engagements, deliverables, and internal workflows with greater clarity.",
+      "A full design audit and architecture overhaul were delivered to resolve technical debt and establish a scalable SaaS foundation.",
+    ],
+    responsibilities: [
+      "Comprehensive design and UX audit",
+      "Core system architecture overhaul",
+      "Workflow SaaS platform development",
+      "Data flow restructuring and modularization",
+      "Product strategy planning for long-term scalability",
+    ],
+    keyFeatures: [
+      "Consulting-specific workflow management",
+      "Modular architecture for maintainability",
+      "Consistent product and design system foundations",
+      "Scalability-oriented product and system decisions",
+      "Governance-ready technical structure",
+    ],
+    technicalConsiderations: [
+      "Audit-first architecture decisions",
+      "Separation of concerns to reduce technical debt",
+      "Workflow design aligned with real consulting operations",
+      "Scalability treated as a product-level concern",
+    ],
+    outcome:
+      "Delivered a restructured, scalable SaaS platform with a coherent design system and durable technical foundation.",
+    images: ["https://www.codemonks.xyz/agencyLogo.png"],
+  },
 ];
 
 export const CASE_STUDIES_BY_SLUG = Object.fromEntries(
