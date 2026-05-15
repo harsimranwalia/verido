@@ -370,29 +370,6 @@ export default function ServicePageTemplate({ service }) {
 
        {/* ── JSON-LD Structured Data ──────────────────────────────────────── */}
        <JsonLd schema={serviceSchema} />
-
-       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-700 via-blue-700 to-teal-600 py-28 text-white">
-         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.12),transparent_70%)]" />
-         <div className="pointer-events-none absolute inset-0 opacity-10 [background-image:linear-gradient(rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:40px_40px]" />
-         <div className="relative mx-auto max-w-3xl px-6 text-center">
-           <FadeUp>
-             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-bold tracking-widest text-white uppercase">
-               Get Started
-             </div>
-             <h2 className="mb-5 font-heading text-[clamp(2.2rem,4.5vw,3.5rem)] font-bold leading-[1.1]">
-               Ready to Get Started?
-             </h2>
-             <p className="mb-10 text-lg text-white/80">
-               Book a consultation. We&apos;ll scope your needs and outline a custom plan.
-             </p>
-             <Link href="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-white px-10 py-4 text-base font-bold text-indigo-700 shadow-xl transition hover:bg-indigo-50">
-               Book Consultation
-               <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-             </Link>
-           </FadeUp>
-         </div>
-       </section>
      </div>
    );
  }

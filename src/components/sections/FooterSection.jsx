@@ -15,8 +15,8 @@ export function FooterSection() {
     Company: [
       { name: "About", href: "/about" },
       { name: "Case Studies", href: "#case-studies" },
-      { name: "Careers", href: "#careers" },
-      { name: "Resources", href: "#resources" }
+      { name: "Careers", href: "/careers" },
+      { name: "Help Center", href: "/help" },
     ],
     Industries: [
       { name: "Banking & Finance", href: "/industries/banking" },
@@ -65,8 +65,8 @@ export function FooterSection() {
           <div className="flex flex-col items-center justify-between gap-4 border-t border-white/15 pt-8 md:flex-row">
             <p className="text-xs text-slate-300/75">© 2026 42works. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="/#terms" className="text-xs text-slate-300/75 transition-colors hover:text-white">Terms & Conditions</a>
-              <a href="/#privacy" className="text-xs text-slate-300/75 transition-colors hover:text-white">Privacy Notice</a>
+              <a href="/terms" className="text-xs text-slate-300/75 transition-colors hover:text-white">Terms & Conditions</a>
+              <a href="/privacy" className="text-xs text-slate-300/75 transition-colors hover:text-white">Privacy Notice</a>
             </div>
           </div>
         </Reveal>

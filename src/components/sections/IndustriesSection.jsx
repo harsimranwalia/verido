@@ -1,59 +1,69 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Reveal } from "../ui/Reveal";
 
 const industries = [
   {
+    slug: "banking",
     title: "Banking & Financial Services",
     description:
       "Modernize banking with AI-driven intelligence that transforms risk modeling, fraud detection, and customer engagement into seamless, trusted financial experiences.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80",
   },
   {
+    slug: "retail",
     title: "Retail & Consumer Goods",
     image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700&q=80",
     description:
       "AI-powered personalization that transforms discovery, browsing, and buying into seamless, revenue-driving experiences.",
   },
   {
+    slug: "healthcare",
     title: "Healthcare & Life Sciences",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80",
     description:
       "Connected solutions powered by AI, automation, and cloud, enhancing patient outcomes and accelerating research at scale.",
   },
   {
+    slug: "hi-tech",
     title: "Hi-Tech",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80",
     description:
       "AI-powered engineering that helps leaders invent the next frontier and set new industry standards.",
   },
   {
+    slug: "automotive",
     title: "Automotive & Manufacturing",
     image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=700&q=80",
     description:
       "AI, cloud, and automation to modernize workflows, optimize supply chains, and deliver superior quality outcomes.",
   },
   {
+    slug: "travel",
     title: "Travel and Hospitality",
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=700&q=80",
     description:
       "Blending operational excellence with exceptional traveler experiences through AI-driven, data-powered solutions.",
   },
   {
+    slug: "telecom",
     title: "Telecom",
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&q=80",
     description:
       "Empower your telecommunications infrastructure with AI and scalable automation for smarter, self-optimizing networks.",
   },
   {
+    slug: "field-service",
     title: "Field Service Management",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80",
     description:
       "Transform frontline operations with AI-driven scheduling, dynamic route optimization, and powerful offline-first mobile experiences.",
   },
   {
+    slug: "energy",
     title: "Energy",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=80",
     description:
@@ -109,39 +119,51 @@ export function IndustriesSection() {
           {/* Right: Industry list */}
           <Reveal delay={0.15}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm h-full content-start">
-              {industries.map((industry, i) => (
-                <button
-                  key={industry.title}
-                  onClick={() => setActive(i)}
-                  className={`text-left w-full transition-all duration-300 rounded-xl px-4 py-3 group ${
-                    active === i ? "sm:col-span-2" : ""
-                  }`}
-                >
-                  {active === i ? (
-                    <motion.div
-                      layoutId="industry-active"
-                      className="rounded-xl border border-cyan-200/30 bg-gradient-to-br from-indigo-950/70 via-indigo-900/60 to-cyan-900/40 p-5 backdrop-blur-sm"
-                      transition={{ type: "spring", stiffness: 280, damping: 26 }}
+              {industries.map((industry, i) => {
+                const isActive = active === i;
+
+                if (isActive) {
+                  return (
+                    <div
+                      key={industry.title}
+                      className="sm:col-span-2 rounded-xl px-4 py-3"
                     >
-                      <h3 className="font-heading text-lg font-bold text-white mb-2">
-                        {industry.title}
-                      </h3>
-                      <p className="text-slate-300 text-sm leading-relaxed mb-3">
-                        {industry.description}
-                      </p>
-                        <span className="nav-link-underline inline-flex items-center gap-1 text-xs font-bold tracking-widest uppercase text-cyan-300">
+                      <motion.div
+                        layoutId="industry-active"
+                        className="rounded-xl border border-cyan-200/30 bg-gradient-to-br from-indigo-950/70 via-indigo-900/60 to-cyan-900/40 p-5 backdrop-blur-sm"
+                        transition={{ type: "spring", stiffness: 280, damping: 26 }}
+                      >
+                        <h3 className="font-heading text-lg font-bold text-white mb-2">
+                          {industry.title}
+                        </h3>
+                        <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                          {industry.description}
+                        </p>
+                        <Link
+                          href={`/industries/${industry.slug}`}
+                          className="nav-link-underline inline-flex items-center gap-1 text-xs font-bold tracking-widest uppercase text-cyan-300 hover:text-cyan-200 transition-colors"
+                        >
                           Learn More →
-                        </span>
-                    </motion.div>
-                  ) : (
+                        </Link>
+                      </motion.div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <button
+                    key={industry.title}
+                    onClick={() => setActive(i)}
+                    className="text-left w-full transition-all duration-300 rounded-xl px-4 py-3 group"
+                  >
                     <div className="border-b border-white/10 px-2 py-2 transition-colors hover:border-white/30 h-full flex items-center">
                       <h3 className="font-heading text-sm font-semibold text-slate-300 group-hover:text-white transition-colors">
                         {industry.title}
                       </h3>
                     </div>
-                  )}
-                </button>
-              ))}
+                  </button>
+                );
+              })}
             </div>
           </Reveal>
         </div>

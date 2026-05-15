@@ -303,37 +303,6 @@ export default function IndustryPageTemplate({ industry }) {
         </div>
       </section>
 
-      {/* ── CASE STUDIES ──────────────────────────────────────────────────── */}
-      {industry.caseStudies?.length > 0 && (
-        <section className="bg-white py-28 md:py-36">
-          <div className="mx-auto max-w-7xl px-6 md:px-12">
-            <FadeUp className="mb-20 text-center">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-xs font-bold tracking-widest text-indigo-600 uppercase">
-                Success Stories
-              </div>
-              <h2 className="font-heading text-[clamp(2.2rem,4.5vw,3.5rem)] font-bold text-slate-900">Case Studies</h2>
-            </FadeUp>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {industry.caseStudies.map((cs, i) => (
-                <FadeUp key={cs.title} delay={i * 0.1}>
-                  <div className="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0_4px_24px_rgba(15,23,42,0.06)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(79,70,229,0.12)]">
-                    <div className="relative h-52 overflow-hidden">
-                      <img src={cs.image} alt={cs.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />
-                      <span className="absolute bottom-4 left-4 rounded-full bg-teal-500 px-3 py-1 text-[10px] font-bold tracking-widest text-white uppercase">{cs.tag}</span>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="mb-2 font-heading text-lg font-bold text-slate-900 transition group-hover:text-indigo-700">{cs.title}</h3>
-                      <p className="text-sm leading-relaxed text-slate-500">{cs.desc}</p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-700 via-blue-700 to-teal-600 py-28 text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.12),transparent_70%)]" />

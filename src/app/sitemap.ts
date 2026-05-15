@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteUrl;
   
   // Static routes
-  const staticRoutes = ['', '/about', '/contact', '/case-studies', '/thought-leadership', '/services', '/industries'].map(
+  const staticRoutes = ['', '/about', '/contact', '/case-studies', '/thought-leadership', '/services', '/industries', '/careers', '/help', '/privacy', '/terms'].map(
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),

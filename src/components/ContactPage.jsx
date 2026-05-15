@@ -184,7 +184,7 @@ export default function ContactPage() {
               </p>
               <p className="mb-8 text-[13px] text-slate-500">
                 Looking for general support?{" "}
-                <a href="#" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-800">
+                <a href="/help" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-800">
                   Visit our help center
                 </a>
               </p>
@@ -358,7 +358,7 @@ export default function ContactPage() {
                   />
                   <span>
                     I agree to the{" "}
-                    <a href="#" className="font-semibold text-indigo-600 hover:underline">Privacy Policy.</a>
+                    <a href="/privacy" className="font-semibold text-indigo-600 hover:underline">Privacy Policy.</a>
                   </span>
                 </label>
 

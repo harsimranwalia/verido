@@ -4,7 +4,7 @@ import * as React from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../lib/utils";
-import { ExternalLink } from "lucide-react";
+import { Link as LinkIcon } from "lucide-react";
 
 export function ExpandableCard({
   title,
@@ -57,7 +57,7 @@ export function ExpandableCard({
                   layoutId={`card-${title}-${id}`}
                   data-lenis-prevent="true"
                   className={cn(
-                    "w-full max-w-[550px] max-h-[90vh] flex flex-col overflow-y-auto overflow-x-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-white shadow-2xl relative pointer-events-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden",
+                    "w-full max-w-[550px] h-[90vh] flex flex-col overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-white shadow-2xl relative pointer-events-auto",
                     classNameExpanded,
                   )}
                   {...props}
@@ -70,23 +70,20 @@ export function ExpandableCard({
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
-                  <motion.div layoutId={`image-${title}-${id}`}>
-                    <div className="relative h-[420px] sm:h-[320px] w-full overflow-hidden shrink-0 bg-slate-100">
-                      <img
-                        src={src}
-                        alt={title}
-                        className="h-full w-full object-cover object-top sm:object-contain bg-slate-900 transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-90" />
+                  <motion.div layoutId={`image-${title}-${id}`} className="shrink-0 h-0 flex-1 min-h-0 w-full overflow-hidden bg-slate-100">
+                    <img
+                      src={src}
+                      alt={title}
+                      className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </motion.div>
+                  <div className="relative p-6 sm:p-8 flex flex-col gap-2 flex-1 overflow-y-auto min-h-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                    <div>
                       {badge && (
-                        <motion.div layoutId={`badge-${title}-${id}`} className="absolute bottom-5 left-6 rounded-full bg-slate-900/60 px-3 py-1 text-[11px] font-bold tracking-widest text-white backdrop-blur-md uppercase shadow-sm">
+                        <motion.div layoutId={`badge-${title}-${id}`} className="mb-3 inline-block rounded-full bg-slate-100 px-3 py-1 text-[11px] font-bold tracking-widest text-slate-600 uppercase shadow-sm">
                           {badge}
                         </motion.div>
                       )}
-                    </div>
-                  </motion.div>
-                  <div className="relative p-6 sm:p-8 flex flex-col gap-2">
-                    <div>
                       <motion.p
                         layoutId={`description-${description}-${id}`}
                         className="mb-1 text-[12px] font-bold tracking-widest text-indigo-600 uppercase"
@@ -107,29 +104,30 @@ export function ExpandableCard({
                           {oneLiner}
                         </motion.div>
                       )}
-                      {linkHref && (
-                        <a
-                          href={linkHref}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
-                          title={linkLabel || "LinkedIn Profile"}
-                        >
-                           <ExternalLink size={20} />
-                        </a>
-                      )}
                     </div>
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ delay: 0.1 }}
-                      className="mt-2 flex flex-col gap-3 pb-2 text-[14px] leading-relaxed text-slate-600"
+                      className="mt-2 flex flex-col gap-3 text-[14px] leading-relaxed text-slate-600"
                     >
                       {children}
                     </motion.div>
+                    {linkHref && (
+                      <a
+                        href={linkHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
+                        title={linkLabel || "LinkedIn Profile"}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <LinkIcon size={20} />
+                      </a>
+                    )}
                   </div>
-                </motion.div>
+                 </motion.div>
               </div>
             </>
           )}
@@ -151,15 +149,14 @@ export function ExpandableCard({
             alt={title}
             className="h-full w-full object-cover object-[25%_20%] transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/0 opacity-80" />
+        </motion.div>
+
+        <div className="flex flex-col p-6 text-left flex-1 relative">
           {badge && (
-            <motion.div layoutId={`badge-${title}-${id}`} className="absolute bottom-4 left-4 rounded-full bg-slate-900/60 px-3 py-1 text-[10px] font-bold tracking-widest text-white backdrop-blur-md uppercase shadow-sm">
+            <motion.div layoutId={`badge-${title}-${id}`} className="mb-3 inline-block self-start rounded-full bg-slate-100 px-3 py-1 text-[10px] font-bold tracking-widest text-slate-600 uppercase shadow-sm">
               {badge}
             </motion.div>
           )}
-        </motion.div>
-        
-        <div className="flex flex-col p-6 text-left flex-1">
           <motion.p
             layoutId={`description-${description}-${id}`}
             className="mb-1 text-[11px] font-bold tracking-widest text-indigo-500 uppercase"
@@ -180,18 +177,18 @@ export function ExpandableCard({
               {oneLiner}
             </motion.div>
           )}
-          {linkHref && (
-            <a
-              href={linkHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(event) => event.stopPropagation()}
-              className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
-              title={linkLabel || "LinkedIn Profile"}
-            >
-              <ExternalLink size={20} />
-            </a>
-          )}
+         {linkHref && (
+           <a
+             href={linkHref}
+             target="_blank"
+             rel="noopener noreferrer"
+             onClick={(event) => event.stopPropagation()}
+             className="mt-4 inline-flex items-center gap-2 text-indigo-600 transition-colors hover:text-indigo-800"
+             title={linkLabel || "LinkedIn Profile"}
+           >
+             <LinkIcon size={20} />
+           </a>
+         )}
         </div>
       </motion.div>
     </>

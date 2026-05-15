@@ -146,7 +146,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <a href="/#contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(79,70,229,0.3)] transition hover:brightness-110">
+              <a href="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(79,70,229,0.3)] transition hover:brightness-110">
                 Start a Project <span>→</span>
               </a>
               <a href="#who-we-are" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-7 py-3.5 text-[15px] font-semibold text-slate-700 shadow-sm transition hover:border-indigo-200 hover:text-indigo-600">
@@ -421,46 +421,41 @@ export default function AboutPage() {
                 name: "Samantha Hayes",
                 role: "Head of Revenue",
                 edu: "Wharton MBA & Salesforce Certified",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=800&fit=crop",
+                image: "https://i.pinimg.com/1200x/24/91/0f/24910f726e8e849d73ba395a584181f0.jpg",
                 oneLiner: "Revenue architect who transforms pipeline strategy into predictable, scalable growth.",
                 fullInfo: "Samantha brings 12+ years of enterprise sales leadership across SaaS, AI, and professional services. Previously VP of Revenue at two Series B startups, she built GTM teams from 0 to $30M ARR. At 42Works she owns the full revenue cycle — from demand generation to deal closure — ensuring every client partnership is anchored in measurable value. Her approach combines rigorous data-driven forecasting with relationship-led selling, consistently delivering above-quota outcomes across North America and the Middle East.",
-                linkedin: "#",
               },
               {
                 name: "Aditya Sinha",
                 role: "Head of Finance",
                 edu: "CA & CFA Charterholder",
-                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=800&fit=crop",
+                image: "https://i.pinimg.com/736x/a2/7b/72/a27b72e446d5a7334d1b97249f083675.jpg",
                 oneLiner: "Finance strategist bridging startup agility with institutional financial discipline.",
                 fullInfo: "Aditya has 14 years of experience across investment banking, venture-backed startups, and global consulting firms. A Chartered Accountant and CFA charterholder, he previously led finance at a MENA-focused fintech unicorn, overseeing $150M in capital allocation and cross-border compliance. At 42Works, Aditya steers financial planning, fundraising strategy, and the fiscal infrastructure that enables rapid, responsible global growth. His expertise in multi-currency operations and emerging-market regulation is central to the firm's international expansion.",
-                linkedin: "#",
               },
               {
                 name: "Olivia Bennet",
                 role: "Head of Marketing",
                 edu: "Northwestern Medill & Google CMO Fellow",
-                image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=800&fit=crop",
+                image: "https://i.pinimg.com/736x/f1/da/f9/f1daf9cebfbcbefb8e86677b8b0cbbc0.jpg",
                 oneLiner: "Brand strategist who turns technical depth into market authority and demand.",
                 fullInfo: "Olivia has spent a decade building category-defining brands in the AI and developer-tools space. With prior roles at a top-5 global digital agency and a Series C AI startup, she has led campaigns that generated over $40M in pipeline. At 42Works, she oversees all marketing — content, SEO, performance, and brand — with a sharp focus on positioning 42Works as the definitive AI Experience Engineering company. She is also an advocate for ethical AI communication and responsible thought leadership.",
-                linkedin: "#",
               },
               {
                 name: "Ivan Petrov",
                 role: "Head of Operations & Delivery",
                 edu: "Moscow State Technical University & PMP",
-                image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&fit=crop",
+                image: "https://i.pinimg.com/1200x/61/8c/d8/618cd86e228a151b4fa21bfecd9e627e.jpg",
                 oneLiner: "Operations leader who turns complex, multi-team projects into reliable on-time delivery.",
                 fullInfo: "Ivan has 16 years of delivery and operations experience spanning enterprise software, defence tech, and AI platforms across Eastern Europe and the Gulf. A PMP and SAFe agilist, he previously directed delivery for a 200-person engineering division and reduced time-to-production by 38% through process re-engineering. At 42Works, Ivan governs the end-to-end project lifecycle, resource planning, and QA, ensuring every engagement lands on time, on scope, and on budget.",
-                linkedin: "#",
               },
               {
                 name: "Markus Vogel",
                 role: "Head of Information Security",
                 edu: "TU Munich & CISSP, ISO 27001 LA",
-                image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=800&fit=crop",
+                image: "https://i.pinimg.com/1200x/a8/7d/7c/a87d7c41fc5120009e2d8f616144257d.jpg",
                 oneLiner: "Security architect who embeds trust into every layer of AI-native product delivery.",
                 fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At 42Works, Markus owns information security strategy, vendor risk, and client data governance — ensuring every AI and Web3 product is built with security-by-design from architecture to deployment.",
-                linkedin: "#",
               },
             ].map((person, i) => (
               <Reveal key={person.name} delay={i * 0.05} className="flex h-full w-full">
@@ -554,10 +549,10 @@ export default function AboutPage() {
                 <h2 className="mb-6 font-heading text-3xl font-bold leading-tight text-slate-900">Environmental, Social and Governance</h2>
                 <p className="mb-10 text-lg leading-relaxed text-slate-600">We are committed to building a sustainable future through responsible innovation, inclusivity, and ethical practices.</p>
                 <div>
-                  <button className="group inline-flex items-center gap-2 rounded-full bg-indigo-50 px-6 py-3 text-[15px] font-semibold text-indigo-600 transition hover:bg-indigo-100">
+                  <a className="group inline-flex items-center gap-2 rounded-full bg-indigo-50 px-6 py-3 text-[15px] font-semibold text-indigo-600 transition hover:bg-indigo-100" href="/thought-leadership/legacy-modernization-architecture-ai-cloud-roi-roadmaps">
                     Read More
                     <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="relative h-72 bg-slate-200 md:h-auto">
@@ -573,7 +568,7 @@ export default function AboutPage() {
 
               <h2 className="relative z-10 mb-6 font-heading text-4xl font-bold">Internal Compliance</h2>
               <p className="relative z-10 mb-10 max-w-2xl text-lg leading-relaxed text-slate-300">Rigorous standards and protocols ensuring the highest level of security, transparency, and integrity in everything we engineer.</p>
-              <a href="/#compliance" className="relative z-10 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500">
+              <a href="/contact" className="relative z-10 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-500">
                 Learn More <span>→</span>
               </a>
             </div>

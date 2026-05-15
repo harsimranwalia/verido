@@ -57,8 +57,9 @@ const pillars = [
       </svg>
     ),
     title: "AI Opportunity Discovery",
+    href: "/services/ai-audit",
     description:
-      "We audit your existing digital and software stack — not your AI — to uncover where AI can create the most value. From workflow automation to intelligent products, we map every opportunity before a line of code is written.",
+      "We audit your existing digital and software stack, to uncover where AI can create the most value. From workflow automation to intelligent products, we map every opportunity before a line of code is written.",
   },
   {
     icon: (
@@ -67,6 +68,7 @@ const pillars = [
       </svg>
     ),
     title: "Engineered for Experience Built for Impact",
+    href: "/services/full-stack-development",
     description:
       "We put experience at the heart of everything we build, with engineering as our core strength and AI & Web3 as accelerants. Every solution is designed to be scalable and resilient.",
   },
@@ -77,6 +79,7 @@ const pillars = [
       </svg>
     ),
     title: "Where Industry Leads, Technology Enables",
+    href: "/industries",
     description:
       "That's our approach to building future-ready solutions that matter to your business, powered by deep domain expertise and teams that understand your industry.",
   },
@@ -203,7 +206,7 @@ export function FundamentalsSection() {
                 </p>
                 <div className="mt-auto pt-2">
                   <a
-                    href="#"
+                    href={pillar.href}
                     className="nav-link-underline inline-flex items-center gap-1.5 text-[13px] font-bold tracking-wider uppercase text-indigo-600 transition-colors hover:text-indigo-800"
                   >
                     Learn More <span className="transition-transform group-hover:translate-x-1">→</span>
