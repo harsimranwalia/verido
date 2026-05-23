@@ -34,7 +34,7 @@ export function FooterSection() {
           {/* Brand */}
           <Reveal className="col-span-2 md:col-span-1">
             <div>
-              <span className="bg-gradient-to-r from-indigo-300 to-cyan-200 bg-clip-text text-xl font-bold tracking-wider text-transparent">42works</span>
+              <span className="bg-gradient-to-r from-indigo-300 to-cyan-200 bg-clip-text text-xl font-bold tracking-wider text-transparent">Verido</span>
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 AI audits to surface opportunities + fast Agentic AI solutions for ambitious founders and enterprises.
               </p>
@@ -62,7 +62,7 @@ export function FooterSection() {
 
         <Reveal delay={0.2}>
           <div className="flex flex-col items-center justify-between gap-4 border-t border-white/15 pt-8 md:flex-row">
-            <p className="text-xs text-slate-300/75">© 2026 42works. All rights reserved.</p>
+            <p className="text-xs text-slate-300/75">© 2026 Verido. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="/terms" className="text-xs text-slate-300/75 transition-colors hover:text-white">Terms & Conditions</a>
               <a href="/privacy" className="text-xs text-slate-300/75 transition-colors hover:text-white">Privacy Notice</a>

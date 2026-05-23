@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 const homepageSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "42Works",
+  name: "Verido",
   url: siteUrl,
   potentialAction: {
     "@type": "SearchAction",
@@ -36,17 +36,17 @@ const homepageSchema = {
   "@graph": [
     {
       "@type": "Organization",
-      name: "42Works",
+      name: "Verido",
       url: siteUrl,
       logo: `${siteUrl}/logo.png`,
       sameAs: [
-        "https://linkedin.com/company/42works",
-        "https://twitter.com/42works",
-        "https://github.com/42works"
+        "https://linkedin.com/company/verido",
+        "https://twitter.com/verido",
+        "https://github.com/verido"
       ],
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+1-647-794-8516",
+        telephone: "+16477948516",
         contactType: "Customer Service",
         areaServed: "US",
         availableLanguage: ["English"],

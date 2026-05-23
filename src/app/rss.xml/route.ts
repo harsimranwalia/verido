@@ -10,9 +10,9 @@ export async function GET() {
   const rssXml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>42Works Thought Leadership</title>
+    <title>Verido Thought Leadership</title>
     <link>${baseUrl}/thought-leadership</link>
-    <description>Perspectives on AI, cloud modernization, and digital operating models from 42Works</description>
+    <description>Perspectives on AI, cloud modernization, and digital operating models from Verido</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml" />

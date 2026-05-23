@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const industry = INDUSTRIES_DATA[slug];
   if (!industry) return {};
   return {
-    title: `${industry.badge} — 42Works`,
+    title: `${industry.badge} — Verido`,
     description: industry.subtitle,
   };
 }

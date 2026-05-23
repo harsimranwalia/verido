@@ -2,8 +2,8 @@
 import { siteUrl } from './site-url';
 
 export const baseMetadata = {
-  title: '42Works',
-  description: '42Works is a global, AI-powered Experience Engineering Company.',
+  title: 'Verido',
+  description: 'Verido is a global, AI-powered Experience Engineering Company.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -13,20 +13,20 @@ export const baseMetadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    siteName: '42Works',
+    siteName: 'Verido',
     images: [
       {
         url: `${siteUrl}/opengraph-image.png`,
         width: 1200,
         height: 630,
-        alt: '42Works - AI Visibility, Measurable',
+        alt: 'Verido - AI Visibility, Measurable',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '42Works',
-    description: '42Works is a global, AI-powered Experience Engineering Company.',
+    title: 'Verido',
+    description: 'Verido is a global, AI-powered Experience Engineering Company.',
     images: [`${siteUrl}/opengraph-image.png`],
   },
   alternates: {

@@ -25,17 +25,17 @@ const sections = [
   {
     title: "Acceptance of Terms",
     content:
-      "By accessing or using the 42Works website, services, or platforms, you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use our services. We may update these terms at any time, and continued use constitutes acceptance of the updated terms.",
+      "By accessing or using the Verido website, services, or platforms, you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use our services. We may update these terms at any time, and continued use constitutes acceptance of the updated terms.",
   },
   {
     title: "Services Description",
     content:
-      "42Works provides Agentic AI engineering and digital transformation services including but not limited to AI audits, generative AI solutions, AI agent development, RAG systems, full-stack development, mobile app development, API development, UI/UX design, product discovery, cloud transformation, and DevOps services. All services are delivered on a project-by-project basis as defined in the applicable Statement of Work (SOW) or Service Agreement.",
+      "Verido provides Agentic AI engineering and digital transformation services including but not limited to AI audits, generative AI solutions, AI agent development, RAG systems, full-stack development, mobile app development, API development, UI/UX design, product discovery, cloud transformation, and DevOps services. All services are delivered on a project-by-project basis as defined in the applicable Statement of Work (SOW) or Service Agreement.",
   },
   {
     title: "Intellectual Property Rights",
     content:
-      "Upon full payment for services, we assign to you all intellectual property rights in the custom deliverables created specifically for your project, excluding any pre-existing tools, libraries, frameworks, or AI models owned by 42Works. We retain the right to use generalized knowledge, methodologies, and non-client-specific improvements developed during the engagement. You retain all rights to your pre-existing materials shared with us for the purpose of delivering services.",
+      "Upon full payment for services, we assign to you all intellectual property rights in the custom deliverables created specifically for your project, excluding any pre-existing tools, libraries, frameworks, or AI models owned by Verido. We retain the right to use generalized knowledge, methodologies, and non-client-specific improvements developed during the engagement. You retain all rights to your pre-existing materials shared with us for the purpose of delivering services.",
   },
   {
     title: "AI & Data Processing Terms",
@@ -60,7 +60,7 @@ const sections = [
   {
     title: "Limitation of Liability",
     content:
-      "To the maximum extent permitted by law, 42Works' liability for any claim arising out of or relating to these terms or our services is limited to the total fees paid by you for the specific service giving rise to the claim. We are not liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or business opportunities, even if advised of the possibility of such damages. AI-generated outputs are provided 'as is' without warranty.",
+      "To the maximum extent permitted by law, Verido's liability for any claim arising out of or relating to these terms or our services is limited to the total fees paid by you for the specific service giving rise to the claim. We are not liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or business opportunities, even if advised of the possibility of such damages. AI-generated outputs are provided 'as is' without warranty.",
   },
   {
     title: "Warranty Disclaimer",
@@ -85,7 +85,7 @@ const sections = [
   {
     title: "Contact & Legal Notices",
     content:
-      "For legal notices or questions regarding these terms, contact us at legal@42works.com or write to: 42Works, Attn: Legal, [Office Address]. Legal notices must be sent in writing and will be deemed delivered upon receipt. We may provide general notices through our website or email.",
+      "For legal notices or questions regarding these terms, contact us at legal@verido.co or write to: Verido, Attn: Legal, [Office Address]. Legal notices must be sent in writing and will be deemed delivered upon receipt. We may provide general notices through our website or email.",
   },
 ];
 
@@ -156,7 +156,7 @@ export default function TermsPage() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="max-w-xl text-base leading-relaxed text-slate-600"
             >
-              These terms govern your use of 42Works&apos; website, services, and
+              These terms govern your use of Verido&apos; website, services, and
               platforms. Please read them carefully before engaging our services.
             </motion.p>
           </div>
@@ -204,10 +204,10 @@ export default function TermsPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="mailto:legal@42works.com"
+                href="mailto:legal@verido.co"
                 className="group inline-flex items-center gap-2 rounded-xl bg-white px-10 py-4 text-base font-bold text-indigo-700 shadow-xl transition hover:bg-indigo-50"
               >
-                legal@42works.com
+                legal@verido.co
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"
                   fill="none"

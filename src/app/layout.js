@@ -20,18 +20,18 @@ import { baseMetadata } from '../lib/metadata';
 
 export const metadata = {
   ...baseMetadata,
-  title: "42works — AI Visibility, Measurable",
+  title: "Verido — AI Visibility, Measurable",
   description:
     "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
   openGraph: {
     ...baseMetadata.openGraph,
-    title: "42works — AI Visibility, Measurable",
+    title: "Verido — AI Visibility, Measurable",
     description:
       "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
   },
   twitter: {
     ...baseMetadata.twitter,
-    title: "42works — AI Visibility, Measurable",
+    title: "Verido — AI Visibility, Measurable",
     description:
       "Track how your clients show up across AI platforms. Uncover missed visibility and prove impact with data you can actually report.",
   },
@@ -48,7 +48,7 @@ export const metadata = {
       rel: 'alternate',
       type: 'application/rss+xml',
       href: '/rss.xml',
-      title: '42Works Thought Leadership RSS Feed',
+      title: 'Verido Thought Leadership RSS Feed',
     },
   ],
 };

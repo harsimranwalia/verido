@@ -14,10 +14,10 @@ export async function generateMetadata({ params }) {
   if (!study) return {};
   
   return generateMetadataOverride({
-    title: `${study.title} — Case Study | 42Works`,
+    title: `${study.title} — Case Study | Verido`,
     description: study.summary,
     openGraph: {
-      title: `${study.title} — Case Study | 42Works`,
+      title: `${study.title} — Case Study | Verido`,
       description: study.summary,
       images: [
         {
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
       ],
     },
     twitter: {
-      title: `${study.title} — Case Study | 42Works`,
+      title: `${study.title} — Case Study | Verido`,
       description: study.summary,
       images: [
         study.image.startsWith('http') 

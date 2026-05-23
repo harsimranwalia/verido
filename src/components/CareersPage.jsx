@@ -58,7 +58,7 @@ const jobsData = [
       "Annual team retreats and offsites.",
       "Latest tools and equipment to do your best work.",
     ],
-    applyEmail: "careers@42works.com",
+    applyEmail: "careers@verido.co",
   },
   {
     id: "agentic-ai-architect",
@@ -100,7 +100,7 @@ const jobsData = [
       "Latest tools and equipment plus cloud compute budget for experimentation.",
       "Opportunity to publish research and speak at industry conferences.",
     ],
-    applyEmail: "careers@42works.com",
+    applyEmail: "careers@verido.co",
   },
   {
     id: "community-development-outreach",
@@ -110,9 +110,9 @@ const jobsData = [
     department: "Marketing & Community",
     posted: "March 2026",
     description:
-      "We're looking for a dynamic Community Development and Outreach Executive to build, nurture, and grow the 42Works community across AI and developer ecosystems. You'll be the voice of 42Works in key communities, driving engagement, partnerships, and brand awareness through authentic relationship-building.",
+      "We're looking for a dynamic Community Development and Outreach Executive to build, nurture, and grow the Verido community across AI and developer ecosystems. You'll be the voice of Verido in key communities, driving engagement, partnerships, and brand awareness through authentic relationship-building.",
     responsibilities: [
-      "Develop and execute a comprehensive community strategy that grows 42Works' presence across developer forums, social platforms, and industry events.",
+      "Develop and execute a comprehensive community strategy that grows Verido' presence across developer forums, social platforms, and industry events.",
       "Build and moderate online communities on Discord, Telegram, LinkedIn, and developer platforms (GitHub, Stack Overflow, Dev.to).",
       "Organize and host virtual and in-person events including workshops, hackathons, webinars, and meetups.",
       "Identify and cultivate relationships with key community influencers, developers, and industry partners.",
@@ -120,7 +120,7 @@ const jobsData = [
       "Collect and synthesize community feedback to inform product and marketing decisions.",
       "Develop and manage ambassador and advocacy programs to empower community champions.",
       "Track and report on community KPIs including engagement, growth, sentiment, and conversion metrics.",
-      "Represent 42Works at industry conferences, hackathons, and networking events globally.",
+      "Represent Verido at industry conferences, hackathons, and networking events globally.",
     ],
     requirements: [
       "3+ years of experience in community management, developer relations, or outreach roles in technology.",
@@ -142,7 +142,7 @@ const jobsData = [
       "Event and conference travel budget.",
       "Latest tools and equipment to do your best work.",
     ],
-    applyEmail: "careers@42works.com",
+    applyEmail: "careers@verido.co",
   },
 ];
 
@@ -378,7 +378,7 @@ export default function CareersPage() {
               transition={{ duration: 0.6, delay: 0.35 }}
               className="mb-10 max-w-xl text-lg leading-relaxed text-slate-600"
             >
-              At 42Works, we build the frontier — autonomous AI agents, intelligent
+              At Verido, we build the frontier — autonomous AI agents, intelligent
               systems, and Agentic AI products that redefine what&apos;s
               possible. We&apos;re looking for people who want to ship, learn, and
               grow.
@@ -478,7 +478,7 @@ export default function CareersPage() {
               Culture
             </div>
             <h2 className="font-heading text-[clamp(2rem,4vw,3rem)] font-bold text-slate-900">
-              Why Join 42Works?
+              Why Join Verido?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-slate-500">
               We believe in shipping fast, learning constantly, and building
@@ -553,7 +553,7 @@ export default function CareersPage() {
               tell us how you can contribute.
             </p>
             <a
-              href="mailto:careers@42works.com?subject=General Application"
+              href="mailto:careers@verido.co?subject=General Application"
               className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 px-8 py-4 text-base font-bold text-white shadow-[0_14px_28px_rgba(79,70,229,0.28)] transition hover:brightness-110"
             >
               Send Your CV

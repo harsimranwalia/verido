@@ -2,11 +2,11 @@ import { INDUSTRIES_DATA } from "../../components/data/industries-data";
 import { IndustriesListingPage } from "../../components/IndustriesListingPage";
 
 export const metadata = {
-  title: "Industries We Serve — 42Works",
+  title: "Industries We Serve — Verido",
   description:
     "From banking and healthcare to telecom and energy, we deliver AI-powered solutions tailored to your industry.",
   openGraph: {
-    title: "Industries We Serve — 42Works",
+    title: "Industries We Serve — Verido",
     description:
       "From banking and healthcare to telecom and energy, we deliver AI-powered solutions tailored to your industry.",
   },

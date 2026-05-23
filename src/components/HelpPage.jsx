@@ -30,11 +30,11 @@ const faqCategories = [
     category: "Getting Started",
     questions: [
       {
-        q: "What does 42Works do?",
-        a: "42Works is an Agentic AI Engineering Company. We help businesses audit their AI landscape to surface high-impact opportunities, then build and launch production-ready Agentic AI solutions in as little as 42 days.",
+        q: "What does Verido do?",
+        a: "Verido is an Agentic AI Engineering Company. We help businesses audit their AI landscape to surface high-impact opportunities, then build and launch production-ready Agentic AI solutions in as little as 42 days.",
       },
       {
-        q: "How do I get started with 42Works?",
+        q: "How do I get started with Verido?",
         a: "Simply book a free AI Audit through our contact page. We'll schedule a discovery call to understand your business, assess your current digital landscape, and identify where Agentic AI can create the most value for you.",
       },
       {
@@ -338,10 +338,10 @@ export default function HelpPage() {
                 </svg>
               </Link>
               <a
-                href="mailto:hello@42works.co"
+                href="mailto:hello@Verido.co"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-10 py-4 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
               >
-                hello@42works.co
+                hello@Verido.co
               </a>
             </div>
           </FadeUp>

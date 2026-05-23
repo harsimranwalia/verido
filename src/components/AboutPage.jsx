@@ -35,17 +35,17 @@ const aboutPageSchema = {
   "@graph": [
     {
       "@type": "Organization",
-      name: "42Works",
+      name: "Verido",
       url: siteUrl,
       logo: `${siteUrl}/logo.png`,
       sameAs: [
-        "https://linkedin.com/company/42works",
-        "https://twitter.com/42works",
-        "https://github.com/42works"
+        "https://linkedin.com/company/verido",
+        "https://twitter.com/verido",
+        "https://github.com/verido"
       ],
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+1-647-794-8516",
+        telephone: "+16477948516",
         contactType: "Customer Service",
         areaServed: "US",
         availableLanguage: ["English"]
@@ -131,7 +131,7 @@ export default function AboutPage() {
           </div>
           <Reveal>
             <h1 className="mb-4 font-heading text-[clamp(2.2rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-tight text-slate-900 md:mb-6">
-              42works is a global, <br />
+              Verido is a global, <br />
               <span className="bg-gradient-to-r text-[34px] md:text-[70px] from-cyan-500 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 AI-native & Agentic
               </span>
@@ -423,7 +423,7 @@ export default function AboutPage() {
                 edu: "Wharton MBA & Salesforce Certified",
                 image: "https://i.pinimg.com/1200x/24/91/0f/24910f726e8e849d73ba395a584181f0.jpg",
                 oneLiner: "Revenue architect who transforms pipeline strategy into predictable, scalable growth.",
-                fullInfo: "Samantha brings 12+ years of enterprise sales leadership across SaaS, AI, and professional services. Previously VP of Revenue at two Series B startups, she built GTM teams from 0 to $30M ARR. At 42Works she owns the full revenue cycle — from demand generation to deal closure — ensuring every client partnership is anchored in measurable value. Her approach combines rigorous data-driven forecasting with relationship-led selling, consistently delivering above-quota outcomes across North America and the Middle East.",
+                fullInfo: "Samantha brings 12+ years of enterprise sales leadership across SaaS, AI, and professional services. Previously VP of Revenue at two Series B startups, she built GTM teams from 0 to $30M ARR. At Verido she owns the full revenue cycle — from demand generation to deal closure — ensuring every client partnership is anchored in measurable value. Her approach combines rigorous data-driven forecasting with relationship-led selling, consistently delivering above-quota outcomes across North America and the Middle East.",
               },
               {
                 name: "Aditya Sinha",
@@ -431,7 +431,7 @@ export default function AboutPage() {
                 edu: "CA & CFA Charterholder",
                 image: "https://i.pinimg.com/736x/a2/7b/72/a27b72e446d5a7334d1b97249f083675.jpg",
                 oneLiner: "Finance strategist bridging startup agility with institutional financial discipline.",
-                fullInfo: "Aditya has 14 years of experience across investment banking, venture-backed startups, and global consulting firms. A Chartered Accountant and CFA charterholder, he previously led finance at a MENA-focused fintech unicorn, overseeing $150M in capital allocation and cross-border compliance. At 42Works, Aditya steers financial planning, fundraising strategy, and the fiscal infrastructure that enables rapid, responsible global growth. His expertise in multi-currency operations and emerging-market regulation is central to the firm's international expansion.",
+                fullInfo: "Aditya has 14 years of experience across investment banking, venture-backed startups, and global consulting firms. A Chartered Accountant and CFA charterholder, he previously led finance at a MENA-focused fintech unicorn, overseeing $150M in capital allocation and cross-border compliance. At Verido, Aditya steers financial planning, fundraising strategy, and the fiscal infrastructure that enables rapid, responsible global growth. His expertise in multi-currency operations and emerging-market regulation is central to the firm's international expansion.",
               },
               {
                 name: "Olivia Bennet",
@@ -439,7 +439,7 @@ export default function AboutPage() {
                 edu: "Northwestern Medill & Google CMO Fellow",
                 image: "https://i.pinimg.com/736x/f1/da/f9/f1daf9cebfbcbefb8e86677b8b0cbbc0.jpg",
                 oneLiner: "Brand strategist who turns technical depth into market authority and demand.",
-                fullInfo: "Olivia has spent a decade building category-defining brands in the AI and developer-tools space. With prior roles at a top-5 global digital agency and a Series C AI startup, she has led campaigns that generated over $40M in pipeline. At 42Works, she oversees all marketing — content, SEO, performance, and brand — with a sharp focus on positioning 42Works as the definitive AI Experience Engineering company. She is also an advocate for ethical AI communication and responsible thought leadership.",
+                fullInfo: "Olivia has spent a decade building category-defining brands in the AI and developer-tools space. With prior roles at a top-5 global digital agency and a Series C AI startup, she has led campaigns that generated over $40M in pipeline. At Verido, she oversees all marketing — content, SEO, performance, and brand — with a sharp focus on positioning Verido as the definitive AI Experience Engineering company. She is also an advocate for ethical AI communication and responsible thought leadership.",
               },
               {
                 name: "Ivan Petrov",
@@ -447,7 +447,7 @@ export default function AboutPage() {
                 edu: "Moscow State Technical University & PMP",
                 image: "https://i.pinimg.com/1200x/61/8c/d8/618cd86e228a151b4fa21bfecd9e627e.jpg",
                 oneLiner: "Operations leader who turns complex, multi-team projects into reliable on-time delivery.",
-                fullInfo: "Ivan has 16 years of delivery and operations experience spanning enterprise software, defence tech, and AI platforms across Eastern Europe and the Gulf. A PMP and SAFe agilist, he previously directed delivery for a 200-person engineering division and reduced time-to-production by 38% through process re-engineering. At 42Works, Ivan governs the end-to-end project lifecycle, resource planning, and QA, ensuring every engagement lands on time, on scope, and on budget.",
+                fullInfo: "Ivan has 16 years of delivery and operations experience spanning enterprise software, defence tech, and AI platforms across Eastern Europe and the Gulf. A PMP and SAFe agilist, he previously directed delivery for a 200-person engineering division and reduced time-to-production by 38% through process re-engineering. At Verido, Ivan governs the end-to-end project lifecycle, resource planning, and QA, ensuring every engagement lands on time, on scope, and on budget.",
               },
               {
                 name: "Markus Vogel",
@@ -455,7 +455,7 @@ export default function AboutPage() {
                 edu: "TU Munich & CISSP, ISO 27001 LA",
                 image: "https://i.pinimg.com/1200x/a8/7d/7c/a87d7c41fc5120009e2d8f616144257d.jpg",
                 oneLiner: "Security architect who embeds trust into every layer of AI-native product delivery.",
-                fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At 42Works, Markus owns information security strategy, vendor risk, and client data governance — ensuring every Agentic AI product is built with security-by-design from architecture to deployment.",
+                fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At Verido, Markus owns information security strategy, vendor risk, and client data governance — ensuring every Agentic AI product is built with security-by-design from architecture to deployment.",
               },
             ].map((person, i) => (
               <Reveal key={person.name} delay={i * 0.05} className="flex h-full w-full">

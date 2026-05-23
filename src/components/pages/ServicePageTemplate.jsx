@@ -122,7 +122,7 @@ export default function ServicePageTemplate({ service }) {
     description: service.subtitle,
     provider: {
       "@type": "Organization",
-      name: "42Works",
+      name: "Verido",
       url: siteUrl,
       logo: `${siteUrl}/logo.png`,
     },
@@ -272,7 +272,7 @@ export default function ServicePageTemplate({ service }) {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-400/10 px-4 py-2 text-xs font-bold tracking-widest text-teal-400 uppercase">
               Our Approach
             </div>
-            <h2 className="font-heading text-[clamp(2.2rem,4.5vw,3.5rem)] font-bold">The 42works Way</h2>
+            <h2 className="font-heading text-[clamp(2.2rem,4.5vw,3.5rem)] font-bold">The Verido Way</h2>
             <p className="mx-auto mt-4 max-w-xl text-slate-400">A structured, transparent process that delivers real results — every time.</p>
           </FadeUp>
 
@@ -309,7 +309,7 @@ export default function ServicePageTemplate({ service }) {
                 Real-World Applications
               </div>
               <h2 className="font-heading text-[clamp(2.2rem,4.5vw,3.5rem)] font-bold text-slate-900">See It in Action</h2>
-              <p className="mx-auto mt-4 max-w-xl text-slate-500">How 42works delivers results for clients across industries.</p>
+              <p className="mx-auto mt-4 max-w-xl text-slate-500">How Verido delivers results for clients across industries.</p>
             </FadeUp>
             <div className="grid gap-6 md:grid-cols-3">
               {service.useCases.map((uc, i) => (

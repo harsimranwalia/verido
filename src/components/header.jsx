@@ -51,7 +51,7 @@ export function Header() {
           transition={{ type: "spring", stiffness: 380, damping: 26 }}
         >
           <span className="bg-gradient-to-r from-indigo-700 to-teal-600 bg-clip-text text-[16px] font-extrabold tracking-tighter text-transparent">
-            42Works
+            Verido
           </span>
         </motion.a>
         <div className="hidden items-center gap-1 md:flex">
