@@ -61,7 +61,7 @@ const aboutPageSchema = {
     {
       "@type": "Person",
       name: "Akshat Agrawal",
-      jobTitle: "Head of Web3 & Crypto",
+      jobTitle: "Head of Engineering",
       url: "https://www.linkedin.com/in/akshatagrawaldelhi/",
       sameAs: "https://www.linkedin.com/in/akshatagrawaldelhi/"
     },
@@ -133,7 +133,7 @@ export default function AboutPage() {
             <h1 className="mb-4 font-heading text-[clamp(2.2rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-tight text-slate-900 md:mb-6">
               42works is a global, <br />
               <span className="bg-gradient-to-r text-[34px] md:text-[70px] from-cyan-500 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                AI-native & Web3-ready
+                AI-native & Agentic
               </span>
               <br />
               Experience Engineering Company.
@@ -225,8 +225,8 @@ export default function AboutPage() {
               <div className="space-y-5">
                 {[
                   "AI audits — a way to get information about your business and surface opportunities to implement AI.",
-                  "Web3 audits — evaluate readiness, security, and opportunity across your stack.",
-                  "AI & Web3 solutions building — going live in 42 days as a PoC, MVP, or independent feature.",
+                  "Agentic AI — autonomous agents and intelligent pipelines that act, not just answer.",
+                  "AI solutions building — going live in 42 days as a PoC, MVP, or independent feature.",
                 ].map((text, i) => (
                   <Reveal key={i} delay={0.2 + i * 0.08}>
                     <div className="group flex items-start gap-4 rounded-2xl border border-transparent p-3 transition-all hover:border-indigo-100 hover:bg-indigo-50/50">
@@ -271,12 +271,12 @@ export default function AboutPage() {
               {
                 step: "01",
                 title: "Deep Discovery Audit",
-                desc: "Intensive architecture mapping to identify inefficiencies and unearth strategic AI and Web3 opportunities."
+                desc: "Intensive architecture mapping to identify inefficiencies and unearth strategic Agentic AI opportunities."
               },
               {
                 step: "02",
                 title: "Solution Architecture",
-                desc: "Designing robust, scalable systems and selecting the optimal LLMs or smart contracts tailored to your goals."
+                desc: "Designing robust, scalable systems and selecting the optimal LLMs and agent frameworks tailored to your goals."
               },
               {
                 step: "03",
@@ -291,7 +291,7 @@ export default function AboutPage() {
               {
                 step: "05",
                 title: "Compliance & Security",
-                desc: "Enterprise-grade security and regulatory compliance (VARA, MiCA) baked into the foundation."
+                desc: "Enterprise-grade security and regulatory compliance baked into the foundation."
               },
               {
                 step: "06",
@@ -359,12 +359,12 @@ export default function AboutPage() {
                 Global Impact
               </div>
               <h2 className="font-heading text-[clamp(2rem,4vw,3.5rem)] font-bold">Audit for Insight. Build for Value.</h2>
-              <p className="mx-auto mt-4 max-w-xl text-slate-400">We combine AI and Web3 depth to move from opportunity discovery to real-world business outcomes.</p>
+              <p className="mx-auto mt-4 max-w-xl text-slate-400">We combine deep Agentic AI expertise with fast execution to move from opportunity discovery to real-world business outcomes.</p>
             </div>
           </Reveal>
           <div className="grid gap-px rounded-3xl border border-white/10 bg-white/5 sm:grid-cols-3">
             {[
-              { label: "AI & Web3 audits", value: "9k+", icon: "🚀" },
+              { label: "AI Audits Delivered", value: "9k+", icon: "🚀" },
               { label: "Global offices", value: "43+", icon: "🌍" },
               { label: "Professionals", value: "62k+", icon: "👥" },
             ].map((stat, i) => (
@@ -401,11 +401,11 @@ export default function AboutPage() {
               },
               {
                 name: "Akshat Agrawal",
-                role: "Head of Web3 & Crypto",
+                role: "Head of Engineering",
                 edu: "IIT Delhi & US MBA",
                 image: "/akshat.jpeg",
-                oneLiner: "Product Strategy leader and Web3/AI infrastructure builder.",
-                fullInfo: "With an early career exit, Akshat led Product Strategy for Softbank-funded Snapdeal and multiple SaaS platforms before moving to Web3. He builds exchanges, vaults, and RWA platforms, ensures VARA/MiCA compliance, and is a major proponent of Coinbase's x402 micropayments for autonomous AI agents.",
+                oneLiner: "Product Strategy leader and AI infrastructure builder.",
+                fullInfo: "With an early career exit, Akshat led Product Strategy for Softbank-funded Snapdeal and multiple SaaS platforms before pivoting to AI engineering. He builds complex AI pipelines, agentic systems, and enterprise platforms, and is a major proponent of Coinbase's x402 micropayments for autonomous AI agents.",
                 linkedin: "https://www.linkedin.com/in/akshatagrawaldelhi/",
               },
               {
@@ -455,7 +455,7 @@ export default function AboutPage() {
                 edu: "TU Munich & CISSP, ISO 27001 LA",
                 image: "https://i.pinimg.com/1200x/a8/7d/7c/a87d7c41fc5120009e2d8f616144257d.jpg",
                 oneLiner: "Security architect who embeds trust into every layer of AI-native product delivery.",
-                fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At 42Works, Markus owns information security strategy, vendor risk, and client data governance — ensuring every AI and Web3 product is built with security-by-design from architecture to deployment.",
+                fullInfo: "Markus is a CISSP and ISO 27001 Lead Auditor with 15+ years protecting digital infrastructure across banking, healthtech, and cloud-native SaaS in the DACH region. He previously served as CISO at a Berlin-based fintech unicorn, leading programs to achieve SOC 2 Type II and full GDPR compliance. At 42Works, Markus owns information security strategy, vendor risk, and client data governance — ensuring every Agentic AI product is built with security-by-design from architecture to deployment.",
               },
             ].map((person, i) => (
               <Reveal key={person.name} delay={i * 0.05} className="flex h-full w-full">
@@ -586,7 +586,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-300 md:text-lg">
-              We partner with ambitious teams to discover, build, and launch AI & Web3 solutions that drive real business value.
+              We partner with ambitious teams to discover, build, and launch Agentic AI solutions that drive real business value.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

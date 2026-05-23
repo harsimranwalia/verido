@@ -33,7 +33,7 @@ function AnimatedCounter({ target, suffix = "", duration = 2000 }) {
 }
 
 const stats = [
-  { value: 120, suffix: "+", label: "AI & Web3 Audits Completed" },
+  { value: 120, suffix: "+", label: "AI Audits Completed" },
   { value: 42, suffix: " Days", label: "To Go Live (PoC/MVP/Feature)" },
   { value: 200, suffix: "+", label: "Enterprise Clients" },
   { value: 30, suffix: "+", label: "Global Locations" },
@@ -51,7 +51,7 @@ export function StatsSection() {
         </Reveal>
         <Reveal delay={0.08}>
           <p className="mx-auto mb-16 max-w-2xl text-center text-lg text-slate-300">
-            We use audits to get information about your business and surface AI opportunities. Then we build production-grade AI & Web3 solutions at record speed.
+            We use audits to get information about your business and surface AI opportunities. Then we build production-grade Agentic AI solutions at record speed.
           </p>
         </Reveal>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">

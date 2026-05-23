@@ -70,7 +70,7 @@ const pillars = [
     title: "Engineered for Experience Built for Impact",
     href: "/services/full-stack-development",
     description:
-      "We put experience at the heart of everything we build, with engineering as our core strength and AI & Web3 as accelerants. Every solution is designed to be scalable and resilient.",
+      "We put experience at the heart of everything we build, with engineering as our core strength and Agentic AI as the accelerant. Every solution is designed to be scalable and resilient.",
   },
   {
     icon: (
@@ -85,7 +85,7 @@ const pillars = [
   },
 ];
 
-const highlights = ["AI Audit", "Web3 & Smart Contracts", "Live in 42 days"];
+const highlights = ["AI Audit", "Agentic AI", "Live in 42 days"];
 const topBars = [
   "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500",
   "bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500",
@@ -160,7 +160,7 @@ export function FundamentalsSection() {
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.1)_0%,transparent_58%)]" />
 
           <div className="absolute left-1/2 top-4 z-10 -translate-x-1/2 md:top-8">
-            <FloatingIcon label="AI & Web3 Powered">
+            <FloatingIcon label="Agentic AI Powered">
               <svg viewBox="0 0 24 24" className="h-5 w-5 text-indigo-500" fill="none" stroke="currentColor" strokeWidth="1.7">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
               </svg>

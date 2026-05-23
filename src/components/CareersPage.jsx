@@ -110,7 +110,7 @@ const jobsData = [
     department: "Marketing & Community",
     posted: "March 2026",
     description:
-      "We're looking for a dynamic Community Development and Outreach Executive to build, nurture, and grow the 42Works community across AI, Web3, and developer ecosystems. You'll be the voice of 42Works in key communities, driving engagement, partnerships, and brand awareness through authentic relationship-building.",
+      "We're looking for a dynamic Community Development and Outreach Executive to build, nurture, and grow the 42Works community across AI and developer ecosystems. You'll be the voice of 42Works in key communities, driving engagement, partnerships, and brand awareness through authentic relationship-building.",
     responsibilities: [
       "Develop and execute a comprehensive community strategy that grows 42Works' presence across developer forums, social platforms, and industry events.",
       "Build and moderate online communities on Discord, Telegram, LinkedIn, and developer platforms (GitHub, Stack Overflow, Dev.to).",
@@ -124,7 +124,7 @@ const jobsData = [
     ],
     requirements: [
       "3+ years of experience in community management, developer relations, or outreach roles in technology.",
-      "Strong understanding of AI, Web3, and developer ecosystems with existing network in these communities.",
+      "Strong understanding of AI and developer ecosystems with existing network in these communities.",
       "Excellent written and verbal communication skills with a talent for storytelling and content creation.",
       "Experience managing communities on Discord, Telegram, and social media platforms with measurable growth results.",
       "Proven track record of planning and executing successful virtual and in-person events.",
@@ -368,7 +368,7 @@ export default function CareersPage() {
             >
               Shape the Future of{" "}
               <span className="bg-gradient-to-r from-indigo-500 via-blue-500 to-teal-400 bg-clip-text text-transparent">
-                AI & Web3
+                Agentic AI
               </span>
             </motion.h1>
 
@@ -379,7 +379,7 @@ export default function CareersPage() {
               className="mb-10 max-w-xl text-lg leading-relaxed text-slate-600"
             >
               At 42Works, we build the frontier — autonomous AI agents, intelligent
-              systems, and decentralized technologies that redefine what&apos;s
+              systems, and Agentic AI products that redefine what&apos;s
               possible. We&apos;re looking for people who want to ship, learn, and
               grow.
             </motion.p>
@@ -457,7 +457,7 @@ export default function CareersPage() {
                 Open Positions
               </h2>
               <p className="mt-3 text-lg text-slate-500">
-                Join a team building at the frontier of AI and Web3.
+                Join a team building at the frontier of Agentic AI.
               </p>
             </div>
           </FadeUp>
@@ -515,7 +515,7 @@ export default function CareersPage() {
               },
               {
                 title: "Build With the Best",
-                desc: "Work alongside senior engineers, AI researchers, and Web3 experts who are leaders in their fields.",
+                desc: "Work alongside senior engineers and AI researchers who are leaders in their fields.",
                 icon: "🏆",
               },
             ].map((item, i) => (

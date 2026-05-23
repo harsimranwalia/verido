@@ -30,7 +30,7 @@ const sections = [
   {
     title: "Services Description",
     content:
-      "42Works provides AI engineering, Web3 development, and digital transformation services including but not limited to AI audits, generative AI solutions, AI agent development, RAG systems, smart contract audits, full-stack development, mobile app development, API development, UI/UX design, product discovery, cloud transformation, and DevOps services. All services are delivered on a project-by-project basis as defined in the applicable Statement of Work (SOW) or Service Agreement.",
+      "42Works provides Agentic AI engineering and digital transformation services including but not limited to AI audits, generative AI solutions, AI agent development, RAG systems, full-stack development, mobile app development, API development, UI/UX design, product discovery, cloud transformation, and DevOps services. All services are delivered on a project-by-project basis as defined in the applicable Statement of Work (SOW) or Service Agreement.",
   },
   {
     title: "Intellectual Property Rights",

@@ -72,7 +72,7 @@ export function HeroContent() {
           data-hero="description"
           className="mt-5 max-w-xl text-pretty text-[0.9rem] leading-relaxed text-slate-500 md:mt-7 md:max-w-2xl md:text-lg"
         >
-          We audit your business to surface high-value AI opportunities, then build and launch the right AI&nbsp;&&nbsp;Web3 solution — as a PoC, MVP, or production feature.
+          We audit your business to surface high-value AI opportunities, then build and launch the right Agentic AI solution — as a PoC, MVP, or production feature.
         </p>
 
 

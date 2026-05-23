@@ -148,7 +148,7 @@ export default function PrivacyPage() {
             >
               At 42Works, we take your privacy seriously. This policy describes
               how we collect, use, process, and protect your personal information
-              in connection with our AI and Web3 engineering services.
+              in connection with our Agentic AI engineering services.
             </motion.p>
           </div>
         </motion.div>

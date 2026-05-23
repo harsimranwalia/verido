@@ -28,7 +28,7 @@ const philosophyCards = [
     ),
     title: "Audit for Opportunity",
     description:
-      "We audit your AI and Web3 landscape to surface the highest-value opportunities to build. Compliance is built in — but the real goal is a clear roadmap to business impact.",
+      "We audit your AI landscape to surface the highest-value opportunities to build. Compliance is built in — but the real goal is a clear roadmap to business impact.",
     accent: "border-l-teal-400",
   },
   {
@@ -39,7 +39,7 @@ const philosophyCards = [
     ),
     title: "Live in 42 days",
     description:
-      "We build and launch AI & Web3 solutions fast. \"Live\" means a PoC, an MVP, or a standalone production feature — whichever delivers the most value for your business.",
+      "We build and launch Agentic AI solutions fast. \"Live\" means a PoC, an MVP, or a standalone production feature — whichever delivers the most value for your business.",
     accent: "border-l-indigo-400",
   },
   {
@@ -50,7 +50,7 @@ const philosophyCards = [
     ),
     title: "Platform-Agnostic. No Lock-ins.",
     description:
-      "Your strategy comes first. We pick only the tools that fit — a custom LLM pipeline, a DeFi protocol, or a hybrid AI-Web3 product. You own everything we build, always.",
+      "Your strategy comes first. We pick only the tools that fit — a custom LLM pipeline, an AI agent network, or a full Agentic AI product. You own everything we build, always.",
     accent: "border-l-purple-400",
   },
 ];
@@ -101,7 +101,7 @@ export function ServicesSection() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-slate-600">
-              We use audit-led discovery to surface high-impact opportunities, then build the right AI & Web3 solution to go live fast.
+              We use audit-led discovery to surface high-impact opportunities, then build the right Agentic AI solution to go live fast.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

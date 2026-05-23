@@ -77,7 +77,7 @@ export function IndustriesListingPage({ industries }) {
                 Every Industry. Every Challenge.
               </h2>
               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600">
-                We bring deep expertise across sectors, combining AI, Web3, and
+                We bring deep expertise across sectors, combining Agentic AI and
                 modern engineering to solve your most complex problems.
               </p>
             </div>
