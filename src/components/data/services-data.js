@@ -60,7 +60,7 @@ export const SERVICES_DATA = {
     ],
   },
 
-  “mvp-development”: {
+  "mvp-development": {
     slug: "mvp-development",
     badge: "AI Solutions Building",
     title: "Idea to Live\nProduct. Fast.",
@@ -72,7 +72,7 @@ export const SERVICES_DATA = {
     capabilities: [
       { title: "Product Discovery", desc: "Rapid product scoping, user research, and feature prioritization to define the right MVP scope.", icon: "search" },
       { title: "UI/UX Design", desc: "High-fidelity, user-tested designs delivered in days. We design for conversion from day one.", icon: "brain" },
-      { title: "Full-Stack Development", desc: "React, Next.js, Node, Python â€” senior engineers building clean, scalable, production-ready code.", icon: "chart" },
+      { title: "Full-Stack Development", desc: "React, Next.js, Node, Python — senior engineers building clean, scalable, production-ready code.", icon: "chart" },
       { title: "Agentic AI Integration", desc: "LLM-powered features, AI agents, and intelligent automation built into your product from the start.", icon: "shield" },
       { title: "Workflow Automation", desc: "Autonomous pipelines and AI-driven workflows that replace repetitive processes at scale.", icon: "lock" },
       { title: "Launch & Scale", desc: "CI/CD pipelines, cloud infra, monitoring, and post-launch support so you scale with confidence.", icon: "check" },
@@ -86,7 +86,7 @@ export const SERVICES_DATA = {
     ],
     useCases: [
       { title: "AI SaaS Platform", tag: "SaaS", desc: "Full-stack AI-native SaaS product shipped in 6 weeks with LLM-powered features.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&fit=crop" },
-      { title: “Agentic AI Platform”, tag: “AI”, desc: “Multi-agent AI platform with autonomous workflows, real-time orchestration, and production-grade reliability — live in 5 weeks.”, image: “https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&fit=crop” },
+      { title: "Agentic AI Platform", tag: "AI", desc: "Multi-agent AI platform with autonomous workflows, real-time orchestration, and production-grade reliability — live in 5 weeks.", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&fit=crop" },
       { title: "B2B Marketplace", tag: "Marketplace", desc: "Two-sided marketplace MVP with payments, notifications, and admin dashboard.", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&fit=crop" },
     ],
     stats: [
@@ -100,7 +100,7 @@ export const SERVICES_DATA = {
     slug: "generative-ai",
     badge: "Generative AI",
     title: "Build AI Products\nThat Actually Work.",
-    subtitle: "We design and build generative AI solutions â€” custom LLMs, fine-tuned models, multi-modal pipelines, and production-ready AI features that create real business value.",
+    subtitle: "We design and build generative AI solutions — custom LLMs, fine-tuned models, multi-modal pipelines, and production-ready AI features that create real business value.",
     heroImage: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&fit=crop&q=80",
     cta: { primary: "Start Building", secondary: "See Our Work" },
     capabilities: [
@@ -135,7 +135,7 @@ export const SERVICES_DATA = {
     slug: "ai-agents",
     badge: "AI Agents & Automation",
     title: "Agents That\nAct. Not Just Answer.",
-    subtitle: "We build multi-agent systems, autonomous pipelines, and AI-powered automation that replace entire workflows â€” not just assist them.",
+    subtitle: "We build multi-agent systems, autonomous pipelines, and AI-powered automation that replace entire workflows — not just assist them.",
     heroImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&fit=crop&q=80",
     cta: { primary: "Build My Agent", secondary: "See Examples" },
     capabilities: [
@@ -147,14 +147,14 @@ export const SERVICES_DATA = {
       { title: "Monitoring & Guardrails", desc: "Observability, rate-limiting, and safety guardrails to keep agents reliable and aligned.", icon: "search" },
     ],
     process: [
-      { step: "01", title: "Workflow Mapping", desc: "We map the exact workflow the agent needs to automate â€” tasks, decisions, tools, and edge cases." },
-      { step: "02", title: "Architecture Design", desc: "Design the agent topology â€” single agent vs. multi-agent, tool use, memory, and handoff logic." },
+      { step: "01", title: "Workflow Mapping", desc: "We map the exact workflow the agent needs to automate — tasks, decisions, tools, and edge cases." },
+      { step: "02", title: "Architecture Design", desc: "Design the agent topology — single agent vs. multi-agent, tool use, memory, and handoff logic." },
       { step: "03", title: "Build & Test", desc: "Build the agent system with comprehensive testing, including adversarial and edge-case scenarios." },
       { step: "04", title: "Safety Review", desc: "Guardrail implementation, permission scoping, and output validation before deployment." },
       { step: "05", title: "Deploy & Monitor", desc: "Production deployment with real-time monitoring, alerting, and continuous improvement loops." },
     ],
     useCases: [
-      { title: "Sales Research Agent", tag: "Sales", desc: "Autonomous agent that researches prospects, drafts outreach, and books meetings â€” 10x faster than humans.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
+      { title: "Sales Research Agent", tag: "Sales", desc: "Autonomous agent that researches prospects, drafts outreach, and books meetings — 10x faster than humans.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
       { title: "Code Review Agent", tag: "Engineering", desc: "Multi-agent system that reviews PRs, identifies bugs, suggests improvements, and runs tests automatically.", image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop" },
       { title: "Financial Analysis Agent", tag: "Finance", desc: "Agent that ingests earnings reports, news, and data feeds to generate investment summaries in real-time.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
     ],
@@ -176,7 +176,7 @@ export const SERVICES_DATA = {
     capabilities: [
       { title: "Data Engineering", desc: "Robust ETL/ELT pipelines, data lakes, and warehouses built for scale and reliability.", icon: "chart" },
       { title: "Business Intelligence", desc: "Executive dashboards, KPI tracking, and self-serve analytics that make data accessible to everyone.", icon: "search" },
-      { title: "Predictive Analytics", desc: "ML models that forecast demand, churn, pricing, and risk â€” connected directly to your data stack.", icon: "brain" },
+      { title: "Predictive Analytics", desc: "ML models that forecast demand, churn, pricing, and risk — connected directly to your data stack.", icon: "brain" },
       { title: "Real-time Streaming", desc: "Event-driven data architectures using Kafka, Flink, and streaming analytics pipelines.", icon: "shield" },
       { title: "Data Governance", desc: "Data cataloguing, lineage tracking, quality monitoring, and access control at enterprise scale.", icon: "lock" },
       { title: "AI-Powered Insights", desc: "Natural language querying, AI-generated reports, and automated anomaly detection.", icon: "check" },
@@ -204,19 +204,19 @@ export const SERVICES_DATA = {
     slug: "rag-systems",
     badge: "RAG Systems",
     title: "AI That Knows\nYour Business.",
-    subtitle: "We build production-grade Retrieval-Augmented Generation systems that ground your AI in real, accurate knowledge â€” eliminating hallucinations and making your AI instantly expert in your domain.",
+    subtitle: "We build production-grade Retrieval-Augmented Generation systems that ground your AI in real, accurate knowledge — eliminating hallucinations and making your AI instantly expert in your domain.",
     heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&fit=crop&q=80",
     cta: { primary: "Build My RAG System", secondary: "See How It Works" },
     capabilities: [
       { title: "Knowledge Base Design", desc: "Architecture of your document corpus, chunking strategy, and metadata schema for optimal retrieval.", icon: "brain" },
-      { title: "Vector Database Setup", desc: "Pinecone, Weaviate, Chroma, or pgvector â€” we select and configure the right store for your scale.", icon: "search" },
+      { title: "Vector Database Setup", desc: "Pinecone, Weaviate, Chroma, or pgvector — we select and configure the right store for your scale.", icon: "search" },
       { title: "Embedding Pipeline", desc: "Custom embedding models and preprocessing pipelines that maximize semantic search accuracy.", icon: "chart" },
       { title: "Hybrid Search", desc: "Combining dense vector search with sparse BM25 retrieval for best-of-both recall and precision.", icon: "lock" },
       { title: "Query Optimization", desc: "HyDE, query rewriting, re-ranking, and multi-hop retrieval strategies for complex questions.", icon: "shield" },
       { title: "Evaluation Framework", desc: "Automated RAG evaluation using RAGAS, faithfulness scoring, and continuous quality monitoring.", icon: "check" },
     ],
     process: [
-      { step: "01", title: "Knowledge Audit", desc: "Map all your knowledge sources â€” docs, databases, APIs â€” and assess their retrieval potential." },
+      { step: "01", title: "Knowledge Audit", desc: "Map all your knowledge sources — docs, databases, APIs — and assess their retrieval potential." },
       { step: "02", title: "Pipeline Design", desc: "Design ingestion, chunking, embedding, and retrieval architecture tailored to your use case." },
       { step: "03", title: "Build & Index", desc: "Implement the full pipeline with testing at each stage for accuracy and latency." },
       { step: "04", title: "LLM Integration", desc: "Connect the retrieval layer to your LLM with optimized prompt templates and context management." },
@@ -224,7 +224,7 @@ export const SERVICES_DATA = {
     ],
     useCases: [
       { title: "Legal Research AI", tag: "Legal", desc: "RAG system over 200k legal documents with 96% retrieval accuracy and citation tracking.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
-      { title: "Enterprise Knowledge Base", tag: "Enterprise", desc: "Internal knowledge assistant for a 5,000-person company â€” instant answers from policy docs and wikis.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
+      { title: "Enterprise Knowledge Base", tag: "Enterprise", desc: "Internal knowledge assistant for a 5,000-person company — instant answers from policy docs and wikis.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
       { title: "Product Support AI", tag: "SaaS", desc: "Customer-facing AI that answers product questions from documentation with 90% first-contact resolution.", image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&fit=crop" },
     ],
     stats: [
@@ -239,11 +239,11 @@ export const SERVICES_DATA = {
     slug: "private-llm",
     badge: "Secure Private LLM Systems",
     title: "AI Power.\nComplete Privacy.",
-    subtitle: "We deploy fully private, on-premise and VPC-hosted LLM systems so your sensitive data never leaves your infrastructure â€” without sacrificing AI capability.",
+    subtitle: "We deploy fully private, on-premise and VPC-hosted LLM systems so your sensitive data never leaves your infrastructure — without sacrificing AI capability.",
     heroImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&fit=crop&q=80",
     cta: { primary: "Deploy Private AI", secondary: "See Architecture" },
     capabilities: [
-      { title: "On-Premise Deployment", desc: "LLMs deployed entirely within your data center or private cloud â€” zero external API calls.", icon: "lock" },
+      { title: "On-Premise Deployment", desc: "LLMs deployed entirely within your data center or private cloud — zero external API calls.", icon: "lock" },
       { title: "VPC-Hosted Inference", desc: "AWS, Azure, or GCP private VPC deployments with no data leaving your cloud account.", icon: "shield" },
       { title: "Model Selection & Fine-tuning", desc: "Open-weight model selection (Llama, Mistral, Phi) and domain-specific fine-tuning.", icon: "brain" },
       { title: "Inference Optimization", desc: "Quantization, batching, and GPU optimization for cost-effective private inference at scale.", icon: "chart" },
@@ -258,8 +258,8 @@ export const SERVICES_DATA = {
       { step: "05", title: "Security Audit", desc: "Final security review, penetration testing, and compliance documentation delivery." },
     ],
     useCases: [
-      { title: "Healthcare Private AI", tag: "Healthcare", desc: "On-premise LLM for clinical documentation processing â€” fully HIPAA-compliant with zero PHI leaving hospital servers.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
-      { title: "Legal Firm AI", tag: "Legal", desc: "Private LLM deployment for a law firm â€” contract review and legal research with full data confidentiality.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
+      { title: "Healthcare Private AI", tag: "Healthcare", desc: "On-premise LLM for clinical documentation processing — fully HIPAA-compliant with zero PHI leaving hospital servers.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
+      { title: "Legal Firm AI", tag: "Legal", desc: "Private LLM deployment for a law firm — contract review and legal research with full data confidentiality.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
       { title: "Government AI System", tag: "Government", desc: "Air-gapped LLM system for a government agency processing classified documents on isolated infrastructure.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&fit=crop" },
     ],
     stats: [
@@ -274,7 +274,7 @@ export const SERVICES_DATA = {
     slug: "machine-learning",
     badge: "Machine Learning",
     title: "Models That\nLearn. Systems That Scale.",
-    subtitle: "We build and deploy custom ML models â€” from classical algorithms to deep learning â€” that solve real business problems and scale reliably in production.",
+    subtitle: "We build and deploy custom ML models — from classical algorithms to deep learning — that solve real business problems and scale reliably in production.",
     heroImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&fit=crop&q=80",
     cta: { primary: "Build My ML Model", secondary: "See Our Approach" },
     capabilities: [
@@ -305,11 +305,11 @@ export const SERVICES_DATA = {
     ],
   },
 
-  “data-engineering”: {
+  "data-engineering": {
     slug: "data-engineering",
     badge: "Data Engineering",
     title: "Pipelines That\nNever Break.",
-    subtitle: "We build robust, scalable data infrastructure â€” modern data stacks, real-time streaming pipelines, and lakehouse architectures that power your analytics and AI systems.",
+    subtitle: "We build robust, scalable data infrastructure — modern data stacks, real-time streaming pipelines, and lakehouse architectures that power your analytics and AI systems.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop&q=80",
     cta: { primary: "Build My Data Stack", secondary: "See Our Stack" },
     capabilities: [
@@ -330,7 +330,7 @@ export const SERVICES_DATA = {
     useCases: [
       { title: "Real-Time Event Pipeline", tag: "E-Commerce", desc: "Kafka-based real-time pipeline processing 50M daily events with sub-100ms latency for a retail platform.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&fit=crop" },
       { title: "Healthcare Data Lake", tag: "Healthcare", desc: "HIPAA-compliant data lakehouse for clinical research data across 30 hospital systems.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
-      { title: "FinTech Data Platform", tag: "Finance", desc: "Modern data stack replacing legacy ETL for a fintech â€” 10x faster queries, 60% cost reduction.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&fit=crop" },
+      { title: "FinTech Data Platform", tag: "Finance", desc: "Modern data stack replacing legacy ETL for a fintech — 10x faster queries, 60% cost reduction.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&fit=crop" },
     ],
     stats: [
       { value: "50+", label: "Data Platforms Built" },
@@ -344,7 +344,7 @@ export const SERVICES_DATA = {
     slug: "data-analytics",
     badge: "Data Analytics & Intelligence",
     title: "Every Decision\nBacked by Data.",
-    subtitle: "We build analytics platforms and intelligence systems that transform raw data into clear, actionable insights â€” enabling every team to make faster, smarter decisions.",
+    subtitle: "We build analytics platforms and intelligence systems that transform raw data into clear, actionable insights — enabling every team to make faster, smarter decisions.",
     heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&fit=crop&q=80",
     cta: { primary: "Start Analytics Journey", secondary: "See Examples" },
     capabilities: [
@@ -357,7 +357,7 @@ export const SERVICES_DATA = {
     ],
     process: [
       { step: "01", title: "Analytics Audit", desc: "Review current analytics tools, data quality, KPIs, and reporting gaps." },
-      { step: "02", title: "Metrics Framework", desc: "Define a unified metrics layer â€” your company's single source of truth for all KPIs." },
+      { step: "02", title: "Metrics Framework", desc: "Define a unified metrics layer — your company's single source of truth for all KPIs." },
       { step: "03", title: "Dashboard Build", desc: "Build role-specific dashboards for executives, product, marketing, and operations." },
       { step: "04", title: "Advanced Models", desc: "Layer in predictive models, experimentation frameworks, and AI-powered features." },
       { step: "05", title: "Training & Adoption", desc: "Team onboarding, documentation, and ongoing analytics support to drive data adoption." },
@@ -379,7 +379,7 @@ export const SERVICES_DATA = {
     slug: "business-intelligence",
     badge: "Business Intelligence",
     title: "Executive Clarity.\nReal-Time.",
-    subtitle: "We build BI platforms that give leadership and operations teams instant, reliable visibility into the metrics that matter â€” from revenue and margins to operational efficiency.",
+    subtitle: "We build BI platforms that give leadership and operations teams instant, reliable visibility into the metrics that matter — from revenue and margins to operational efficiency.",
     heroImage: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&fit=crop&q=80",
     cta: { primary: "Build My BI Platform", secondary: "See Demo Dashboards" },
     capabilities: [
