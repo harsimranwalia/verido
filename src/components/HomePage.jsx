@@ -55,7 +55,7 @@ const homepageSchema = {
   ]
 };
 
-export default function CiklumPage() {
+export default function HomePage() {
   const containerRef = useRef(null);
 
   useEffect(() => {

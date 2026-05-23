@@ -1,4 +1,4 @@
-import CiklumPage from "../components/CiklumPage";
+import HomePage from "../components/HomePage";
 import { generateMetadataOverride } from '../lib/metadata';
 
 export const metadata = generateMetadataOverride({
@@ -15,5 +15,5 @@ export const metadata = generateMetadataOverride({
 });
 
 export default function Home() {
-  return <CiklumPage />;
+  return <HomePage />;
 }
