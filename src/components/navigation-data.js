@@ -16,7 +16,6 @@ import {
   AutoIcon,
   TravelIcon,
   AiIcon,
-  BlockchainIcon,
   DataIcon,
   EngineeringIcon,
   ExperienceIcon,
@@ -71,17 +70,6 @@ export const SERVICE_GROUPS = [
     ],
   },
   {
-    label: "Web3 & Blockchain",
-    icon: BlockchainIcon,
-    services: [
-      { label: "Smart Contract Audits", href: "/services/smart-contracts" },
-      { label: "dApp Development", href: "/services/dapp-development" },
-      { label: "RWA & Tokenization", href: "/services/rwa-tokenization" },
-      { label: "DeFi Protocols", href: "/services/defi-protocols" },
-      { label: "VARA / MiCA Compliance", href: "/services/vara-mica" },
-    ],
-  },
-  {
     label: "Data and Intelligence",
     icon: DataIcon,
     services: [
@@ -97,7 +85,7 @@ export const SERVICE_GROUPS = [
       { label: "Full-Stack Development", href: "/services/full-stack-development" },
       { label: "Mobile App Development", href: "/services/mobile-apps" },
       { label: "API Development", href: "/services/api-development" },
-      { label: "AI & Web3 Solutions Building", href: "/services/mvp-development" },
+      { label: "AI Solutions Building", href: "/services/mvp-development" },
       { label: "SaaS Development", href: "/services/saas-development" },
       { label: "Rapid MVP Development", href: "/services/rapid-mvp" },
     ],

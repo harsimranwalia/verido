@@ -2,7 +2,7 @@ import Link from "next/link";
 import { THOUGHT_LEADERSHIP_ARTICLES } from "../../components/data/thought-leadership-data";
 
 export const metadata = {
-  title: "Thought Leadership — 42Works",
+  title: "Thought Leadership — Verido",
   description: "Perspectives on AI, cloud modernization, and digital operating models.",
 };
 

@@ -60,7 +60,7 @@ const sections = [
   {
     title: "Your Rights",
     content:
-      "Depending on your jurisdiction, you may have the right to access, correct, update, or delete your personal information; to object to or restrict processing; to data portability; and to withdraw consent at any time. To exercise these rights, please contact us at privacy@42works.com. We will respond to your request within 30 days.",
+      "Depending on your jurisdiction, you may have the right to access, correct, update, or delete your personal information; to object to or restrict processing; to data portability; and to withdraw consent at any time. To exercise these rights, please contact us at privacy@verido.co. We will respond to your request within 30 days.",
   },
   {
     title: "International Transfers",
@@ -75,7 +75,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection Officer at privacy@42works.com or write to us at: 42Works, Attn: Privacy, [Your Office Address]. We are committed to resolving your privacy concerns promptly and transparently.",
+      "If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection Officer at privacy@verido.co or write to us at: Verido, Attn: Privacy, [Your Office Address]. We are committed to resolving your privacy concerns promptly and transparently.",
   },
 ];
 
@@ -146,9 +146,9 @@ export default function PrivacyPage() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="max-w-xl text-base leading-relaxed text-slate-600"
             >
-              At 42Works, we take your privacy seriously. This policy describes
+              At Verido, we take your privacy seriously. This policy describes
               how we collect, use, process, and protect your personal information
-              in connection with our AI and Web3 engineering services.
+              in connection with our Agentic AI engineering services.
             </motion.p>
           </div>
         </motion.div>
@@ -195,10 +195,10 @@ export default function PrivacyPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="mailto:privacy@42works.com"
+                href="mailto:privacy@verido.co"
                 className="group inline-flex items-center gap-2 rounded-xl bg-white px-10 py-4 text-base font-bold text-indigo-700 shadow-xl transition hover:bg-indigo-50"
               >
-                privacy@42works.com
+                privacy@verido.co
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"
                   fill="none"

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const service = SERVICES_DATA[slug];
   if (!service) return {};
   return {
-    title: `${service.badge} — 42Works`,
+    title: `${service.badge} — Verido`,
     description: service.subtitle,
   };
 }

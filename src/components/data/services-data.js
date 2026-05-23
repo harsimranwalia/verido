@@ -60,58 +60,21 @@ export const SERVICES_DATA = {
     ],
   },
 
-  "web3-blockchain": {
-    slug: "web3-blockchain",
-    badge: "Web3 & Blockchain",
-    title: "Secure Your\nWeb3 Stack.",
-    subtitle:
-      "From smart contract audits to DeFi protocol reviews and VARA/MiCA compliance â€” we help Web3 teams ship with confidence and regulatory clarity.",
-    heroImage:
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&fit=crop&q=80",
-    cta: { primary: "Get a Web3 Audit", secondary: "See How It Works" },
-    capabilities: [
-      { title: "Smart Contract Audit", desc: "Line-by-line review of Solidity, Rust, and Move contracts for vulnerabilities, logic errors, and gas inefficiencies.", icon: "shield" },
-      { title: "DeFi Protocol Review", desc: "Security review of AMMs, lending protocols, vaults, and cross-chain bridges.", icon: "chart" },
-      { title: "VARA / MiCA Compliance", desc: "Regulatory compliance assessment for virtual asset businesses under UAE VARA and EU MiCA frameworks.", icon: "check" },
-      { title: "KYT / KYC Integration", desc: "Audit of on-chain transaction monitoring, KYT feeds, and KYC workflow implementations.", icon: "lock" },
-      { title: "RWA Tokenization", desc: "Technical review of real-world asset tokenization platforms, legal wrappers, and token mechanics.", icon: "brain" },
-      { title: "dApp Security", desc: "Frontend and backend security review of decentralised applications, wallet integrations, and APIs.", icon: "search" },
-    ],
-    process: [
-      { step: "01", title: "Scope Definition", desc: "We define the audit scope â€” contracts, protocols, integrations, and compliance requirements." },
-      { step: "02", title: "Static Analysis", desc: "Automated and manual static analysis of all smart contract code and protocol logic." },
-      { step: "03", title: "Dynamic Testing", desc: "Fuzz testing, invariant testing, and economic attack simulation on forked environments." },
-      { step: "04", title: "Compliance Review", desc: "Mapping your protocol against VARA, MiCA, FATF Travel Rule, and applicable jurisdictions." },
-      { step: "05", title: "Final Report", desc: "Detailed findings report with severity ratings, PoC exploits, and a remediation checklist." },
-    ],
-    useCases: [
-      { title: "DeFi Protocol Launch", tag: "DeFi", desc: "Pre-launch smart contract audit for a multi-chain DeFi lending protocol.", image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&fit=crop" },
-      { title: "RWA Tokenization Platform", tag: "RWA", desc: "End-to-end technical and compliance review of a real estate tokenization platform.", image: "https://images.unsplash.com/photo-1560472355-536de3962603?w=600&fit=crop" },
-      { title: "Crypto Exchange Compliance", tag: "Exchange", desc: "VARA and MiCA readiness audit for a regulated cryptocurrency exchange launch.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "80+", label: "Web3 Audits Done" },
-      { value: "3 wk", label: "Avg. Turnaround" },
-      { value: "6", label: "Jurisdictions Covered" },
-      { value: "$2B+", label: "Protocol TVL Secured" },
-    ],
-  },
-
   "mvp-development": {
     slug: "mvp-development",
-    badge: "MVP Development",
+    badge: "AI Solutions Building",
     title: "Idea to Live\nProduct. Fast.",
     subtitle:
-      "We build production-grade MVPs in weeks, not months. Our AI-assisted development process, senior engineers, and battle-tested playbooks cut time-to-market dramatically.",
+      "We build production-grade AI-powered products in weeks, not months. Our Agentic AI development process, senior engineers, and battle-tested playbooks cut time-to-market dramatically.",
     heroImage:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&fit=crop&q=80",
     cta: { primary: "Start My MVP", secondary: "See Our Process" },
     capabilities: [
       { title: "Product Discovery", desc: "Rapid product scoping, user research, and feature prioritization to define the right MVP scope.", icon: "search" },
       { title: "UI/UX Design", desc: "High-fidelity, user-tested designs delivered in days. We design for conversion from day one.", icon: "brain" },
-      { title: "Full-Stack Development", desc: "React, Next.js, Node, Python â€” senior engineers building clean, scalable, production-ready code.", icon: "chart" },
-      { title: "AI Feature Integration", desc: "LLM-powered features, AI agents, and intelligent automation built into your product from the start.", icon: "shield" },
-      { title: "Web3 Integration", desc: "Wallet connections, smart contract interactions, and on-chain features integrated seamlessly.", icon: "lock" },
+      { title: "Full-Stack Development", desc: "React, Next.js, Node, Python — senior engineers building clean, scalable, production-ready code.", icon: "chart" },
+      { title: "Agentic AI Integration", desc: "LLM-powered features, AI agents, and intelligent automation built into your product from the start.", icon: "shield" },
+      { title: "Workflow Automation", desc: "Autonomous pipelines and AI-driven workflows that replace repetitive processes at scale.", icon: "lock" },
       { title: "Launch & Scale", desc: "CI/CD pipelines, cloud infra, monitoring, and post-launch support so you scale with confidence.", icon: "check" },
     ],
     process: [
@@ -123,7 +86,7 @@ export const SERVICES_DATA = {
     ],
     useCases: [
       { title: "AI SaaS Platform", tag: "SaaS", desc: "Full-stack AI-native SaaS product shipped in 6 weeks with LLM-powered features.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&fit=crop" },
-      { title: "Web3 dApp", tag: "Web3", desc: "DeFi application with wallet integration, smart contracts, and real-time data â€” live in 5 weeks.", image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&fit=crop" },
+      { title: "Agentic AI Platform", tag: "AI", desc: "Multi-agent AI platform with autonomous workflows, real-time orchestration, and production-grade reliability — live in 5 weeks.", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&fit=crop" },
       { title: "B2B Marketplace", tag: "Marketplace", desc: "Two-sided marketplace MVP with payments, notifications, and admin dashboard.", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&fit=crop" },
     ],
     stats: [
@@ -137,7 +100,7 @@ export const SERVICES_DATA = {
     slug: "generative-ai",
     badge: "Generative AI",
     title: "Build AI Products\nThat Actually Work.",
-    subtitle: "We design and build generative AI solutions â€” custom LLMs, fine-tuned models, multi-modal pipelines, and production-ready AI features that create real business value.",
+    subtitle: "We design and build generative AI solutions — custom LLMs, fine-tuned models, multi-modal pipelines, and production-ready AI features that create real business value.",
     heroImage: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&fit=crop&q=80",
     cta: { primary: "Start Building", secondary: "See Our Work" },
     capabilities: [
@@ -172,7 +135,7 @@ export const SERVICES_DATA = {
     slug: "ai-agents",
     badge: "AI Agents & Automation",
     title: "Agents That\nAct. Not Just Answer.",
-    subtitle: "We build multi-agent systems, autonomous pipelines, and AI-powered automation that replace entire workflows â€” not just assist them.",
+    subtitle: "We build multi-agent systems, autonomous pipelines, and AI-powered automation that replace entire workflows — not just assist them.",
     heroImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&fit=crop&q=80",
     cta: { primary: "Build My Agent", secondary: "See Examples" },
     capabilities: [
@@ -184,14 +147,14 @@ export const SERVICES_DATA = {
       { title: "Monitoring & Guardrails", desc: "Observability, rate-limiting, and safety guardrails to keep agents reliable and aligned.", icon: "search" },
     ],
     process: [
-      { step: "01", title: "Workflow Mapping", desc: "We map the exact workflow the agent needs to automate â€” tasks, decisions, tools, and edge cases." },
-      { step: "02", title: "Architecture Design", desc: "Design the agent topology â€” single agent vs. multi-agent, tool use, memory, and handoff logic." },
+      { step: "01", title: "Workflow Mapping", desc: "We map the exact workflow the agent needs to automate — tasks, decisions, tools, and edge cases." },
+      { step: "02", title: "Architecture Design", desc: "Design the agent topology — single agent vs. multi-agent, tool use, memory, and handoff logic." },
       { step: "03", title: "Build & Test", desc: "Build the agent system with comprehensive testing, including adversarial and edge-case scenarios." },
       { step: "04", title: "Safety Review", desc: "Guardrail implementation, permission scoping, and output validation before deployment." },
       { step: "05", title: "Deploy & Monitor", desc: "Production deployment with real-time monitoring, alerting, and continuous improvement loops." },
     ],
     useCases: [
-      { title: "Sales Research Agent", tag: "Sales", desc: "Autonomous agent that researches prospects, drafts outreach, and books meetings â€” 10x faster than humans.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
+      { title: "Sales Research Agent", tag: "Sales", desc: "Autonomous agent that researches prospects, drafts outreach, and books meetings — 10x faster than humans.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
       { title: "Code Review Agent", tag: "Engineering", desc: "Multi-agent system that reviews PRs, identifies bugs, suggests improvements, and runs tests automatically.", image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop" },
       { title: "Financial Analysis Agent", tag: "Finance", desc: "Agent that ingests earnings reports, news, and data feeds to generate investment summaries in real-time.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
     ],
@@ -213,7 +176,7 @@ export const SERVICES_DATA = {
     capabilities: [
       { title: "Data Engineering", desc: "Robust ETL/ELT pipelines, data lakes, and warehouses built for scale and reliability.", icon: "chart" },
       { title: "Business Intelligence", desc: "Executive dashboards, KPI tracking, and self-serve analytics that make data accessible to everyone.", icon: "search" },
-      { title: "Predictive Analytics", desc: "ML models that forecast demand, churn, pricing, and risk â€” connected directly to your data stack.", icon: "brain" },
+      { title: "Predictive Analytics", desc: "ML models that forecast demand, churn, pricing, and risk — connected directly to your data stack.", icon: "brain" },
       { title: "Real-time Streaming", desc: "Event-driven data architectures using Kafka, Flink, and streaming analytics pipelines.", icon: "shield" },
       { title: "Data Governance", desc: "Data cataloguing, lineage tracking, quality monitoring, and access control at enterprise scale.", icon: "lock" },
       { title: "AI-Powered Insights", desc: "Natural language querying, AI-generated reports, and automated anomaly detection.", icon: "check" },
@@ -241,19 +204,19 @@ export const SERVICES_DATA = {
     slug: "rag-systems",
     badge: "RAG Systems",
     title: "AI That Knows\nYour Business.",
-    subtitle: "We build production-grade Retrieval-Augmented Generation systems that ground your AI in real, accurate knowledge â€” eliminating hallucinations and making your AI instantly expert in your domain.",
+    subtitle: "We build production-grade Retrieval-Augmented Generation systems that ground your AI in real, accurate knowledge — eliminating hallucinations and making your AI instantly expert in your domain.",
     heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&fit=crop&q=80",
     cta: { primary: "Build My RAG System", secondary: "See How It Works" },
     capabilities: [
       { title: "Knowledge Base Design", desc: "Architecture of your document corpus, chunking strategy, and metadata schema for optimal retrieval.", icon: "brain" },
-      { title: "Vector Database Setup", desc: "Pinecone, Weaviate, Chroma, or pgvector â€” we select and configure the right store for your scale.", icon: "search" },
+      { title: "Vector Database Setup", desc: "Pinecone, Weaviate, Chroma, or pgvector — we select and configure the right store for your scale.", icon: "search" },
       { title: "Embedding Pipeline", desc: "Custom embedding models and preprocessing pipelines that maximize semantic search accuracy.", icon: "chart" },
       { title: "Hybrid Search", desc: "Combining dense vector search with sparse BM25 retrieval for best-of-both recall and precision.", icon: "lock" },
       { title: "Query Optimization", desc: "HyDE, query rewriting, re-ranking, and multi-hop retrieval strategies for complex questions.", icon: "shield" },
       { title: "Evaluation Framework", desc: "Automated RAG evaluation using RAGAS, faithfulness scoring, and continuous quality monitoring.", icon: "check" },
     ],
     process: [
-      { step: "01", title: "Knowledge Audit", desc: "Map all your knowledge sources â€” docs, databases, APIs â€” and assess their retrieval potential." },
+      { step: "01", title: "Knowledge Audit", desc: "Map all your knowledge sources — docs, databases, APIs — and assess their retrieval potential." },
       { step: "02", title: "Pipeline Design", desc: "Design ingestion, chunking, embedding, and retrieval architecture tailored to your use case." },
       { step: "03", title: "Build & Index", desc: "Implement the full pipeline with testing at each stage for accuracy and latency." },
       { step: "04", title: "LLM Integration", desc: "Connect the retrieval layer to your LLM with optimized prompt templates and context management." },
@@ -261,7 +224,7 @@ export const SERVICES_DATA = {
     ],
     useCases: [
       { title: "Legal Research AI", tag: "Legal", desc: "RAG system over 200k legal documents with 96% retrieval accuracy and citation tracking.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
-      { title: "Enterprise Knowledge Base", tag: "Enterprise", desc: "Internal knowledge assistant for a 5,000-person company â€” instant answers from policy docs and wikis.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
+      { title: "Enterprise Knowledge Base", tag: "Enterprise", desc: "Internal knowledge assistant for a 5,000-person company — instant answers from policy docs and wikis.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
       { title: "Product Support AI", tag: "SaaS", desc: "Customer-facing AI that answers product questions from documentation with 90% first-contact resolution.", image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&fit=crop" },
     ],
     stats: [
@@ -276,11 +239,11 @@ export const SERVICES_DATA = {
     slug: "private-llm",
     badge: "Secure Private LLM Systems",
     title: "AI Power.\nComplete Privacy.",
-    subtitle: "We deploy fully private, on-premise and VPC-hosted LLM systems so your sensitive data never leaves your infrastructure â€” without sacrificing AI capability.",
+    subtitle: "We deploy fully private, on-premise and VPC-hosted LLM systems so your sensitive data never leaves your infrastructure — without sacrificing AI capability.",
     heroImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&fit=crop&q=80",
     cta: { primary: "Deploy Private AI", secondary: "See Architecture" },
     capabilities: [
-      { title: "On-Premise Deployment", desc: "LLMs deployed entirely within your data center or private cloud â€” zero external API calls.", icon: "lock" },
+      { title: "On-Premise Deployment", desc: "LLMs deployed entirely within your data center or private cloud — zero external API calls.", icon: "lock" },
       { title: "VPC-Hosted Inference", desc: "AWS, Azure, or GCP private VPC deployments with no data leaving your cloud account.", icon: "shield" },
       { title: "Model Selection & Fine-tuning", desc: "Open-weight model selection (Llama, Mistral, Phi) and domain-specific fine-tuning.", icon: "brain" },
       { title: "Inference Optimization", desc: "Quantization, batching, and GPU optimization for cost-effective private inference at scale.", icon: "chart" },
@@ -295,8 +258,8 @@ export const SERVICES_DATA = {
       { step: "05", title: "Security Audit", desc: "Final security review, penetration testing, and compliance documentation delivery." },
     ],
     useCases: [
-      { title: "Healthcare Private AI", tag: "Healthcare", desc: "On-premise LLM for clinical documentation processing â€” fully HIPAA-compliant with zero PHI leaving hospital servers.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
-      { title: "Legal Firm AI", tag: "Legal", desc: "Private LLM deployment for a law firm â€” contract review and legal research with full data confidentiality.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
+      { title: "Healthcare Private AI", tag: "Healthcare", desc: "On-premise LLM for clinical documentation processing — fully HIPAA-compliant with zero PHI leaving hospital servers.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
+      { title: "Legal Firm AI", tag: "Legal", desc: "Private LLM deployment for a law firm — contract review and legal research with full data confidentiality.", image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&fit=crop" },
       { title: "Government AI System", tag: "Government", desc: "Air-gapped LLM system for a government agency processing classified documents on isolated infrastructure.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&fit=crop" },
     ],
     stats: [
@@ -311,7 +274,7 @@ export const SERVICES_DATA = {
     slug: "machine-learning",
     badge: "Machine Learning",
     title: "Models That\nLearn. Systems That Scale.",
-    subtitle: "We build and deploy custom ML models â€” from classical algorithms to deep learning â€” that solve real business problems and scale reliably in production.",
+    subtitle: "We build and deploy custom ML models — from classical algorithms to deep learning — that solve real business problems and scale reliably in production.",
     heroImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&fit=crop&q=80",
     cta: { primary: "Build My ML Model", secondary: "See Our Approach" },
     capabilities: [
@@ -342,185 +305,11 @@ export const SERVICES_DATA = {
     ],
   },
 
-  "smart-contracts": {
-    slug: "smart-contracts",
-    badge: "Smart Contract Audits",
-    title: "Secure Every Line.\nProtect Every Dollar.",
-    subtitle: "Our smart contract security experts perform exhaustive code reviews, formal verification, and economic attack simulations â€” protecting your protocol before a single user interacts with it.",
-    heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&fit=crop&q=80",
-    cta: { primary: "Audit My Contract", secondary: "See Our Methodology" },
-    capabilities: [
-      { title: "Manual Code Review", desc: "Line-by-line expert review of Solidity, Rust, Move, and Vyper contracts for logic flaws and vulnerabilities.", icon: "search" },
-      { title: "Automated Analysis", desc: "Slither, Mythril, Echidna, and custom static analysis tools for systematic vulnerability detection.", icon: "chart" },
-      { title: "Fuzzing & Invariant Testing", desc: "Property-based fuzzing and invariant testing to find edge cases that manual review misses.", icon: "shield" },
-      { title: "Economic Attack Simulation", desc: "Flash loan attacks, oracle manipulation, MEV extraction, and governance attack simulations.", icon: "brain" },
-      { title: "Formal Verification", desc: "Mathematical proofs of critical contract properties using Certora Prover and K-framework.", icon: "lock" },
-      { title: "Upgrade Safety Review", desc: "Proxy pattern audits, storage layout verification, and upgrade logic safety checks.", icon: "check" },
-    ],
-    process: [
-      { step: "01", title: "Scope & Kickoff", desc: "Define audit scope, review documentation, understand protocol economics and trust assumptions." },
-      { step: "02", title: "Automated Scanning", desc: "Run comprehensive automated tools and triage findings for manual review prioritization." },
-      { step: "03", title: "Manual Deep Review", desc: "Senior auditors perform thorough manual review of all in-scope code and logic paths." },
-      { step: "04", title: "PoC Development", desc: "Develop proof-of-concept exploits for all critical and high findings to confirm exploitability." },
-      { step: "05", title: "Report & Remediation", desc: "Detailed report delivered, followed by developer Q&A and a re-audit of all fixes." },
-    ],
-    useCases: [
-      { title: "DeFi Lending Protocol", tag: "DeFi", desc: "Pre-launch audit uncovering 2 critical and 7 high findings on a $200M TVL lending protocol.", image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&fit=crop" },
-      { title: "NFT Marketplace", tag: "NFT", desc: "Full audit of a high-volume NFT marketplace contract suite including royalty logic and marketplace fees.", image: "https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=600&fit=crop" },
-      { title: "Cross-Chain Bridge", tag: "Infrastructure", desc: "Security audit of a cross-chain bridge securing $500M in bridged assets across 6 EVM chains.", image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "80+", label: "Contracts Audited" },
-      { value: "$2B+", label: "TVL Secured" },
-      { value: "500+", label: "Vulnerabilities Found" },
-      { value: "3 wk", label: "Avg. Audit Duration" },
-    ],
-  },
-
-  "dapp-development": {
-    slug: "dapp-development",
-    badge: "dApp Development",
-    title: "Decentralised Apps\nBuilt to Last.",
-    subtitle: "We build production-grade decentralised applications â€” from DeFi protocols to NFT platforms and Web3 SaaS â€” with a focus on security, UX, and long-term maintainability.",
-    heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&fit=crop&q=80",
-    cta: { primary: "Build My dApp", secondary: "See Our Work" },
-    capabilities: [
-      { title: "Smart Contract Development", desc: "Secure, gas-optimized contracts in Solidity, Rust, and Move with comprehensive test suites.", icon: "shield" },
-      { title: "Frontend Development", desc: "React and Next.js dApp frontends with wagmi, ethers.js, and wallet connector integrations.", icon: "brain" },
-      { title: "Wallet Integration", desc: "MetaMask, WalletConnect, Coinbase Wallet, and mobile wallet deep links across all major chains.", icon: "lock" },
-      { title: "Subgraph & Indexing", desc: "The Graph protocol subgraphs and custom indexers for fast, reliable on-chain data queries.", icon: "search" },
-      { title: "Multi-chain Deployment", desc: "Deploy across Ethereum, Base, Arbitrum, Polygon, Solana, and custom L2s.", icon: "chart" },
-      { title: "IPFS & Decentralised Storage", desc: "IPFS, Arweave, and Filecoin integrations for decentralised metadata and file storage.", icon: "check" },
-    ],
-    process: [
-      { step: "01", title: "Protocol Design", desc: "Define tokenomics, contract architecture, user flows, and security model." },
-      { step: "02", title: "Smart Contract Build", desc: "Develop and test contracts with Hardhat/Foundry â€” full unit, integration, and fuzz testing." },
-      { step: "03", title: "Frontend Build", desc: "Build the dApp frontend with wallet integration, real-time on-chain data, and responsive design." },
-      { step: "04", title: "Audit & Security Review", desc: "Internal security review and coordination with external auditors before mainnet deployment." },
-      { step: "05", title: "Launch & Monitor", desc: "Mainnet deployment, monitoring setup, and post-launch incident response planning." },
-    ],
-    useCases: [
-      { title: "DeFi Yield Platform", tag: "DeFi", desc: "Full-stack yield aggregator with auto-compounding vaults, built and audited in 10 weeks.", image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&fit=crop" },
-      { title: "NFT Launchpad", tag: "NFT", desc: "End-to-end NFT minting platform with allowlist management, reveal mechanics, and secondary royalties.", image: "https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=600&fit=crop" },
-      { title: "DAO Governance Platform", tag: "DAO", desc: "On-chain governance dApp with proposal creation, voting, timelock execution, and treasury management.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "40+", label: "dApps Launched" },
-      { value: "10", label: "Chains Supported" },
-      { value: "$500M+", label: "Protocol Value Launched" },
-      { value: "8 wk", label: "Avg. Build Time" },
-    ],
-  },
-  "rwa-tokenization": {
-    slug: "rwa-tokenization",
-    badge: "RWA & Tokenization",
-    title: "Bring Real Assets\nOn-Chain.",
-    subtitle: "We help asset managers, real estate firms, and financial institutions tokenize real-world assets â€” combining blockchain transparency with rigorous legal and technical frameworks.",
-    heroImage: "https://images.unsplash.com/photo-1560472355-536de3962603?w=1200&fit=crop&q=80",
-    cta: { primary: "Tokenize My Asset", secondary: "See Our Approach" },
-    capabilities: [
-      { title: "Asset Structuring", desc: "Legal and technical structuring of tokenized equity, debt, real estate, and commodity instruments.", icon: "brain" },
-      { title: "Smart Contract Architecture", desc: "ERC-3643, ERC-1400, and custom token standards for compliant, permissioned security tokens.", icon: "shield" },
-      { title: "Investor Onboarding", desc: "KYC/AML-integrated investor whitelisting, transfer restrictions, and permissioned wallet management.", icon: "check" },
-      { title: "Cap Table Management", desc: "On-chain cap table systems with automated dividend distribution and secondary market controls.", icon: "chart" },
-      { title: "Custody Integration", desc: "Integration with institutional custodians and qualified custody providers for regulated environments.", icon: "lock" },
-      { title: "Marketplace Development", desc: "Primary issuance platforms and regulated secondary market infrastructure for tokenized assets.", icon: "search" },
-    ],
-    process: [
-      { step: "01", title: "Asset & Legal Review", desc: "Assess the asset, jurisdiction, investor base, and applicable securities regulations." },
-      { step: "02", title: "Token Design", desc: "Design token economics, transfer restrictions, rights encoding, and lifecycle events." },
-      { step: "03", title: "Smart Contract Development", desc: "Build compliant token contracts with full test coverage and security review." },
-      { step: "04", title: "Platform Build", desc: "Develop the issuance and investor management platform with KYC/AML integration." },
-      { step: "05", title: "Audit & Launch", desc: "Smart contract audit, regulatory sign-off support, and primary issuance launch." },
-    ],
-    useCases: [
-      { title: "Real Estate Tokenization", tag: "Real Estate", desc: "Tokenized a $50M commercial property portfolio, enabling fractional investment with automated rental distributions.", image: "https://images.unsplash.com/photo-1560472355-536de3962603?w=600&fit=crop" },
-      { title: "Private Credit Token", tag: "Credit", desc: "On-chain private credit instrument with automated coupon payments and investor KYC enforcement.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
-      { title: "Commodity-Backed Token", tag: "Commodities", desc: "Gold-backed stablecoin with real-time reserve attestation and regulatory reporting automation.", image: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "$200M+", label: "Assets Tokenized" },
-      { value: "15+", label: "RWA Projects" },
-      { value: "8", label: "Jurisdictions" },
-      { value: "100%", label: "Audit Pass Rate" },
-    ],
-  },
-
-  "defi-protocols": {
-    slug: "defi-protocols",
-    badge: "DeFi Protocols",
-    title: "Build the\nFuture of Finance.",
-    subtitle: "We design, build, and audit DeFi protocols â€” AMMs, lending markets, yield vaults, and cross-chain bridges â€” with security and capital efficiency at the core.",
-    heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&fit=crop&q=80",
-    cta: { primary: "Build My Protocol", secondary: "See Our Work" },
-    capabilities: [
-      { title: "AMM & DEX Design", desc: "Automated market maker design with concentrated liquidity, custom curves, and MEV protection.", icon: "chart" },
-      { title: "Lending & Borrowing", desc: "Collateralized lending protocols with liquidation engines, oracle integration, and risk parameters.", icon: "brain" },
-      { title: "Yield Vaults & Strategies", desc: "ERC-4626 compliant yield vaults with auto-compounding strategies and risk-adjusted returns.", icon: "check" },
-      { title: "Cross-Chain Bridges", desc: "Secure bridging infrastructure with optimistic and ZK proof verification mechanisms.", icon: "shield" },
-      { title: "Oracle Integration", desc: "Chainlink, Pyth, and TWAP oracle integration with manipulation resistance and fallback logic.", icon: "search" },
-      { title: "Governance & Tokenomics", desc: "DAO governance design, vote-escrowed tokens, emissions scheduling, and treasury management.", icon: "lock" },
-    ],
-    process: [
-      { step: "01", title: "Protocol Design", desc: "Define the protocol mechanics, tokenomics, risk parameters, and governance structure." },
-      { step: "02", title: "Economic Modeling", desc: "Simulation and stress-testing of protocol economics under various market conditions." },
-      { step: "03", title: "Smart Contract Build", desc: "Implement protocol contracts with comprehensive Foundry test suites and invariant tests." },
-      { step: "04", title: "Security Audit", desc: "Internal and external audit coordination with economic attack simulations." },
-      { step: "05", title: "Deployment & Monitoring", desc: "Mainnet deployment with real-time TVL and risk monitoring dashboards." },
-    ],
-    useCases: [
-      { title: "Multi-Chain DEX", tag: "DEX", desc: "Built a concentrated liquidity AMM deployed on 5 EVM chains with $80M peak TVL.", image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&fit=crop" },
-      { title: "Lending Protocol", tag: "Lending", desc: "Cross-collateral lending market with isolated lending pools and automated risk management.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
-      { title: "Yield Aggregator", tag: "Yield", desc: "Multi-strategy yield aggregator auto-routing liquidity across 12 protocols for optimal APY.", image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "25+", label: "DeFi Protocols Built" },
-      { value: "$500M+", label: "Peak TVL Managed" },
-      { value: "10", label: "Chains Deployed" },
-      { value: "0", label: "Critical Exploits Post-Audit" },
-    ],
-  },
-
-  "vara-mica": {
-    slug: "vara-mica",
-    badge: "VARA / MiCA Compliance",
-    title: "Compliant Web3.\nRegulated Markets.",
-    subtitle: "We help crypto businesses navigate VARA (UAE), MiCA (EU), and global VASP frameworks â€” from gap analysis to full compliance implementation and regulatory liaison support.",
-    heroImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&fit=crop&q=80",
-    cta: { primary: "Get Compliance Review", secondary: "See Our Framework" },
-    capabilities: [
-      { title: "VARA Readiness", desc: "Full gap analysis and remediation roadmap for UAE VARA licensing across all VASP categories.", icon: "check" },
-      { title: "MiCA Implementation", desc: "EU MiCA compliance for CASPs, EMTs, ARTs, and crypto-asset issuers with technical documentation.", icon: "shield" },
-      { title: "FATF Travel Rule", desc: "Travel Rule compliance implementation with TRUST, TRISA, and OpenVASP protocol integration.", icon: "lock" },
-      { title: "AML/KYC Program Design", desc: "Crypto-native AML policies, KYC workflows, transaction monitoring, and SAR procedures.", icon: "brain" },
-      { title: "Whitepaper & Disclosure", desc: "MiCA-compliant crypto-asset whitepapers and investor disclosure documentation.", icon: "search" },
-      { title: "Regulatory Liaison", desc: "Regulatory communication support, application preparation, and ongoing compliance monitoring.", icon: "chart" },
-    ],
-    process: [
-      { step: "01", title: "Regulatory Mapping", desc: "Identify applicable jurisdictions, licensing categories, and compliance obligations." },
-      { step: "02", title: "Gap Analysis", desc: "Assess current state against regulatory requirements and prioritize remediation items." },
-      { step: "03", title: "Policy & Documentation", desc: "Draft AML policies, whitepapers, disclosures, and internal compliance procedures." },
-      { step: "04", title: "Technical Implementation", desc: "Implement Travel Rule, transaction monitoring, KYC, and audit logging systems." },
-      { step: "05", title: "Application Support", desc: "Prepare and support regulatory license applications with ongoing compliance advisory." },
-    ],
-    useCases: [
-      { title: "VARA License Preparation", tag: "VARA", desc: "End-to-end VARA readiness for a Dubai-based exchange â€” gap analysis through license submission in 12 weeks.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" },
-      { title: "MiCA CASP Compliance", tag: "MiCA", desc: "MiCA compliance implementation for a European crypto brokerage covering CASP and ART obligations.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&fit=crop" },
-      { title: "Travel Rule Integration", tag: "Travel Rule", desc: "TRISA Travel Rule implementation for a multi-jurisdictional VASP with 50+ counterparty integrations.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&fit=crop" },
-    ],
-    stats: [
-      { value: "30+", label: "Compliance Projects" },
-      { value: "6", label: "Jurisdictions Covered" },
-      { value: "100%", label: "License Success Rate" },
-      { value: "12 wk", label: "Avg. VARA Readiness" },
-    ],
-  },
-
   "data-engineering": {
     slug: "data-engineering",
     badge: "Data Engineering",
     title: "Pipelines That\nNever Break.",
-    subtitle: "We build robust, scalable data infrastructure â€” modern data stacks, real-time streaming pipelines, and lakehouse architectures that power your analytics and AI systems.",
+    subtitle: "We build robust, scalable data infrastructure — modern data stacks, real-time streaming pipelines, and lakehouse architectures that power your analytics and AI systems.",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop&q=80",
     cta: { primary: "Build My Data Stack", secondary: "See Our Stack" },
     capabilities: [
@@ -541,7 +330,7 @@ export const SERVICES_DATA = {
     useCases: [
       { title: "Real-Time Event Pipeline", tag: "E-Commerce", desc: "Kafka-based real-time pipeline processing 50M daily events with sub-100ms latency for a retail platform.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&fit=crop" },
       { title: "Healthcare Data Lake", tag: "Healthcare", desc: "HIPAA-compliant data lakehouse for clinical research data across 30 hospital systems.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" },
-      { title: "FinTech Data Platform", tag: "Finance", desc: "Modern data stack replacing legacy ETL for a fintech â€” 10x faster queries, 60% cost reduction.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&fit=crop" },
+      { title: "FinTech Data Platform", tag: "Finance", desc: "Modern data stack replacing legacy ETL for a fintech — 10x faster queries, 60% cost reduction.", image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&fit=crop" },
     ],
     stats: [
       { value: "50+", label: "Data Platforms Built" },
@@ -555,7 +344,7 @@ export const SERVICES_DATA = {
     slug: "data-analytics",
     badge: "Data Analytics & Intelligence",
     title: "Every Decision\nBacked by Data.",
-    subtitle: "We build analytics platforms and intelligence systems that transform raw data into clear, actionable insights â€” enabling every team to make faster, smarter decisions.",
+    subtitle: "We build analytics platforms and intelligence systems that transform raw data into clear, actionable insights — enabling every team to make faster, smarter decisions.",
     heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&fit=crop&q=80",
     cta: { primary: "Start Analytics Journey", secondary: "See Examples" },
     capabilities: [
@@ -568,7 +357,7 @@ export const SERVICES_DATA = {
     ],
     process: [
       { step: "01", title: "Analytics Audit", desc: "Review current analytics tools, data quality, KPIs, and reporting gaps." },
-      { step: "02", title: "Metrics Framework", desc: "Define a unified metrics layer â€” your company's single source of truth for all KPIs." },
+      { step: "02", title: "Metrics Framework", desc: "Define a unified metrics layer — your company's single source of truth for all KPIs." },
       { step: "03", title: "Dashboard Build", desc: "Build role-specific dashboards for executives, product, marketing, and operations." },
       { step: "04", title: "Advanced Models", desc: "Layer in predictive models, experimentation frameworks, and AI-powered features." },
       { step: "05", title: "Training & Adoption", desc: "Team onboarding, documentation, and ongoing analytics support to drive data adoption." },
@@ -590,7 +379,7 @@ export const SERVICES_DATA = {
     slug: "business-intelligence",
     badge: "Business Intelligence",
     title: "Executive Clarity.\nReal-Time.",
-    subtitle: "We build BI platforms that give leadership and operations teams instant, reliable visibility into the metrics that matter â€” from revenue and margins to operational efficiency.",
+    subtitle: "We build BI platforms that give leadership and operations teams instant, reliable visibility into the metrics that matter — from revenue and margins to operational efficiency.",
     heroImage: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&fit=crop&q=80",
     cta: { primary: "Build My BI Platform", secondary: "See Demo Dashboards" },
     capabilities: [
@@ -621,7 +410,7 @@ export const SERVICES_DATA = {
     ],
   },
   "full-stack-development": { slug: "full-stack-development", badge: "Full-Stack Development", title: "End-to-End Products.`nBuilt to Scale.", subtitle: "We build full-stack web applications from databases and APIs to pixel-perfect frontends using modern technologies.", heroImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&fit=crop&q=80", cta: { primary: "Start Building", secondary: "See Our Stack" }, capabilities: [ { title: "Frontend Engineering", desc: "React, Next.js, and TypeScript frontends with SSR, performance optimization, and accessibility.", icon: "brain" }, { title: "Backend Engineering", desc: "Node.js, Python, Go backends with RESTful and GraphQL APIs designed for scale.", icon: "chart" }, { title: "Database Architecture", desc: "PostgreSQL, MongoDB, Redis, and vector database design with optimized query patterns.", icon: "lock" }, { title: "Real-Time Features", desc: "WebSockets, SSE, and real-time data sync for collaborative applications.", icon: "search" }, { title: "Testing & QA", desc: "Unit, integration, and E2E test coverage with CI-integrated quality gates.", icon: "check" }, { title: "Performance Engineering", desc: "Load testing, caching strategies, and CDN integration for sub-100ms response times.", icon: "shield" }, ], process: [ { step: "01", title: "Tech Scoping", desc: "Define architecture, tech stack, integrations, and non-functional requirements." }, { step: "02", title: "System Design", desc: "ERD, API contracts, component architecture, and infrastructure design." }, { step: "03", title: "Agile Build", desc: "2-week sprint cycles with daily standups, demos, and continuous deployment." }, { step: "04", title: "Testing & QA", desc: "Automated testing, manual QA, performance testing, and security review." }, { step: "05", title: "Launch & Support", desc: "Production deployment, monitoring, and 30-day post-launch support." }, ], useCases: [ { title: "B2B SaaS Platform", tag: "SaaS", desc: "Built a multi-tenant B2B SaaS from scratch with auth, billing, roles, and AI features in 8 weeks.", image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop" }, { title: "Marketplace Platform", tag: "Marketplace", desc: "Two-sided marketplace with search, payments, messaging, and seller analytics.", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&fit=crop" }, { title: "Enterprise Portal", tag: "Enterprise", desc: "Large-scale enterprise portal with SSO, RBAC, reporting, and API integrations.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" }, ], stats: [ { value: "80+", label: "Applications Built" }, { value: "99.9%", label: "Uptime SLA" }, { value: "4 wk", label: "Avg. MVP Delivery" }, { value: "15+", label: "Tech Stacks" }, ], },
-  "mobile-apps": { slug: "mobile-apps", badge: "Mobile App Development", title: "Apps Users`nActually Love.", subtitle: "We build high-performance native and cross-platform mobile applications for iOS and Android.", heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&fit=crop&q=80", cta: { primary: "Build My App", secondary: "See Our Portfolio" }, capabilities: [ { title: "React Native", desc: "Cross-platform apps sharing 90% of codebase across iOS and Android without sacrificing native feel.", icon: "brain" }, { title: "iOS (Swift)", desc: "Native Swift applications leveraging the full iOS ecosystem, ARKit, HealthKit, and CoreML.", icon: "chart" }, { title: "Android (Kotlin)", desc: "Native Kotlin apps with Material Design, Jetpack Compose, and Google Play optimization.", icon: "search" }, { title: "Offline-First Architecture", desc: "Apps that work offline with seamless sync when connectivity is restored.", icon: "lock" }, { title: "Push & Real-Time", desc: "FCM/APNS push notifications, real-time messaging, and live data synchronization.", icon: "shield" }, { title: "App Store Optimization", desc: "Screenshot design, keyword optimization, and rating strategy for App Store and Google Play.", icon: "check" }, ], process: [ { step: "01", title: "Platform Strategy", desc: "Define target platforms, device support, offline requirements, and distribution strategy." }, { step: "02", title: "UX Prototyping", desc: "Interactive prototypes validated with target users before a line of code is written." }, { step: "03", title: "Development Sprints", desc: "2-week sprints with TestFlight/Firebase builds for stakeholder feedback each cycle." }, { step: "04", title: "QA & Device Testing", desc: "Testing across 20+ device configurations, OS versions, and network conditions." }, { step: "05", title: "Store Launch", desc: "App Store and Google Play submission, review management, and launch monitoring." }, ], useCases: [ { title: "HealthTech App", tag: "Healthcare", desc: "HIPAA-compliant iOS/Android patient engagement app with wearable integration and telehealth.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" }, { title: "FinTech Mobile App", tag: "Finance", desc: "Mobile banking app with biometric auth, real-time notifications, and crypto wallet.", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&fit=crop" }, { title: "On-Demand Platform", tag: "Marketplace", desc: "Uber-style on-demand service app with driver and rider flows, maps, and payments.", image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=600&fit=crop" }, ], stats: [ { value: "45+", label: "Apps Published" }, { value: "4.8", label: "Avg. App Store Rating" }, { value: "5M+", label: "Total Downloads" }, { value: "6 wk", label: "Avg. Build Time" }, ], },
+  "mobile-apps": { slug: "mobile-apps", badge: "Mobile App Development", title: "Apps Users`nActually Love.", subtitle: "We build high-performance native and cross-platform mobile applications for iOS and Android.", heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&fit=crop&q=80", cta: { primary: "Build My App", secondary: "See Our Portfolio" }, capabilities: [ { title: "React Native", desc: "Cross-platform apps sharing 90% of codebase across iOS and Android without sacrificing native feel.", icon: "brain" }, { title: "iOS (Swift)", desc: "Native Swift applications leveraging the full iOS ecosystem, ARKit, HealthKit, and CoreML.", icon: "chart" }, { title: "Android (Kotlin)", desc: "Native Kotlin apps with Material Design, Jetpack Compose, and Google Play optimization.", icon: "search" }, { title: "Offline-First Architecture", desc: "Apps that work offline with seamless sync when connectivity is restored.", icon: "lock" }, { title: "Push & Real-Time", desc: "FCM/APNS push notifications, real-time messaging, and live data synchronization.", icon: "shield" }, { title: "App Store Optimization", desc: "Screenshot design, keyword optimization, and rating strategy for App Store and Google Play.", icon: "check" }, ], process: [ { step: "01", title: "Platform Strategy", desc: "Define target platforms, device support, offline requirements, and distribution strategy." }, { step: "02", title: "UX Prototyping", desc: "Interactive prototypes validated with target users before a line of code is written." }, { step: "03", title: "Development Sprints", desc: "2-week sprints with TestFlight/Firebase builds for stakeholder feedback each cycle." }, { step: "04", title: "QA & Device Testing", desc: "Testing across 20+ device configurations, OS versions, and network conditions." }, { step: "05", title: "Store Launch", desc: "App Store and Google Play submission, review management, and launch monitoring." }, ], useCases: [ { title: "HealthTech App", tag: "Healthcare", desc: "HIPAA-compliant iOS/Android patient engagement app with wearable integration and telehealth.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" }, { title: "FinTech Mobile App", tag: "Finance", desc: "Mobile banking app with biometric auth, real-time notifications, and AI-powered financial insights.", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&fit=crop" }, { title: "On-Demand Platform", tag: "Marketplace", desc: "Uber-style on-demand service app with driver and rider flows, maps, and payments.", image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=600&fit=crop" }, ], stats: [ { value: "45+", label: "Apps Published" }, { value: "4.8", label: "Avg. App Store Rating" }, { value: "5M+", label: "Total Downloads" }, { value: "6 wk", label: "Avg. Build Time" }, ], },
   "api-development": { slug: "api-development", badge: "API Development", title: "APIs That Power`nYour Ecosystem.", subtitle: "We design and build robust, scalable, and secure APIs including REST, GraphQL, microservices, and event-driven architectures.", heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop&q=80", cta: { primary: "Build My API", secondary: "See Our Approach" }, capabilities: [ { title: "REST API Design", desc: "Resource-oriented REST APIs with OpenAPI documentation, versioning, and idempotency.", icon: "search" }, { title: "GraphQL APIs", desc: "Flexible GraphQL schemas with DataLoader optimization, subscriptions, and schema stitching.", icon: "brain" }, { title: "Microservices", desc: "Domain-driven microservice architectures with service mesh, circuit breakers, and tracing.", icon: "chart" }, { title: "Event-Driven", desc: "Kafka, SQS, and RabbitMQ event streaming architectures for async decoupled systems.", icon: "lock" }, { title: "API Security", desc: "OAuth2, JWT, API keys, rate limiting, and OWASP API security compliance.", icon: "shield" }, { title: "Developer Experience", desc: "SDK generation, interactive docs, sandbox environments, and onboarding tooling.", icon: "check" }, ], process: [ { step: "01", title: "API Design", desc: "Resource modeling, endpoint design, schema definition, and developer experience planning." }, { step: "02", title: "Spec-First Development", desc: "OpenAPI or GraphQL schema defined and approved before implementation begins." }, { step: "03", title: "Implementation", desc: "Build API with security, validation, error handling, and observability built in." }, { step: "04", title: "Testing", desc: "Contract tests, load tests, and security scans as part of CI pipeline." }, { step: "05", title: "Documentation & Launch", desc: "Developer portal, interactive docs, SDK publishing, and changelog management." }, ], useCases: [ { title: "Platform API", tag: "Platform", desc: "Public developer API for a SaaS platform used by 500+ third-party integrations.", image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&fit=crop" }, { title: "Microservices Migration", tag: "Enterprise", desc: "Migrated a monolith to 12 microservices with Kafka event bus and 99.99% uptime.", image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop" }, { title: "Open Banking API", tag: "Finance", desc: "PSD2-compliant open banking API with bank integrations across 8 European markets.", image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&fit=crop" }, ], stats: [ { value: "100+", label: "APIs Built" }, { value: "1B+", label: "API Calls/Month Served" }, { value: "50ms", label: "Avg. API Latency" }, { value: "99.99%", label: "API Uptime" }, ], },
   "ui-ux-design": { slug: "ui-ux-design", badge: "UI/UX Design", title: "Interfaces That`nConvert and Delight.", subtitle: "We design intuitive beautiful digital experiences that balance user needs with business goals.", heroImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&fit=crop&q=80", cta: { primary: "Start Design Project", secondary: "See Our Work" }, capabilities: [ { title: "User Research", desc: "Interviews, surveys, usability tests, and competitive analysis grounded in real user needs.", icon: "search" }, { title: "Information Architecture", desc: "Site maps, navigation design, and content hierarchy that make complex products intuitive.", icon: "brain" }, { title: "UI Design", desc: "High-fidelity Figma designs with consistent branded visual language and component libraries.", icon: "chart" }, { title: "Interaction Design", desc: "Micro-interactions, motion design, and state management that make interfaces feel alive.", icon: "shield" }, { title: "Design Systems", desc: "Scalable component libraries with tokens, documentation, and Storybook integration.", icon: "lock" }, { title: "Usability Testing", desc: "Prototype testing sessions with target users and iterative refinement based on findings.", icon: "check" }, ], process: [ { step: "01", title: "Discovery", desc: "User interviews, competitive audit, and business objective alignment." }, { step: "02", title: "Information Architecture", desc: "User flows, site maps, and navigation structure validated with stakeholders." }, { step: "03", title: "Wireframing", desc: "Low-fidelity wireframes iterated with business and engineering feedback." }, { step: "04", title: "Visual Design", desc: "High-fidelity designs with full component library in Figma." }, { step: "05", title: "Handoff & Support", desc: "Developer handoff with specs, assets, and design support through build." }, ], useCases: [ { title: "SaaS Product Redesign", tag: "SaaS", desc: "Complete redesign of a B2B SaaS - onboarding completion up 45%, support tickets down 30%.", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&fit=crop" }, { title: "Mobile App UX", tag: "Mobile", desc: "0-to-1 UX design for a fintech mobile app validated with 200 users before development.", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&fit=crop" }, { title: "Design System Build", tag: "Enterprise", desc: "Unified design system for a 500-person tech company used across 8 products.", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&fit=crop" }, ], stats: [ { value: "120+", label: "Products Designed" }, { value: "45%", label: "Avg. Conversion Lift" }, { value: "4.9", label: "Client Satisfaction Score" }, { value: "2 wk", label: "First Designs Delivered" }, ], },
   "product-discovery": { slug: "product-discovery", badge: "Product Discovery", title: "Build the Right Thing.`nBefore You Build It.", subtitle: "We run focused discovery sprints that validate assumptions, define the right product scope, and give your team a clear roadmap.", heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&fit=crop&q=80", cta: { primary: "Book Discovery Sprint", secondary: "See Our Process" }, capabilities: [ { title: "Problem Framing", desc: "Structured workshops to define the core problem, user segments, and success criteria.", icon: "brain" }, { title: "User Interviews", desc: "Rapid interview programs to validate pain points and gather real user insight.", icon: "search" }, { title: "Assumption Mapping", desc: "Identify and prioritize risky assumptions across desirability, viability, and feasibility.", icon: "chart" }, { title: "Prototype Testing", desc: "Build and test low-fidelity prototypes with real users to validate concepts quickly.", icon: "lock" }, { title: "Product Scoping", desc: "Define MVP scope, user stories, and acceptance criteria backed by evidence.", icon: "check" }, { title: "Roadmap Design", desc: "Phased product roadmap with clear milestones, priorities, and dependency mapping.", icon: "shield" }, ], process: [ { step: "01", title: "Problem Alignment", desc: "Align stakeholders on the core problem, target users, and north star outcome." }, { step: "02", title: "User Research", desc: "Conduct rapid qualitative research to understand real user needs and behaviors." }, { step: "03", title: "Assumption Testing", desc: "Build lightweight prototypes to test critical assumptions with real users." }, { step: "04", title: "Scope Definition", desc: "Define MVP scope with prioritized user stories and technical requirements." }, { step: "05", title: "Roadmap & Handoff", desc: "Deliver a clear roadmap, design brief, and kickoff-ready product spec." }, ], useCases: [ { title: "Startup Discovery Sprint", tag: "Startup", desc: "4-week discovery sprint - validated 3 concepts, chose 1, saved 6 months of wrong development.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&fit=crop" }, { title: "Enterprise Feature Discovery", tag: "Enterprise", desc: "Discovery for a new enterprise module with user research across 30 clients before any design.", image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&fit=crop" }, { title: "Product Pivot Discovery", tag: "SaaS", desc: "Discovery sprint that identified a better market opportunity, redirecting a struggling product.", image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop" }, ], stats: [ { value: "60+", label: "Discovery Sprints Run" }, { value: "4 wk", label: "Avg. Sprint Duration" }, { value: "80%", label: "Pivot Rate Reduction" }, { value: "3x", label: "Faster Build Phase" }, ], },

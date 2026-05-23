@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const article = THOUGHT_LEADERSHIP_BY_SLUG[slug];
   if (!article) return {};
   return {
-    title: `${article.title} — 42Works`,
+    title: `${article.title} — Verido`,
     description: article.excerpt,
   };
 }
