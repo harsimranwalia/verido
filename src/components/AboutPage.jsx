@@ -380,7 +380,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP */}
+      {/* LEADERSHIP — hidden, remove the wrapping div to restore */}
+      <div className="hidden">
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 md:px-12">
           <Reveal>
@@ -477,6 +478,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* VALUES */}
       <section className="bg-[#f8fafc] py-24 md:py-32">
