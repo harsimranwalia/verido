@@ -134,20 +134,20 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-5xl rounded-[2rem] border border-white/60 bg-[linear-gradient(145deg,rgba(255,255,255,0.94),rgba(240,246,255,0.92))] px-6 py-14 text-center shadow-[0_30px_90px_rgba(79,70,229,0.16)] backdrop-blur-xl md:px-12 md:py-20">
           <Reveal>
             <span className="mb-6 inline-block rounded-full border border-teal-300/70 bg-teal-400/90 px-4 py-1.5 text-xs font-semibold tracking-wide text-white shadow-[0_8px_20px_rgba(20,184,166,0.3)]">
-              Ready to start?
+              Ready to build?
             </span>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mb-6 font-heading text-[clamp(2rem,5vw,4rem)] font-bold leading-tight tracking-tight text-slate-900">
-              Whether you&apos;re starting with data modernization
+              Ship your Agentic AI solution
               <br />
               <span className="bg-gradient-to-r from-indigo-700 via-blue-600 to-teal-500 bg-clip-text text-transparent">
-                or exploring AI copilots
+                live in 42 days
               </span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mb-12 text-lg text-slate-600 md:text-xl">We&apos;re here to help.</p>
+            <p className="mb-12 text-lg text-slate-600 md:text-xl">We start with an AI audit to find your highest-value opportunity — then we build it.</p>
           </Reveal>
           <Reveal delay={0.3}>
             <motion.a
@@ -157,7 +157,7 @@ export default function HomePage() {
               whileTap={{ scale: 0.97 }}
               transition={{ type: "spring", stiffness: 380, damping: 26 }}
             >
-              Get an AI Audit Today
+              Build My Agentic AI
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20">→</span>
             </motion.a>
           </Reveal>

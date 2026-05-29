@@ -85,7 +85,7 @@ const pillars = [
   },
 ];
 
-const highlights = ["AI Audit", "Agentic AI", "Live in 42 days"];
+const highlights = ["Agentic AI", "AI Audit", "Live in 42 days"];
 const topBars = [
   "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500",
   "bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500",
@@ -112,9 +112,9 @@ export function FundamentalsSection() {
               Toward Possibilities
             </h2>
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600">
-              We audit your current digital operations to discover where AI can drive real impact —
-              then we build it. From workflow automation to intelligent products,
-              this isn&apos;t about patching inefficiencies. This is about competitive advantage.
+              We build Agentic AI solutions — autonomous agents and intelligent pipelines that act, not just answer.
+              We start with an AI audit to find your highest-value opportunity, then build and ship it.
+              This isn&apos;t about patching inefficiencies. This is about competitive advantage.
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 md:gap-3">
               {highlights.map((item) => (

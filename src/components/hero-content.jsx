@@ -56,7 +56,7 @@ export function HeroContent() {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.55, delay: 0.2, ease: "easeOut" }}
           >
-            Find the AI Opportunity.
+            Build Agentic AI Solutions.
           </motion.span>
           <motion.span
             className="block bg-[linear-gradient(90deg,#4338ca_0%,#0ea5e9_45%,#059669_100%)] bg-clip-text text-transparent drop-shadow-none"
@@ -64,7 +64,7 @@ export function HeroContent() {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.55, delay: 0.38, ease: "easeOut" }}
           >
-            Build It. Ship It. Live in 42 days.
+            Audit. Design. Ship. Live in 42 Days.
           </motion.span>
         </h1>
 
@@ -72,7 +72,7 @@ export function HeroContent() {
           data-hero="description"
           className="mt-5 max-w-xl text-pretty text-[0.9rem] leading-relaxed text-slate-500 md:mt-7 md:max-w-2xl md:text-lg"
         >
-          We audit your business to surface high-value AI opportunities, then build and launch the right Agentic AI solution — as a PoC, MVP, or production feature.
+          We design and ship Agentic AI solutions — autonomous agents, intelligent pipelines, and AI-native products. We start with an AI audit to find your highest-value opportunity, then build and launch it as a PoC, MVP, or production feature.
         </p>
 
 
@@ -87,10 +87,10 @@ export function HeroContent() {
             transition={{ type: "spring", stiffness: 420, damping: 30 }}
             className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-700 via-blue-600 to-teal-500 px-6 py-3.5 text-base font-bold text-white shadow-[0_16px_34px_rgba(79,70,229,0.35)] transition hover:brightness-110 md:px-8 md:text-lg"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+            <svg className="h-4 w-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
-            Get an AI Audit
+            Build My Agentic AI
           </motion.a>
           {/* Secondary CTA */}
           <motion.a
@@ -101,10 +101,10 @@ export function HeroContent() {
             transition={{ type: "spring", stiffness: 420, damping: 30 }}
             className="inline-flex items-center gap-2 rounded-xl border border-white/70 bg-white/85 px-6 py-3.5 text-base font-semibold text-slate-900 shadow-[0_14px_32px_rgba(79,70,229,0.14)] backdrop-blur-sm transition hover:bg-white md:px-8 md:text-lg"
           >
-            <svg className="h-4 w-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
             </svg>
-            Build My Solution
+            Get an AI Audit
           </motion.a>
         </div>
 
