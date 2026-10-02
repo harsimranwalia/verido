@@ -24,6 +24,16 @@ if (typeof window !== "undefined") {
   import("@react-spring/three");
 }
 
+// Pages that link here pass ?source=<section>/<slug> so each enquiry records
+// where it came from. Only known sections with slug-shaped values are kept.
+const SOURCE_PATTERN = /^(thought-leadership|case-studies)\/[a-z0-9-]+$/;
+
+function enquirySourceTag() {
+  const source = new URLSearchParams(window.location.search).get("source");
+  const page = source && SOURCE_PATTERN.test(source) ? source : "contact";
+  return `[source: verido.co/${page}]`;
+}
+
 const COMPANY_SIZES = ["1–10", "11–50", "51–200", "201–500", "500–1000", "1000+"];
 const INITIAL_FORM_DATA = {
   firstName: "",
@@ -126,7 +136,7 @@ export default function ContactPage() {
           phone: formData.phone,
           company_website: formData.companyWebsite,
           company_size: formData.companySize,
-          message: formData.message,
+          message: `${enquirySourceTag()}\n\n${formData.message}`,
         },
         { publicKey }
       );

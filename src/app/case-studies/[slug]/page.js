@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ContactCta from "../../../components/ContactCta";
 import { CASE_STUDIES, CASE_STUDIES_BY_SLUG } from "../../../components/data/case-studies-data";
 import { generateMetadataOverride } from '../../../lib/metadata';
 import { siteUrl } from '../../../lib/site-url';
@@ -116,6 +117,12 @@ export default async function CaseStudyDetailPage({ params }) {
             <p className="text-sm leading-relaxed text-slate-700">{study.outcome}</p>
           </section>
         ) : null}
+
+        <ContactCta
+          source={`case-studies/${study.slug}`}
+          heading="Want something like this built for you?"
+          body="Tell us about the workflow that eats your team's time. We'll scope what automating it looks like and give you a fixed price."
+        />
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ContactCta from "../../../components/ContactCta";
 import { THOUGHT_LEADERSHIP_ARTICLES, THOUGHT_LEADERSHIP_BY_SLUG } from "../../../components/data/thought-leadership-data";
 
 export async function generateStaticParams() {
@@ -89,6 +90,12 @@ export default async function ThoughtLeadershipDetailPage({ params }) {
         <div className="mt-10">
           <KeyPointsSection points={article.keyPoints} />
         </div>
+
+        <ContactCta
+          source={`thought-leadership/${article.slug}`}
+          heading="Have a workflow like this in your business?"
+          body="Tell us what the manual steps look like today. We'll show you what it looks like automated, and whether it's worth building."
+        />
       </div>
     </main>
   );
